@@ -15,11 +15,13 @@
   },
   "dependencies": {
     "apexcharts": "^3.20.0",
+    "axios": "^0.19.2",
     "bootstrap": "^4.5.2",
     "bootstrap-vue": "^2.16.0",
     "vue": "^2.6.11",
     "vue-apexcharts": "^1.6.0",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "vue-wordcloud": "^1.1.1"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

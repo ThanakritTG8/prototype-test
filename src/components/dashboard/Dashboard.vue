@@ -1,12 +1,12 @@
 <template>
-  <div class="hello">
+  <div class="dashboard">
     <apexchart width="500" type="line" :options="options" :series="series"></apexchart>
   </div>
 </template>
 
 <script>
 export default {
-    name: 'Hello-World',
+    name: 'dashboard',
     data:() => ({
         options: {
         chart: {
