@@ -1,16 +1,20 @@
 <template>
   <div id="count-neg">
+   
     <div class="row">
+       <router-link to="/comment" class="navbar">
       <div class="col-lg-6">
         <p class="head text-left" id="comment-icon">
           <i class="fa fa-minus-circle" style="color:red"></i>
         </p>
       </div>
+      </router-link>
       <div class="col-lg-5">
         <p class="head" id="text">Negative Comment</p>
         <p class="lead" id="numComment">5000</p>
       </div>
     </div>
+    
   </div>
 </template>
 

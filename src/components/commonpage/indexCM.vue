@@ -3,78 +3,40 @@
     <b-container class="margin-top">
       <b-row>
         <b-col>
-          <b-button variant="info">Positive</b-button>
-          <b-button variant="info">Negative</b-button>
+          <b-button variant="info" @click="PosBtn">Positive</b-button>
+          <b-button variant="info" @click="NegBtn">Negative</b-button>
         </b-col>
         <b-col></b-col>
         <b-col></b-col>
       </b-row>
     </b-container>
-
-    <b-container class="margin-top">
-      <b-row>
-        <b-col lg="4"></b-col>
-       
-        <b-col>
-          <PiePos />
-        </b-col>
-        
-        <b-col></b-col>
-      </b-row>
-    </b-container>
-    <b-container class="margin-top">
-      <b-row>
-
-        <b-col class="margin-top">
-              <b-card class="card">
-          <BarNounPos />
-          </b-card>
-        </b-col>
-
-
-        <b-col class="margin-top">
-              <b-card class="card">
-          <BarVerbPos />
-          </b-card>
-        </b-col>
-
-
-        <div class="w-100"></div>
-
-
-        <b-col class="margin-top">
-              <b-card class="card">
-          <BarAdjPos />
-          </b-card>
-        </b-col>
-
-
-        <b-col class="margin-top">
-              <b-card class="card">
-          <BarAdvPos />
-          </b-card>
-        </b-col>
-
-
-      </b-row>
-    </b-container>
+ <PosPage v-if="pos"/>
+  <NegPage v-if="neg"/>
   </div>
 </template>
 <script>
-import PiePos from "@/components/commonpage/PiePos";
-import BarNounPos from "@/components/commonpage/BarNounPos";
-import BarVerbPos from "@/components/commonpage/BarVerbPos";
-import BarAdjPos from "@/components/commonpage/BarAdjPos";
-import BarAdvPos from "@/components/commonpage/BarAdvPos";
-
+import NegPage from "@/components/commonpage/NegPage";
+import PosPage from "@/components/commonpage/PosPage";
 export default {
-  components: {
-    PiePos,
-    BarNounPos,
-    BarVerbPos,
-    BarAdjPos,
-    BarAdvPos,
-  },
+  data :()=>({
+    pos : true ,
+    neg :false
+  }),
+  methods :{
+    PosBtn(){
+      this.pos = true
+      this.neg =false
+    },
+     NegBtn(){
+      this.pos = false
+      this.neg =true
+    }
+  }
+  ,components : {
+PosPage,
+NegPage
+  }
+   
 };
 </script>
 <style  scoped>

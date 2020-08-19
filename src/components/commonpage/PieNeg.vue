@@ -1,20 +1,20 @@
 <template>
   <div>
-      <h3>Positive</h3><br>
-    <canvas id="Pie" weight="300" height="300"></canvas>
+      <h3>Negative</h3><br>
+    <canvas id="PieNeg" weight="300" height="300"></canvas>
   </div>
 </template>
 <script>
 export default {
   mounted() {
-      var ctx = document.getElementById("Pie").getContext("2d");
+      var ctx = document.getElementById("PieNeg").getContext("2d");
     var myDoughnutChart = new Chart(ctx, {
       type: "doughnut",
       data: {
           
         datasets: [
           {
-            data: [26 , 20 , 56 ,50 ],
+            data: [30 , 40 , 26 ,10 ],
           
                 backgroundColor: [
                 'rgba(255, 46, 70, 0.63)',
