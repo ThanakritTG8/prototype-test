@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Dashboard from '@/components/dashboard/Dashboard'
 import CommentPage from '@/components/commentpage/CommentPage'
-import CommonWordPage from '@/components/commonpage/CommonWordPage'
+import indexCM from '@/components/commonpage/indexCM'
 
 Vue.use(Router)
 
@@ -20,8 +20,8 @@ export default new Router({
     },
     {
       path: '/common',
-      name: 'Common',
-      component: CommonWordPage
+      name: 'indexCM',
+      component: indexCM
     }
   ]
 })
