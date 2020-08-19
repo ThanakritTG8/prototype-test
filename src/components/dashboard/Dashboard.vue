@@ -1,28 +1,18 @@
 <template>
   <div class="dashboard">
-    <apexchart width="500" type="line" :options="options" :series="series"></apexchart>
+    <index-dashboard/>
   </div>
 </template>
 
 <script>
+import IndexDashboard from '@/components/dashboard/IndexDashboard'
+
 export default {
-    name: 'dashboard',
-    data:() => ({
-        options: {
-        chart: {
-          id: 'vuechart-example'
-        },
-        xaxis: {
-          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
-        }
-      },
-      series: [{
-        name: 'series-1',
-        data: [30, 40, 45, 50, 49, 60, 70, 91]
-      }]
-    })
-    
-}
+  name: "dashboard",
+  components: {
+    IndexDashboard
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
