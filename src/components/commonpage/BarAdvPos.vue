@@ -21,7 +21,7 @@ export default {
           fontSize: "18px",
           fontWeight: "bold",
           fontFamily: undefined,
-          color: "#FFFFFF",
+          color: "#000",
         },
       },
         
