@@ -6,7 +6,7 @@
           <i class="fa fa-plus-circle" style="color:rgb(85, 253, 139)"></i>
         </p>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-5">
         <p class="head" id="text">Positive Comment</p>
         <p class="lead" id="numComment">5000</p>
       </div>

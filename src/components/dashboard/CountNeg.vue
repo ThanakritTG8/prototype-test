@@ -6,7 +6,7 @@
           <i class="fa fa-minus-circle" style="color:red"></i>
         </p>
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-5">
         <p class="head" id="text">Negative Comment</p>
         <p class="lead" id="numComment">5000</p>
       </div>
