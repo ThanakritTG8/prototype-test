@@ -1,6 +1,6 @@
 <template>
   <div id="date">
-  <p class="title"></p>
+  <p class="title">Monthly Comments</p>
     <canvas id="line"></canvas>
   </div>
 </template>
@@ -43,6 +43,6 @@ export default {
 <style scoped>
 #line {
     width: 90%;
-    height: auto;
+    height: 370;
 }
 </style>

@@ -29,7 +29,7 @@ export default {
 #text {
   padding-top: 0px;
   font-size: 15px;
-  margin-right: 20px;
+  margin-right: 5px;
 }
 #numComment {
   font-size: 45px;
