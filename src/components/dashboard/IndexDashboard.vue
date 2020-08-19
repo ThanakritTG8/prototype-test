@@ -2,22 +2,6 @@
   <div id="index-dashboard">
     <h1 class="title text-center">Dashboard</h1>
     <div class="row">
-      <div class="col-lg-6 text-center">
-        <div class="card">
-          <div class="card-body">
-            <date />
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="card">
-          <div class="card-body">
-            <alltext-sense />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
       <div class="col-lg-4">
         <div class="card">
           <div class="card-body">
@@ -36,6 +20,22 @@
         <div class="card">
           <div class="card-body">
             <count-neg />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 text-center">
+        <div class="card">
+          <div class="card-body">
+            <date />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-body">
+            <alltext-sense />
           </div>
         </div>
       </div>
