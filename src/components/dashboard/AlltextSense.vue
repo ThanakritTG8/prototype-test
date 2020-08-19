@@ -209,7 +209,7 @@ export default {
 .wordcloud {
   font-family: "Lato", Arial, sans-serif;
   width: 100%;
-  height: 360px;
+  height: 370px;
 }
 .right {
   text-align: right;

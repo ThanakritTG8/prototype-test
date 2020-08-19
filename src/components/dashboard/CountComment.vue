@@ -8,7 +8,7 @@
       </div>
       <div class="col-lg-4">
         <p class="head" id="text">All Comment</p>
-        <p class="lead" id="numComment">5000</p>
+        <p class="lead" id="numComment">3000</p>
       </div>
     </div>
   </div>
