@@ -14,27 +14,48 @@
     <b-container class="margin-top">
       <b-row>
         <b-col lg="4"></b-col>
+       
         <b-col>
           <PiePos />
         </b-col>
+        
         <b-col></b-col>
       </b-row>
     </b-container>
     <b-container class="margin-top">
       <b-row>
+
         <b-col class="margin-top">
+              <b-card class="card">
           <BarNounPos />
+          </b-card>
         </b-col>
+
+
         <b-col class="margin-top">
+              <b-card class="card">
           <BarVerbPos />
+          </b-card>
         </b-col>
+
+
         <div class="w-100"></div>
+
+
         <b-col class="margin-top">
+              <b-card class="card">
           <BarAdjPos />
+          </b-card>
         </b-col>
+
+
         <b-col class="margin-top">
+              <b-card class="card">
           <BarAdvPos />
+          </b-card>
         </b-col>
+
+
       </b-row>
     </b-container>
   </div>
@@ -60,5 +81,11 @@ export default {
 
 .margin-top{
     margin-top: 20px;
+    
+}
+.card{
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
 }
 </style>
