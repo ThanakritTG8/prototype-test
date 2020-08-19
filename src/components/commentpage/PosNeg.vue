@@ -14,7 +14,7 @@ export default {
   mounted: function () {
     var ctx = document.getElementById("pie").getContext("2d");
     var line = new Chart(ctx, {
-      type: "pie",
+      type: "doughnut",
       data: {
         labels: ['Positive', 'Negative'],
         datasets: [
