@@ -45,6 +45,7 @@ import BarNounPos from "@/components/commonpage/BarNounPos";
 import BarVerbPos from "@/components/commonpage/BarVerbPos";
 import BarAdjPos from "@/components/commonpage/BarAdjPos";
 import BarAdvPos from "@/components/commonpage/BarAdvPos";
+
 export default {
   components: {
     PiePos,
