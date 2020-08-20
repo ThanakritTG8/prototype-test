@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4 class="text-center">Place</h4>
+    <h4 class="text-center">Action</h4>
     <wordcloud
       class="wordcloud"
       :data="defaultWords"
@@ -47,8 +47,7 @@ export default {
       { word: "ปลอดภัย ", count: 3 },
       { word: "เช่า ", count: 3 },
       { word: "หลีกเลี่ยง ", count: 2 },
-      { word: "ริ ", count: 2 },
-      { word: "กะ ", count: 2 },
+     
       { word: "ซื้อ ", count: 2 },
       { word: "นั่ง ", count: 2 },
       { word: "*ดี ", count: 2 },
@@ -158,3 +157,8 @@ export default {
   },
 };
 </script>
+<style  scoped>
+.wordcloud{
+  height: 250px;
+}
+</style>
