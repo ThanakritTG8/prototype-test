@@ -1,25 +1,25 @@
 <template>
-  <div id="index-dashboard">
-    <h1 class="title text-center">Patong Dashboard</h1>
+  <div id="index-dashboard-karon">
+    <h1 class="title text-center">Karon Dashboard</h1>
     <div class="row">
       <div class="col-lg-4">
         <div class="card">
           <div class="card-body">
-            <count-comment />
+            <count-comment-karon />
           </div>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="card">
           <div class="card-body">
-            <count-pos />
+            <count-pos-karon />
           </div>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="card">
           <div class="card-body">
-            <count-neg />
+            <count-neg-karon />
           </div>
         </div>
       </div>
@@ -28,7 +28,7 @@
       <div class="col-lg-6 text-center">
         <div class="card">
           <div class="card-body">
-            <date />
+            <date-karon />
           </div>
         </div>
       </div>
@@ -44,19 +44,19 @@
 </template>
 
 <script>
-import Date from "@/components/dashboard/Date";
-import CountComment from "@/components/dashboard/CountComment";
-import CountPos from "@/components/dashboard/CountPos";
-import CountNeg from "@/components/dashboard/CountNeg";
-import AlltextSense from "@/components/dashboard/AlltextSense";
+import CountCommentKaron from '@/components/dashboardKaron/CountCommentKaron'
+import CountNegKaron from '@/components/dashboardKaron/CountNegKaron'
+import CountPosKaron from '@/components/dashboardKaron/CountPosKaron'
+import DateKaron from '@/components/dashboardKaron/DateKaron'
+import AlltextSense from '@/components/dashboard/AlltextSense'
 
 export default {
-  name: "index-dashboard",
+  name: "index-dashboard-karon",
   components: {
-    Date,
-    CountComment,
-    CountPos,
-    CountNeg,
+    DateKaron,
+    CountCommentKaron,
+    CountPosKaron,
+    CountNegKaron,
     AlltextSense,
   },
 };
