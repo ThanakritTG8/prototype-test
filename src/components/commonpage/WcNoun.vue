@@ -208,3 +208,8 @@ export default {
   },
 };
 </script>
+<style  scoped>
+.wordcloud{
+  height: 250px;
+}
+</style>

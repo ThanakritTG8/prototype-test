@@ -45,14 +45,14 @@
         <b-col class="margin-top">
           <b-card class="card">
             <BarAdjPos v-if="bar" />
-             <WcAdj v-if="wc"/>
+             <WcAdjNeg v-if="wc"/>
           </b-card>
         </b-col>
 
         <b-col class="margin-top">
           <b-card class="card">
             <BarAdvPos v-if="bar"/>
-            <WcAdv v-if="wc"/>
+            <WcAdvNeg v-if="wc"/>
           </b-card>
         </b-col>
       </b-row>
@@ -68,8 +68,8 @@ import BarAdvPos from "@/components/commonpage/BarAdvPos";
 
 import WcNoun from "@/components/commonpage/WcNoun";
 import WcVerb from "@/components/commonpage/WcVerb";
-import WcAdv from "@/components/commonpage/WcAdv";
-import WcAdj from "@/components/commonpage/WcAdj";
+import WcAdvNeg from "@/components/commonpage/WcAdvNeg";
+import WcAdjNeg from "@/components/commonpage/WcAdjNeg";
 export default {
     data:()=>({
         bar : true,
@@ -98,8 +98,8 @@ export default {
     BarAdvPos,
     WcNoun,
     WcVerb,
-    WcAdv,
-    WcAdj
+    WcAdvNeg,
+    WcAdjNeg
   },
 };
 </script>
