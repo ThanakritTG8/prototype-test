@@ -4,8 +4,8 @@
     <wordcloud
       class="wordcloud"
       :data="defaultWords"
-      nameKey="word"
-      valueKey="count"
+      nameKey="words"
+      valueKey="counts"
       :color="Accent"
       :showTooltip="true"
       :wordClick="wordClickHandler"
