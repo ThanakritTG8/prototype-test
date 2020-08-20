@@ -27,21 +27,7 @@
         </b-col>
 
         <b-col lg="6" class="my-1">
-          <b-form-group
-            label="Initial sort"
-            label-cols-sm="3"
-            label-align-sm="right"
-            label-size="sm"
-            label-for="initialSortSelect"
-            class="mb-0"
-          >
-            <b-form-select
-              v-model="sortDirection"
-              id="initialSortSelect"
-              size="sm"
-              :options="['asc', 'desc', 'last']"
-            ></b-form-select>
-          </b-form-group>
+        
         </b-col>
 
         <b-col lg="6" class="my-1">
