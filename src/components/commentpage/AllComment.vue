@@ -27,10 +27,6 @@
         </b-col>
 
         <b-col lg="6" class="my-1">
-        
-        </b-col>
-
-        <b-col lg="6" class="my-1">
           <b-form-group
             label="Filter"
             label-cols-sm="3"
@@ -52,7 +48,7 @@
             </b-input-group>
           </b-form-group>
         </b-col>
-
+        
         <b-col sm="5" md="6" class="my-1">
           <b-form-group
             label="Per page"
@@ -67,7 +63,7 @@
             <b-form-select v-model="perPage" id="perPageSelect" size="sm" :options="pageOptions"></b-form-select>
           </b-form-group>
         </b-col>
-        <b-col sm="5" md="6"></b-col>
+
         <b-col sm="7" md="6" class="my-1">
           <b-pagination
             v-model="currentPage"
@@ -80,6 +76,8 @@
         </b-col>
       </b-row>
 
+
+      <div id="space"></div>
       <div class="card">
         <div class="card-body">
           <!-- Main table element -->
@@ -672,3 +670,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+#space {
+  margin-bottom: 40px;
+}
+
+</style>
