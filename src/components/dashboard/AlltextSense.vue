@@ -11,24 +11,29 @@
       :showTooltip="true"
       :wordClick="wordClickHandler"
     ></wordcloud>
-    <b-modal id="modal-scrollable" size="lg" scrollable>
+
+    <b-modal id="modal-scrollable" ok-only size="lg" scrollable>
       <template v-slot:modal-title>
         <h3>
           #
           <code>{{name}}</code>
+          <code>{{filter}}</code>
         </h3>
       </template>
-      
-     <b-card class="boder" v-for="i in 20" :key="i">
-        <h5 class="my-4 position" >{{name}}</h5>
-      </b-card>
-     
+
+      <div class="card">
+        <div class="card-body">
+          <!-- Main table element -->
+          <b-table show-empty small stacked="md" :items="item" :fields="fields" :filter="filter"></b-table>
+        </div>
+      </div>
     </b-modal>
   </div>
 </template>
 
 <script>
 import wordcloud from "vue-wordcloud";
+
 export default {
   name: "all-text-sense",
   components: {
@@ -36,14 +41,15 @@ export default {
   },
   methods: {
     wordClickHandler(name) {
-      console.log("wordClickHandler", name);
       this.name = name;
+      this.filter = name;
     },
   },
 
   data: () => ({
     name: "null",
     defaultWords: [
+      { word: "ช่วย", count: 60 },
       { word: "ชายหาด", count: 59 },
       { word: "ป่า", count: 18 },
       { word: "น้ำ", count: 18 },
@@ -222,6 +228,66 @@ export default {
       { word: "เล่นกีฬา", count: 1 },
       { word: "ผจญภัย", count: 1 },
     ],
+    item: [
+      {
+        Review:
+          "Different from the information in the net, the beach is clean, calm ans nice for families. İt is easy accessible, with a lot of options for cheap and tasty street food.",
+        Name: "Panar Kyazim",
+        Address: "-",
+        Time: "Date of experience: January 2020",
+        Rating: 5,
+        Thai:
+          "แตกต่างจากข้อมูลในเน็ตชายหาดสะอาดสงบและดีสำหรับครอบครัว มันสามารถเข้าถึงได้ง่ายมีตัวเลือกมากมายสำหรับอาหารริมถนนราคาถูกและอร่อยชายหาด",
+      },
+      {
+        Review:
+          "A busy but exciting beach with plenty of exiting opportunities for sports etc. Excellent local restaurants and bars, shops etc.",
+        Name: "iann990",
+        Address: "Edinburgh, United Kingdom",
+        Time: "Date of experience: January 2020",
+        Rating: 4,
+        Thai:
+          "ชายหาดที่วุ่นวาย แต่น่าตื่นเต้นพร้อมโอกาสมากมายสำหรับการเล่นกีฬา ฯลฯ ร้านอาหารและบาร์ท้องถิ่นที่ยอดเยี่ยมร้านค้า ฯลฯ ตอง",
+      },
+      {
+        Review:
+          "Besides the location not much going for it especially as there are so many fantastic beaches all around Patong and Phuket in general.",
+        Name: "Susan Firth Bernard Kavanagh",
+        Address: "Island of Malta, Malta",
+        Time: "Date of experience: January 2020",
+        Rating: 1,
+        Thai:
+          "นอกจากทำเลที่ตั้งไม่ค่อยไปโดยเฉพาะอย่างยิ่งเพราะมีชายหาดที่ยอดเยี่ยมมากมายรอบ ๆ ป่าตองและภูเก็ตโดยทั่วไปป่า",
+      },
+      {
+        Review:
+          "Patong Beach was absolutely amazing.  There are a bunch of restaurants that will provide you with great food and some shade when you need a break from the water.  Jet skis, parasailing and various water activities also await you here.  I was here for New Years Eve and the beach…",
+        Name: "krich0311",
+        Address: "Phoenix, Arizona",
+        Time: "Date of experience: January 2020",
+        Rating: 5,
+        Thai:
+          "หาดป่าตองเป็นสิ่งที่น่าอัศจรรย์อย่างยิ่ง มีร้านอาหารมากมายที่จะช่วยให้คุณได้รับอาหารอร่อยและร่มเงาเมื่อคุณต้องการหยุดพักจากน้ำ เจ็ทสกีพาราเซลลิ่งและกิจกรรมทางน้ำมากมายรอคุณอยู่ที่นี่ ฉันอยู่ที่นี่เพื่อปีใหม่และชายหาด",
+      },
+      {
+        Review:
+          "The beach and restaurants are ok, don’t come here for a relaxing holiday. Come here when you want to party and to date. The area has very nice places to visit. The traffic is busy and the distances to the nice sceneries to visit James Bond rock it’s about 100 km.",
+        Name: "Ghentfreak",
+        Address: "Hanoi, Vietnam",
+        Time: "Date of experience: January 2020",
+        Rating: 3,
+        Thai:
+          "ชายหาดและร้านอาหารโอเคอย่ามาที่นี่สำหรับวันหยุดพักผ่อนที่ผ่อนคลาย มาที่นี่เมื่อคุณต้องการปาร์ตี้และนัดเดท พื้นที่มีสถานที่ที่ดีมากในการเยี่ยมชม การจราจรไม่ว่างและระยะทางไปยังฉากที่ดีในการเยี่ยมชมหินบอนด์เจมส์มันอยู่ห่างออกไปประมาณหนึ่งร้อยกิโลเมตร",
+      },
+    ],
+
+    fields: [
+      {
+        key: "Thai",
+        label: "Review",
+      },
+    ],
+    filter: null,
   }),
 };
 </script>
@@ -235,13 +301,4 @@ export default {
 .right {
   text-align: right;
 }
- .position{
-   margin: 30px;
- }
- .boder{
-   border-radius: 30px;
-   margin: 15px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
- }
-
 </style>

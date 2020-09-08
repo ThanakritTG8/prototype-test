@@ -10,7 +10,7 @@
         <b-col></b-col>
       </b-row>
     </b-container>
- <PosPage v-if="pos"/>
+  <PosPage v-if="pos"/>
   <NegPage v-if="neg"/>
   </div>
 </template>

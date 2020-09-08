@@ -2,6 +2,7 @@
   <div>
     <h4 class="text-center">Emotion</h4>
     <wordcloud
+      v-b-modal.modal-scrollable
       class="wordcloud"
       :data="defaultWords"
       nameKey="word"
@@ -10,23 +11,28 @@
       :showTooltip="true"
       :wordClick="wordClickHandler"
     ></wordcloud>
+   
   </div>
 </template>
+
 <script>
+
 import wordcloud from "vue-wordcloud";
 export default {
-  name: "common-word-cloud-noun",
+  name: "common-word-cloud-adj",
   components: {
     wordcloud,
+ 
   },
 
   data: () => ({
+    name:"null",
     defaultWords: [
-      { word: "สกปรก", count: 8},
-      { word: "ไม่สะอาด", count: 1},
-      { word: "แย่", count: 6},
-      { word: "ขุ่น", count: 5},
-      { word: "สด", count: 4},
+      { word: "สกปรก", count: 8 },
+      { word: "ไม่สะอาด", count: 1 },
+      { word: "แย่", count: 6 },
+      { word: "ขุ่น", count: 5 },
+      { word: "สด", count: 4 },
       { word: "ไม่อร่อย", count: 3 },
       { word: "สูบบุหรี่", count: 2 },
       { word: "แพง", count: 1 },
@@ -44,23 +50,21 @@ export default {
       { word: "เชือก", count: 1 },
       { word: "ไม่เป็นมิตร", count: 1 },
       { word: "ความสุข", count: 1 },
-      { word: "อิ่ม", count: 2},
+      { word: "อิ่ม", count: 2 },
       { word: "แคบ", count: 12 },
       { word: "ดัง", count: 5 },
       { word: "ไม่เรียบร้อย", count: 6 },
-
-      
     ],
   }),
   methods: {
-    wordClickHandler(word, count, vm) {
-      console.log("wordClickHandler", name, value, vm);
+    wordClickHandler(name) {
+      this.name = name;
     },
   },
 };
 </script>
 <style  scoped>
-.wordcloud{
+.wordcloud {
   height: 250px;
 }
 </style>

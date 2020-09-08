@@ -2,6 +2,7 @@
   <div>
     <h4 class="text-center">Place</h4>
     <wordcloud
+      v-b-modal.modal-scrollable
       class="wordcloud"
       :data="defaultWords"
       nameKey="word"
@@ -10,17 +11,22 @@
       :showTooltip="true"
       :wordClick="wordClickHandler"
     ></wordcloud>
+  
   </div>
 </template>
+
 <script>
+
 import wordcloud from "vue-wordcloud";
 export default {
   name: "common-word-cloud-noun",
   components: {
     wordcloud,
+    
   },
 
   data: () => ({
+    name:"null",
     defaultWords: [
       { word: "ชายหาด", count: 59 },
       { word: "ป่า", count: 18 },
@@ -201,15 +207,15 @@ export default {
       { word: "ผจญภัย", count: 1 },
     ],
   }),
-  methods: {
-    wordClickHandler(word, count, vm) {
-      console.log("wordClickHandler", name, value, vm);
-    },
-  },
+//  methods: {
+//     wordClickHandler(name) {
+//       this.name = name;
+//     },
+//   },
 };
 </script>
 <style  scoped>
-.wordcloud{
+.wordcloud {
   height: 250px;
 }
 </style>

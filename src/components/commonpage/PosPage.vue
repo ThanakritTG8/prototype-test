@@ -60,6 +60,7 @@
   </div>
 </template>
 <script>
+
 import PiePos from "@/components/commonpage/PiePos";
 import BarNounPos from "@/components/commonpage/BarNounPos";
 import BarVerbPos from "@/components/commonpage/BarVerbPos";
@@ -90,6 +91,7 @@ export default {
     }
     ,
   components: {
+   
     PiePos,
 
     BarNounPos,
