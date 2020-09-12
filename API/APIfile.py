@@ -8,7 +8,7 @@ api = Api(app)
 @app.route('/CorrectIDFRatingType1Patong')
 def CorrectIDFRatingType1Patong(): 
  
- url="./testjson/jsonfile/CorrectIDFRatingType1Patong.json"
+ url="./API/testjson/jsonfile/CorrectIDFRatingType1Patong.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,ensure_ascii=False)
@@ -17,7 +17,7 @@ def CorrectIDFRatingType1Patong():
 @app.route('/CorrectIDFSpecialType1Patong')
 def CorrectIDFSpecialType1Patong(): 
  
- url="./testjson/jsonfile/CorrectIDFSpecialType1Patong.json"
+ url="./API/testjson/jsonfile/CorrectIDFSpecialType1Patong.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -26,7 +26,7 @@ def CorrectIDFSpecialType1Patong():
 @app.route('/CorrectNodeRatingType1Patong')
 def CorrectNodeRatingType1Patong(): 
  
- url="./testjson/jsonfile/CorrectNodeRatingType1Patong.json"
+ url="./API/testjson/jsonfile/CorrectNodeRatingType1Patong.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -35,7 +35,7 @@ def CorrectNodeRatingType1Patong():
 @app.route('/CorrectNodeSpecialType1Patong')
 def CorrectNodeSpecialType1Patong(): 
  
- url="./testjson/jsonfile/CorrectNodeSpecialType1Patong.json"
+ url="./API/testjson/jsonfile/CorrectNodeSpecialType1Patong.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -44,7 +44,7 @@ def CorrectNodeSpecialType1Patong():
 @app.route('/CountOfNumberMessage')
 def CountOfNumberMessage(): 
  
- url="./testjson/jsonfile/CountOfNumberMessage.json"
+ url="./API/testjson/jsonfile/CountOfNumberMessage.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -53,7 +53,7 @@ def CountOfNumberMessage():
 @app.route('/NounAllIinPatong')
 def NounAllIinPatong(): 
  
- url="./testjson/jsonfile/NounAllIinPatong.json"
+ url="./API/testjson/jsonfile/NounAllIinPatong.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -62,7 +62,7 @@ def NounAllIinPatong():
 @app.route('/NounAllIinPromthep')
 def NounAllIinPromthep(): 
  
- url="./testjson/jsonfile/NounAllIinPromthep.json"
+ url="./API/testjson/jsonfile/NounAllIinPromthep.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -71,7 +71,7 @@ def NounAllIinPromthep():
 @app.route('/NounAllIinWat')
 def NounAllIinWat(): 
  
- url="./testjson/jsonfile/NounAllIinWat.json"
+ url="./API/testjson/jsonfile/NounAllIinWat.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -80,7 +80,7 @@ def NounAllIinWat():
 @app.route('/PatongBeachGoogleReviews')
 def MessageGoogleReview(): 
  
- url="./testjson/jsonfile/PatongBeachGoogleReviews.json"
+ url="./API/testjson/jsonfile/PatongBeachGoogleReviews.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -89,7 +89,7 @@ def MessageGoogleReview():
 @app.route('/PatongBeachTripadvisor')
 def PatongBeachTripadvisor(): 
  
- url="./testjson/jsonfile/PatongBeachTripadvisor.json"
+ url="./API/testjson/jsonfile/PatongBeachTripadvisor.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -98,7 +98,7 @@ def PatongBeachTripadvisor():
 @app.route('/PositiveAndNegative')
 def PositiveAndNegative(): 
  
- url="./testjson/jsonfile/PositiveAndNegative.json"
+ url="./API/testjson/jsonfile/PositiveAndNegative.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -107,7 +107,7 @@ def PositiveAndNegative():
 @app.route('/PositiveAndNegativeEachDomain')
 def PositiveAndNegativeEachDomain(): 
  
- url="./testjson/jsonfile/PositiveAndNegativeEachDomain.json"
+ url="./API/testjson/jsonfile/PositiveAndNegativeEachDomain.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -116,7 +116,7 @@ def PositiveAndNegativeEachDomain():
 @app.route('/PositiveAndNegativePatongTrip')
 def PositiveAndNegativePatongTrip(): 
  
- url="./testjson/jsonfile/PositiveAndNegativePatongTrip.json"
+ url="./API/testjson/jsonfile/PositiveAndNegativePatongTrip.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -125,7 +125,7 @@ def PositiveAndNegativePatongTrip():
 @app.route('/PromthepCapeGoogleReviews')
 def PromthepCapeGoogleReviews(): 
  
- url="./testjson/jsonfile/PromthepCapeGoogleReviews.json"
+ url="./API/testjson/jsonfile/PromthepCapeGoogleReviews.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -134,7 +134,7 @@ def PromthepCapeGoogleReviews():
 @app.route('/PromthepCapeTripadvisor')
 def PromthepCapeTripadvisor(): 
  
- url="./testjson/jsonfile/PromthepCapeTripadvisor.json"
+ url="./API/testjson/jsonfile/PromthepCapeTripadvisor.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -143,7 +143,7 @@ def PromthepCapeTripadvisor():
 @app.route('/ToptenNoun')
 def ToptenNoun(): 
  
- url="./testjson/jsonfile/ToptenNoun.json"
+ url="./API/testjson/jsonfile/ToptenNoun.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -152,7 +152,7 @@ def ToptenNoun():
 @app.route('/WatChalongGoogleReviews')
 def WatChalongGoogleReviews(): 
  
- url="./testjson/jsonfile/WatChalongGoogleReviews.json"
+ url="./API/testjson/jsonfile/WatChalongGoogleReviews.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -160,7 +160,7 @@ def WatChalongGoogleReviews():
 @app.route('/WatChalongTripadvisor')
 def WatChalongTripadvisor(): 
  
- url="./testjson/jsonfile/WatChalongTripadvisor.json"
+ url="./API/testjson/jsonfile/WatChalongTripadvisor.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -169,7 +169,7 @@ def WatChalongTripadvisor():
 @app.route('/MuchInPatongNegative')
 def MuchInPatongNegative(): 
  
- url="./testjson/jsonfile/MuchInPatongNegative.json"
+ url="./API/testjson/jsonfile/MuchInPatongNegative.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -178,7 +178,7 @@ def MuchInPatongNegative():
 @app.route('/MuchInPatongPositive')
 def MuchInPatongPositive(): 
  
- url="./testjson/jsonfile/MuchInPatongPositive.json"
+ url="./API/testjson/jsonfile/MuchInPatongPositive.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -187,7 +187,7 @@ def MuchInPatongPositive():
 @app.route('/MuchInPromthepNegative')
 def MuchInPromthepNegative(): 
  
- url="./testjson/jsonfile/MuchInPromthepNegative.json"
+ url="./API/testjson/jsonfile/MuchInPromthepNegative.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -196,7 +196,7 @@ def MuchInPromthepNegative():
 @app.route('/MuchInPromthepPositive')
 def MuchInPromthepPositive(): 
  
- url="./testjson/jsonfile/MuchInPromthepPositive.json"
+ url="./API/testjson/jsonfile/MuchInPromthepPositive.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -205,7 +205,7 @@ def MuchInPromthepPositive():
 @app.route('/MuchInWatNegative')
 def MuchInWatNegative(): 
  
- url="./testjson/jsonfile/MuchInWatNegative.json"
+ url="./API/testjson/jsonfile/MuchInWatNegative.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -214,7 +214,7 @@ def MuchInWatNegative():
 @app.route('/MuchInWatPositive')
 def MuchInWatPositive(): 
  
- url="./testjson/jsonfile/MuchInWatPositive.json"
+ url="./API/testjson/jsonfile/MuchInWatPositive.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -223,7 +223,7 @@ def MuchInWatPositive():
 @app.route('/SentenceGooglePatongNegative')
 def SentenceGooglePatongNegative(): 
  
- url="./testjson/jsonfile/SentenceGooglePatongNegative.json"
+ url="./API/testjson/jsonfile/SentenceGooglePatongNegative.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -232,7 +232,7 @@ def SentenceGooglePatongNegative():
 @app.route('/SentenceGooglePatongPositive')
 def SentenceGooglePatongPositive(): 
  
- url="./testjson/jsonfile/SentenceGooglePatongPositive.json"
+ url="./API/testjson/jsonfile/SentenceGooglePatongPositive.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -241,7 +241,7 @@ def SentenceGooglePatongPositive():
 @app.route('/SentencePatong')
 def SentencePatong(): 
  
- url="./testjson/jsonfile/SentencePatong.json"
+ url="./API/testjson/jsonfile/SentencePatong.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -250,7 +250,7 @@ def SentencePatong():
 @app.route('/SentencePromthep')
 def SentencePromthep(): 
  
- url="./testjson/jsonfile/SentencePromthep.json"
+ url="./API/testjson/jsonfile/SentencePromthep.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -259,7 +259,7 @@ def SentencePromthep():
 @app.route('/SentenceTripPatongNegative')
 def SentenceTripPatongNegative(): 
  
- url="./testjson/jsonfile/SentenceTripPatongNegative.json"
+ url="./API/testjson/jsonfile/SentenceTripPatongNegative.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -268,7 +268,7 @@ def SentenceTripPatongNegative():
 @app.route('/SentenceTripPatongPositive')
 def SentenceTripPatongPositive(): 
  
- url="./testjson/jsonfile/SentenceTripPatongPositive.json"
+ url="./API/testjson/jsonfile/SentenceTripPatongPositive.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -277,7 +277,7 @@ def SentenceTripPatongPositive():
 @app.route('/SentenceWat')
 def SentenceWat(): 
  
- url="./testjson/jsonfile/SentenceWat.json"
+ url="./API/testjson/jsonfile/SentenceWat.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -285,7 +285,7 @@ def SentenceWat():
 @app.route('/TOP10AdjPatong')
 def TOP10AdjPatong(): 
  
- url="./testjson/jsonfile/TOP10AdjPatong.json"
+ url="./API/testjson/jsonfile/TOP10AdjPatong.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -293,7 +293,7 @@ def TOP10AdjPatong():
 @app.route('/TOP10AdvPatong')
 def TOP10AdvPatong(): 
  
- url="./testjson/jsonfile/TOP10AdvPatong.json"
+ url="./API/testjson/jsonfile/TOP10AdvPatong.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -301,7 +301,7 @@ def TOP10AdvPatong():
 @app.route('/TOP10NounPatong')
 def TOP10NounPatong(): 
  
- url="./testjson/jsonfile/TOP10NounPatong.json"
+ url="./API/testjson/jsonfile/TOP10NounPatong.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -309,7 +309,7 @@ def TOP10NounPatong():
 @app.route('/TOP10VerbPatong')
 def TOP10VerbPatong(): 
  
- url="./testjson/jsonfile/TOP10VerbPatong.json"
+ url="./API/testjson/jsonfile/TOP10VerbPatong.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -318,7 +318,7 @@ def TOP10VerbPatong():
 @app.route('/cloudAdjPatong')
 def cloudAdjPatong(): 
  
- url="./testjson/jsonfile/cloudAdjPatong.json"
+ url="./API/testjson/jsonfile/cloudAdjPatong.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -326,7 +326,7 @@ def cloudAdjPatong():
 @app.route('/cloudAdvPatong')
 def cloudAdvPatong(): 
  
- url="./testjson/jsonfile/cloudAdvPatong.json"
+ url="./API/testjson/jsonfile/cloudAdvPatong.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -334,7 +334,7 @@ def cloudAdvPatong():
 @app.route('/cloudNounPatong')
 def cloudNounPatong(): 
  
- url="./testjson/jsonfile/cloudNounPatong.json"
+ url="./API/testjson/jsonfile/cloudNounPatong.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -343,7 +343,7 @@ def cloudNounPatong():
 @app.route('/cloudVerbPatong')
 def cloudVerbPatong(): 
  
- url="./testjson/jsonfile/cloudVerbPatong.json"
+ url="./API/testjson/jsonfile/cloudVerbPatong.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -351,7 +351,7 @@ def cloudVerbPatong():
 @app.route('/CorrectIDFSpecialType1Promthep')
 def CorrectIDFSpecialType1Promthep(): 
  
- url="./testjson/jsonfile/CorrectIDFSpecialType1Promthep.json"
+ url="./API/testjson/jsonfile/CorrectIDFSpecialType1Promthep.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -359,7 +359,7 @@ def CorrectIDFSpecialType1Promthep():
 @app.route('/CorrectNodeRatingType1Promthep')
 def CorrectNodeRatingType1Promthep(): 
  
- url="./testjson/jsonfile/CorrectNodeRatingType1Promthep.json"
+ url="./API/testjson/jsonfile/CorrectNodeRatingType1Promthep.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -367,7 +367,7 @@ def CorrectNodeRatingType1Promthep():
 @app.route('/CorrectNodeSpecialType1Promthep')
 def CorrectNodeSpecialType1Promthep(): 
  
- url="./testjson/jsonfile/CorrectNodeSpecialType1Promthep.json"
+ url="./API/testjson/jsonfile/CorrectNodeSpecialType1Promthep.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -375,7 +375,7 @@ def CorrectNodeSpecialType1Promthep():
 @app.route('/CorrectIDFRatingType1Wat')
 def CorrectIDFRatingType1Wat(): 
  
- url="./testjson/jsonfile/CorrectIDFRatingType1Wat.json"
+ url="./API/testjson/jsonfile/CorrectIDFRatingType1Wat.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -383,7 +383,7 @@ def CorrectIDFRatingType1Wat():
 @app.route('/CorrectIDFSpecialType1Wat')
 def CorrectIDFSpecialType1Wat(): 
  
- url="./testjson/jsonfile/CorrectIDFSpecialType1Wat.json"
+ url="./API/testjson/jsonfile/CorrectIDFSpecialType1Wat.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -391,7 +391,7 @@ def CorrectIDFSpecialType1Wat():
 @app.route('/CorrectNodeRatingType1Wat')
 def CorrectNodeRatingType1Wat(): 
  
- url="./testjson/jsonfile/CorrectNodeRatingType1Wat.json"
+ url="./API/testjson/jsonfile/CorrectNodeRatingType1Wat.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -399,7 +399,7 @@ def CorrectNodeRatingType1Wat():
 @app.route('/CorrectNodeSpecialType1Wat')
 def CorrectNodeSpecialType1Wat(): 
  
- url="./testjson/jsonfile/CorrectNodeSpecialType1Wat.json"
+ url="./API/testjson/jsonfile/CorrectNodeSpecialType1Wat.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -407,7 +407,7 @@ def CorrectNodeSpecialType1Wat():
 @app.route('/SentencePatongLolipop')
 def SentencePatongLolipop(): 
  
- url="./testjson/jsonfile/SentencePatongLolipop.json"
+ url="./API/testjson/jsonfile/SentencePatongLolipop.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -415,7 +415,7 @@ def SentencePatongLolipop():
 @app.route('/SentencePromthepLolipop')
 def SentencePromthepLolipop(): 
  
- url="./testjson/jsonfile/SentencePromthepLolipop.json"
+ url="./API/testjson/jsonfile/SentencePromthepLolipop.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -423,7 +423,7 @@ def SentencePromthepLolipop():
 @app.route('/SentenceWatLolipop')
 def SentenceWatLolipop(): 
  
- url="./testjson/jsonfile/SentenceWatLolipop.json"
+ url="./API/testjson/jsonfile/SentenceWatLolipop.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -432,7 +432,7 @@ def SentenceWatLolipop():
 @app.route('/cloudAdjPatongName')
 def cloudAdjPatongName(): 
  
- url="./testjson/jsonfile/cloudAdjPatongName.json"
+ url="./API/testjson/jsonfile/cloudAdjPatongName.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -441,7 +441,7 @@ def cloudAdjPatongName():
 @app.route('/cloudAdvPatongName')
 def cloudAdvPatongName(): 
  
- url="./testjson/jsonfile/cloudAdvPatongName.json"
+ url="./API/testjson/jsonfile/cloudAdvPatongName.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -449,7 +449,7 @@ def cloudAdvPatongName():
 @app.route('/cloudNounPatongName')
 def cloudNounPatongName(): 
  
- url="./testjson/jsonfile/cloudNounPatongName.json"
+ url="./API/testjson/jsonfile/cloudNounPatongName.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -457,7 +457,7 @@ def cloudNounPatongName():
 @app.route('/cloudVerbPatongName')
 def cloudVerbPatongName(): 
  
- url="./testjson/jsonfile/cloudVerbPatongName.json"
+ url="./API/testjson/jsonfile/cloudVerbPatongName.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -465,7 +465,7 @@ def cloudVerbPatongName():
 @app.route('/MuchinPatongNegArray')
 def MuchinPatongNegArray(): 
  
- url="./testjson/jsonfile/MuchinPatongNegArray.json"
+ url="./API/testjson/jsonfile/MuchinPatongNegArray.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -473,7 +473,7 @@ def MuchinPatongNegArray():
 @app.route('/MuchinPatongPosArray')
 def MuchinPatongPosArray(): 
  
- url="./testjson/jsonfile/MuchinPatongPosArray.json"
+ url="./API/testjson/jsonfile/MuchinPatongPosArray.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -481,7 +481,7 @@ def MuchinPatongPosArray():
 @app.route('/top10NegAdjPatong')
 def top10NegAdjPatong(): 
  
- url="./testjson/jsonfile/top10NegAdjPatong.json"
+ url="./API/testjson/jsonfile/top10NegAdjPatong.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -489,7 +489,7 @@ def top10NegAdjPatong():
 @app.route('/top10NegAdvPatong')
 def top10NegAdvPatong(): 
  
- url="./testjson/jsonfile/top10NegAdvPatong.json"
+ url="./API/testjson/jsonfile/top10NegAdvPatong.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -497,7 +497,7 @@ def top10NegAdvPatong():
 @app.route('/top10NegNounPatong')
 def top10NegNounPatong(): 
  
- url="./testjson/jsonfile/top10NegNounPatong.json"
+ url="./API/testjson/jsonfile/top10NegNounPatong.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -505,7 +505,7 @@ def top10NegNounPatong():
 @app.route('/top10NegVerbPatong')
 def top10NegVerbPatong(): 
  
- url="./testjson/jsonfile/top10NegVerbPatong.json"
+ url="./API/testjson/jsonfile/top10NegVerbPatong.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -513,7 +513,7 @@ def top10NegVerbPatong():
 @app.route('/cloudAdvNegPatongName')
 def cloudAdvNegPatongName(): 
  
- url="./testjson/jsonfile/cloudAdvNegPatongName.json"
+ url="./API/testjson/jsonfile/cloudAdvNegPatongName.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -521,7 +521,7 @@ def cloudAdvNegPatongName():
 @app.route('/cloudAdjNegPatongName')
 def cloudAdjNegPatongName(): 
  
- url="./testjson/jsonfile/cloudAdjNegPatongName.json"
+ url="./API/testjson/jsonfile/cloudAdjNegPatongName.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -529,7 +529,7 @@ def cloudAdjNegPatongName():
 @app.route('/cloudNounNegPatongName')
 def cloudNounNegPatongName(): 
  
- url="./testjson/jsonfile/cloudNounNegPatongName.json"
+ url="./API/testjson/jsonfile/cloudNounNegPatongName.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
@@ -537,14 +537,14 @@ def cloudNounNegPatongName():
 @app.route('/cloudVerbNegPatongName')
 def cloudVerbNegPatongName(): 
  
- url="./testjson/jsonfile/cloudVerbNegPatongName.json"
+ url="./API/testjson/jsonfile/cloudVerbNegPatongName.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
 
 class ClickEachwordAndText(Resource):
     def get(self,name):
-        url = './testjson/jsonfile/UniquewordDeepcutWordTestset.json'
+        url = './API/testjson/jsonfile/UniquewordDeepcutWordTestset.json'
         with open(url,encoding="utf-8") as f: 
           names = json.load(f)
           # obj = names[name]
