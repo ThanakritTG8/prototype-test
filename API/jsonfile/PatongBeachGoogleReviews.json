@@ -1,0 +1,402 @@
+[
+ {
+   "Review": "Good but pretty crowded. Other beaches nearby are better",
+   "Name": "ha k",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 3,
+   "thai": "ดี แต่ค่อนข้างแออัด หาดอื่น ๆ ในบริเวณใกล้เคียงนั้นดีกว่า"
+ },
+ {
+   "Review": "Good sand, VERY crowded. The water isn't really clear (I was when there were waves) but overall a fun beach.",
+   "Name": "Anton durov",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 3,
+   "thai": "ทรายที่ดีแออัดมาก น้ำไม่ชัดเจนจริง ๆ ฉันเคยมีคลื่น แต่โดยรวมแล้วเป็นชายหาดที่สนุก"
+ },
+ {
+   "Review": "Crowded but nice!",
+   "Name": "Pinar Alver",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 4,
+   "thai": "แออัด แต่ดี"
+ },
+ {
+   "Review": "Pretty beach. Less crowded if you walk a little further.",
+   "Name": "Anandita Pattnaik",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 4,
+   "thai": "หาดสวย แออัดน้อยถ้าคุณเดินไปอีกหน่อย"
+ },
+ {
+   "Review": "Nice clean beach. Did not see any rubbish. Lots of water activity’s. Sunbathing chairs available.",
+   "Name": "karolis kalenda",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 4,
+   "thai": "ชายหาดสวยดี ไม่เห็นขยะใด ๆ กิจกรรมทางน้ำมากมาย เก้าอี้อาบแดด"
+ },
+ {
+   "Review": "Good one.",
+   "Name": "Sudip Kumar",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 4,
+   "thai": "สิ่งที่ดี."
+ },
+ {
+   "Review": "Great beach. Was pretty crowded but not as crowded as I expected. Had plenty to do on the many streets near it as well.",
+   "Name": "Erik Covert",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 5,
+   "thai": "ชายหาดที่ดี ค่อนข้างแออัด แต่ไม่แออัดอย่างที่ฉันคาดไว้ มีอะไรให้ทำมากมายบนถนนหลายสายที่อยู่ใกล้ ๆ เช่นกัน"
+ },
+ {
+   "Review": "Overcrowded with lots of activities... The local people who handle the beach activities are very rude and arrrogant…",
+   "Name": "Hasmukh J",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 3,
+   "thai": "แออัดไปด้วยกิจกรรมมากมาย คนในท้องถิ่นที่ทำกิจกรรมชายหาดนั้นหยาบคายและหยิ่งผยอง"
+ },
+ {
+   "Review": "Beautiful beach with clear shallow sea water. Various water sports activities available. Its worth going there.",
+   "Name": "Pankaj Lal",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 5,
+   "thai": "ชายหาดที่สวยงามพร้อมน้ำทะเลใส มีกิจกรรมกีฬาทางน้ำมากมาย มันคุ้มค่าที่จะไปที่นั่น"
+ },
+ {
+   "Review": "Clean beach. Spent a marvelous afternoon.",
+   "Name": "Paban Buragohain",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 5,
+   "thai": "ชายหาดที่สะอาด ใช้เวลาช่วงบ่ายที่น่าอัศจรรย์"
+ },
+ {
+   "Review": "Lovely beach close to many amenities. Highly recommended",
+   "Name": "Suzan Tokdemir",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 5,
+   "thai": "ชายหาดที่น่ารักใกล้กับสิ่งอำนวยความสะดวกมากมาย ขอแนะนำอย่างยิ่ง"
+ },
+ {
+   "Review": "Near Bangla market and good.",
+   "Name": "Abdul Kader",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 5,
+   "thai": "ใกล้ตลาดบางลาและดี"
+ },
+ {
+   "Review": "One of the good ones but gets busy",
+   "Name": "Paul William Traquair",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 5,
+   "thai": "เป็นหนึ่งในคนดี แต่ไม่ว่าง"
+ },
+ {
+   "Review": "Would be five stars if they could sort out the plastic problem!",
+   "Name": "Darragh Oneill",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 3,
+   "thai": "จะเป็นห้าดาวถ้าพวกเขาสามารถแยกแยะปัญหาพลาสติกได้"
+ },
+ {
+   "Review": "Nothing special and Alot of shoppers",
+   "Name": "RECENZENT michelin JB",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 3,
+   "thai": "ไม่มีอะไรพิเศษและนักช้อปมากมาย"
+ },
+ {
+   "Review": "An amazingly clean beach. The smell of the city is horrible but im not rating Phuket just the beach.",
+   "Name": "Khwuan Carroll",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 5,
+   "thai": "ชายหาดที่สะอาดน่าอัศจรรย์ กลิ่นเมืองน่ากลัว แต่ฉันไม่ได้ให้คะแนนที่ภูเก็ตแค่ชายหาด"
+ },
+ {
+   "Review": "The water is disgusting. Dont come here.",
+   "Name": "Derek Chu",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 2,
+   "thai": "น้ำน่าขยะแขยง อย่ามาที่นี่"
+ },
+ {
+   "Review": "Main beach area Patong close to Bangela road.Water is not clear and shallow...great water attractions..not so crowded.",
+   "Name": "Shlomo Vanunu",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 3,
+   "thai": "พื้นที่ชายหาดหลักป่าตองใกล้กับถนนบางลา น้ำไม่ใสและตื้น สถานที่ท่องเที่ยวทางน้ำที่ดี ไม่แออัด"
+ },
+ {
+   "Review": "One of the most popular beaches in Phuket.",
+   "Name": "Hemanshu Belani",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 5,
+   "thai": "หนึ่งในชายหาดที่ได้รับความนิยมมากที่สุดในจังหวัดภูเก็ต"
+ },
+ {
+   "Review": "Mooi strand, wel wilde golven",
+   "Name": "Rob Postma",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 5,
+   "thai": "ชายหาดที่สวยงาม แต่คลื่นป่า"
+ },
+ {
+   "Review": "Beautiful place, sunset is amazing!!",
+   "Name": "Craig Thomson",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 5,
+   "thai": "สถานที่ที่สวยงามพระอาทิตย์ตกที่น่าตื่นตาตื่นใจ"
+ },
+ {
+   "Review": "Worst place in thailand, too crowded, smells really bad, ugly people and super noisy. I do not recommend to go there under any circumstances. Go to another beaches instead, like karon beach",
+   "Name": "Leonardo Cavalcante",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 1,
+   "thai": "สถานที่ที่เลวร้ายที่สุดในประเทศไทยแออัดเกินไปมีกลิ่นไม่ดีจริง ๆ คนน่าเกลียดและมีเสียงดังสุด ๆ ฉันไม่แนะนำให้ไปที่นั่นไม่ว่าในกรณีใด ๆ ไปที่ชายหาดอื่นแทนเช่นหาดคารอน"
+ },
+ {
+   "Review": "I visited this place last month. This is very famous and very crowded beach in phuket. Many activities like para gliding and boat riding are availavle. If you want to enjoy swimming you will get some area marked by rope. Outside of that area is not available for swimming. If you want to enjoy the sun light then that is a problem. You wont get seat or place to relax. The shops beside the beach is overrated. One coconut water will cost you 50 THB. Please do some research before reaching to this place. I brought a flute from here. The overall experience is very nice. The scenic beauty and the behaviour of people is outstanding. I love this place. Please do take a hotel next to this beach and you will be able to enjoy the beautiful environment in night. The bangla Street is just opposite to this beach. Very nice resturants available near to this beach. You can walk at night in sea side and enjoy the shows. Thanks.",
+   "Name": "Santoast Santoast",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 5,
+   "thai": "ฉันเยี่ยมชมสถานที่นี้เมื่อเดือนที่แล้ว ที่นี่มีชื่อเสียงมากและเป็นชายหาดที่แออัดมากในจังหวัดภูเก็ต มีกิจกรรมมากมายเช่นพาราร่อนและขี่เรือ หากคุณต้องการสนุกกับการว่ายน้ำคุณจะได้รับพื้นที่ที่ทำเครื่องหมายด้วยเชือก นอกพื้นที่นั้นไม่สามารถว่ายน้ำได้ หากคุณต้องการเพลิดเพลินไปกับแสงของดวงอาทิตย์นั่นก็เป็นปัญหา คุณจะไม่ได้ที่นั่งหรือสถานที่พักผ่อน ร้านค้าที่อยู่ข้างชายหาดนั้นมีการพูดเกินจริง น้ำมะพร้าวหนึ่งลูกจะเสียค่าใช้จ่ายห้าสิบบาท โปรดทำวิจัยก่อนที่จะถึงสถานที่นี้ ฉันนำฟลุตจากที่นี่ ประสบการณ์โดยรวมดีมาก ความงามอันงดงามและพฤติกรรมของผู้คนที่โดดเด่น ฉันรักสถานที่แห่งนี้. โปรดนำโรงแรมไปติดกับชายหาดนี้และคุณจะสามารถเพลิดเพลินไปกับสภาพแวดล้อมที่สวยงามในตอนกลางคืน ถนนบางลาอยู่ตรงข้ามกับชายหาดนี้ ร้านอาหารที่ดีมากอยู่ใกล้กับชายหาดนี้ คุณสามารถเดินตอนกลางคืนริมทะเลและเพลิดเพลินกับการแสดง ขอบคุณ"
+ },
+ {
+   "Review": "A little crowded beach however much cleaner than expected",
+   "Name": "Girish jadhav",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 3,
+   "thai": "ชายหาดที่แออัดไปหน่อย แต่สะอาดกว่าที่คิดไว้มาก"
+ },
+ {
+   "Review": "Party area! bars and entertainment .",
+   "Name": "Theo Botha",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 5,
+   "thai": "บาร์ปาร์ตี้และสถานบันเทิง"
+ },
+ {
+   "Review": "Visited in December. The weather was pleasant, a bit on the warmer side. Maintained beach but could be a little cleaner. A lot of activities here including parasailing but with no life guard on duty. Many food stalls along the beach. Best to rent a scooter and explore the entire beach. Volleyball nets available. THB 200 for chair",
+   "Name": "Moosa Zulfiqar",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 5,
+   "thai": "เข้าชมในเดือนธันวาคม อากาศดีมากอากาศอุ่น ชายหาดได้รับการดูแลรักษา แต่อาจจะสะอาดกว่านี้ กิจกรรมมากมายที่นี่รวมถึงการเล่นพาราเซล แต่ไม่มีเจ้าหน้าที่รักษาความปลอดภัยประจำหน้าที่ แผงขายอาหารมากมายริมหาด ดีที่สุดในการเช่าสกู๊ตเตอร์และสำรวจชายหาดทั้งหมด มีมุ้งวอลเลย์บอล เก้าอี้สองร้อยบาท"
+ },
+ {
+   "Review": "Great beach,clean and well kept and absolutely safe even at odd hours.close to anything one may want like a 7/11 or a money changer.Walkable distance to most of the hostels and places of interest in the area.Plenty of eating options - from the market serving fresh fish to small shops where locals eat.all within walking distance so one may explore on foot",
+   "Name": "joseph george",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 5,
+   "thai": "ชายหาดที่ดีสะอาดและเก็บไว้อย่างดีและปลอดภัยอย่างแน่นอนแม้ในเวลาที่แปลก ใกล้เคียงกับสิ่งใดสิ่งหนึ่งที่อาจต้องการเช่น 7/11 หรือแลกเงิน ระยะทางเดินไปยังหอพักและสถานที่น่าสนใจในพื้นที่ส่วนใหญ่ ตัวเลือกการกินมากมาย - จากตลาดที่ให้บริการปลาสดไปจนถึงร้านค้าเล็ก ๆ ที่คนในท้องถิ่นกิน ทั้งหมดอยู่ในระยะที่สามารถเดินเท้าได้"
+ },
+ {
+   "Review": "Patong Beach - One of the most popular beach in the island, full of life all the time. It's right in the middle of all the action, water sports, partying, etc etc. You can find a bunch of restaurants, spas, and bars for the full range of experiences.",
+   "Name": "Vishwas R",
+   "Address": "-",
+   "Time": "Dec 2019",
+   "Rating": 5,
+   "thai": "หาดป่าตอง - หนึ่งในชายหาดที่ได้รับความนิยมมากที่สุดในเกาะซึ่งเต็มไปด้วยสิ่งมีชีวิตตลอดเวลา มันอยู่ตรงกลางของทุกกิจกรรมกีฬาทางน้ำปาร์ตี้และอื่น ๆ คุณสามารถค้นหาร้านอาหารสปาและบาร์สำหรับประสบการณ์ที่หลากหลาย"
+ },
+ {
+   "Review": "A bit crowded but still one of the best spots in Phuket to capture sunset. You can bring you all foods and drinks to enjoy the view here with friends.",
+   "Name": "Tevin Nguyen",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 5,
+   "thai": "ค่อนข้างแออัด แต่ก็ยังคงเป็นจุดที่ดีที่สุดแห่งหนึ่งในจังหวัดภูเก็ตเพื่อชมพระอาทิตย์ตก คุณสามารถนำอาหารและเครื่องดื่มทั้งหมดมาให้คุณได้เพลิดเพลินกับวิวที่นี่กับเพื่อน ๆ"
+ },
+ {
+   "Review": "Not a clean beach, but they had a seating area at the beach for 200 baht for two beach chairs. The water around December is quite warm, and I went at 10am. The hotel is stay at offers a shuttle ride to the beach, but the ride was a 10 minute drive if I’m estimating correctly. It was a short ride. The shuttle picks you up to go back to the hotel too. Just have to go by the scheduled times for drop off and pick up according to the hotel. I would recommend bringing your own towel from your hotel. The beach does not offer towels. There are A LOT of street food vendors though. Anything from coconut drinks to hot foods cooked and served right on the street. I bought chicken kebabs, roti pancake with banana and sweet milk, morning glory, fried prawn balls, pork with Chinese vegetables. If you walk further down to wear the shopping district area is, you’ll pass by the food market where they were just beginning to set up but have not opened yet. They also offer massages at the beach on top of many others trying to sell tourists things such as grapefruits and fried foods, beach cover-ups, and sunglasses (knockoff ray-bans).",
+   "Name": "REBECCA HO",
+   "Address": "-",
+   "Time": "Dec 2019",
+   "Rating": 3,
+   "thai": "ไม่ใช่ชายหาดที่สะอาด แต่มีพื้นที่นั่งเล่นที่ชายหาดสองร้อยบาทสำหรับเก้าอี้ชายหาดสองตัว น้ำรอบ ๆ เดือนธันวาคมค่อนข้างอบอุ่นและฉันไปตอนสิบโมง โรงแรมอยู่ที่ข้อเสนอบริการรถรับส่งไปยังชายหาด แต่นั่งก็ขับรถสิบนาทีถ้าฉันประเมินอย่างถูกต้อง มันเป็นระยะทางสั้น ๆ รถรับส่งไปรับคุณเพื่อกลับไปที่โรงแรมด้วย เพียงแค่ต้องไปตามเวลาที่กำหนดสำหรับการส่งและรับตามโรงแรม ฉันขอแนะนำให้นำผ้าขนหนูมาเองจากโรงแรมของคุณ ชายหาดไม่มีผ้าเช็ดตัว มีผู้ค้าอาหารข้างถนนมากมาย อะไรก็ได้ตั้งแต่เครื่องดื่มน้ำมะพร้าวไปจนถึงอาหารจานร้อนที่ปรุงและเสิร์ฟบนถนน ฉันซื้อเคบับไก่, โรตีแพนเค้กกับกล้วยและนมหวาน, ผักบุ้ง, ลูกกุ้งทอด, หมูกับผักจีน ถ้าคุณเดินต่อไปเพื่อสวมใส่ย่านช็อปปิ้งคุณจะผ่านตลาดอาหารที่พวกเขาเพิ่งเริ่มตั้ง แต่ยังไม่เปิด พวกเขายังเสนอบริการนวดที่ชายหาดด้านบนของคนอื่น ๆ พยายามขายสิ่งที่นักท่องเที่ยวเช่นเกรฟฟรุ๊ตและอาหารทอด, cover-ups ชายหาดและแว่นตากันแดด knockoff rayans"
+ },
+ {
+   "Review": "It's very famous among  tourist and you will always find this beach crowded.. So if you are looking for some peace and me time, this ain't the beach.. On the other hand, if you are up for some water sports like jet ski or Para gliding, this is the place to be.. Also lot of bars around the beach which are quite lively",
+   "Name": "\nPranay H",
+   "Address": "-",
+   "Time": "Dec 2019",
+   "Rating": 5,
+   "thai": "มันมีชื่อเสียงมากในหมู่นักท่องเที่ยวและคุณมักจะพบกับชายหาดที่แออัด ดังนั้นหากคุณกำลังมองหาความสงบและเวลาฉันนี่ไม่ใช่ชายหาด ในทางกลับกันหากคุณมีความสนใจในกีฬาทางน้ำเช่นเจ็ทสกีหรือพาราร่อนนี่คือสถานที่ที่จะเป็น ยังมีบาร์มากมายรอบ ๆ ชายหาดซึ่งค่อนข้างมีชีวิตชีวา"
+ },
+ {
+   "Review": "Beautiful beach with great waters for water sports like jet skis. Be prepared for lots of haggling if you’re interested in water sports, all the printed prices are around double of what the real prices are. Lots of great places to eat at walking distance, remember to wear lots of sun screen and drink lots of water as it can get quite sunny!",
+   "Name": "Adithya Prasad N",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 4,
+   "thai": "ชายหาดที่สวยงามพร้อมน้ำที่ยอดเยี่ยมสำหรับกีฬาทางน้ำเช่นเจ็ทสกี เตรียมพร้อมสำหรับการต่อรองมากมายหากคุณสนใจกีฬาทางน้ำราคาพิมพ์ทั้งหมดประมาณสองเท่าของราคาจริง มีสถานที่กินมากมายในระยะที่เดินได้อย่าลืมสวมแว่นตากันแดดเยอะ ๆ และดื่มน้ำมาก ๆ เพราะมันจะมีแดดจัด"
+ },
+ {
+   "Review": "Quite nice beach with beautiful views, warm blue water and yellow sand. Lots of Thai food, fruits and drinks sold nearby. Close to city streets, bars and shops. Not as crowded as Karon beach or few others. You will enjoy relaxing there.",
+   "Name": "George G",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 4,
+   "thai": "ชายหาดสวยมากพร้อมวิวที่สวยงาม, น้ำทะเลสีฟ้าอบอุ่นและหาดทรายสีเหลือง จำหน่ายอาหารไทยผลไม้และเครื่องดื่มมากมายในบริเวณใกล้เคียง ใกล้ถนนในเมืองบาร์และร้านค้า ไม่แออัดเหมือนหาดคารอนหรือคนอื่นน้อย คุณจะเพลิดเพลินไปกับการพักผ่อนที่นั่น"
+ },
+ {
+   "Review": "The best and most happening beach in Phuket. This place is always full of tourists. One can also do Parasailing, Jet Skiing etc. but do negotiate the cost beforehand. Great place to spend time in the evening and have a bath as well. The beach is very clean and full of pubs nearby.",
+   "Name": "Gourav Sinha",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 5,
+   "thai": "ชายหาดที่ดีที่สุดและเกิดขึ้นมากที่สุดในจังหวัดภูเก็ต สถานที่แห่งนี้เต็มไปด้วยนักท่องเที่ยวเสมอ ท่านสามารถเล่นพาราเซลเจ็ทสกีเป็นต้น แต่สามารถต่อรองราคาล่วงหน้าได้ สถานที่ที่เหมาะสำหรับการใช้เวลาในตอนเย็นและมีอ่างอาบน้ำเช่นกัน ชายหาดสะอาดมากและเต็มไปด้วยผับในบริเวณใกล้เคียง"
+ },
+ {
+   "Review": "Very nice beach, with everything to buy on the beach or near, watersports, large for 5km, and tide friendly (even in the low tide is a good beach). No showers however..",
+   "Name": "Valoschi-Nencescu Andrei",
+   "Address": "-",
+   "Time": "Dec 2019",
+   "Rating": 5,
+   "thai": "ชายหาดสวยมากมีทุกอย่างที่จะซื้อบนชายหาดหรือใกล้กับกีฬาทางน้ำที่มีขนาดใหญ่ห้ากิโลเมตรและเป็นมิตรกับน้ำขึ้นน้ำลงแม้ในช่วงน้ำลงเป็นชายหาดที่ดี ไม่มีที่อาบน้ำ"
+ },
+ {
+   "Review": "Not the Cleanest and Best beach in Phuket. That has to be Kata / Karon Beach. But this Beach is lively located very close to the night life and all the Happening places in Phuket. This is a beach to chill for a while before you hit the shopping or party scene hard!!!",
+   "Name": "Deep Sett",
+   "Address": "-",
+   "Time": "Dec 2019",
+   "Rating": 3,
+   "thai": "ไม่ใช่ชายหาดที่สะอาดและดีที่สุดในภูเก็ต นั่นต้องเป็นหาดกะตะกะรน แต่ชายหาดนี้มีชีวิตชีวาตั้งอยู่ใกล้กับสถานบันเทิงยามค่ำคืนและสถานที่ที่เกิดขึ้นในจังหวัดภูเก็ต นี่เป็นชายหาดที่ทำใจให้สบายก่อนที่คุณจะไปช้อปปิ้งหรือปาร์ตี้อย่างหนัก"
+ },
+ {
+   "Review": "Beautiful beach. Crowded due to its popularity as expected, so go elsewhere if you aren’t comfortable with this\n$200 Baht for hiring 2 chairs and 1 umbrella for the day which is great. Drink/food prices reasonable",
+   "Name": "Mauricio Saracho",
+   "Address": "-",
+   "Time": "Dec 2019",
+   "Rating": 5,
+   "thai": "ชายหาดที่สวยงาม แออัดเนื่องจากความนิยมตามที่คาดไว้ดังนั้นไปที่อื่นถ้าคุณไม่สะดวกกับสองร้อยบาทสำหรับการจ้างเก้าอี้สองตัวและร่มหนึ่งสำหรับวันที่ดี ดื่มราคาอาหารที่เหมาะสม"
+ },
+ {
+   "Review": "Very nice location but I was bitten by alot of fleas there.... my legs were ruined there... 83 spots on both legs in an hour....\n",
+   "Name": "曾翊晴",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 4,
+   "thai": "ทำเลที่ตั้งดีมาก แต่ฉันถูกกัดโดยหมัดที่นั่นมาก ขาของฉันถูกทำลายที่นั่น จุดแปดสิบสามบนขาทั้งสองข้างในหนึ่งชั่วโมง"
+ },
+ {
+   "Review": "Not clean at all and lots of people bother you to try and sell you something, better at night",
+   "Name": "Louie Fevapres",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 2,
+   "thai": "ไม่สะอาดเลยและมีผู้คนมากมายที่รบกวนคุณและพยายามขายคุณบางอย่างให้ดีขึ้นในเวลากลางคืน"
+ },
+ {
+   "Review": "Clean beach. Early morning swims with quiet waves is what anyone would wish for in a holiday. Lovely park around. Has quite a lot of sun beds. Loved this place",
+   "Name": "Swadesh Nayak",
+   "Address": "-",
+   "Time": "Nov 2019",
+   "Rating": 5,
+   "thai": "ชายหาดที่สะอาด ตอนเช้าว่ายน้ำกับคลื่นที่เงียบสงบเป็นสิ่งที่ทุกคนต้องการในวันหยุด สวนสาธารณะที่น่ารักรอบ ๆ มีเตียงอาบแดดค่อนข้างมาก ชอบที่นี่มาก"
+ },
+ {
+   "Review": "Beautiful beach. Especially when it's less busy. Walk down and being a beach towel and enjoy the sun and the swim. Waves are calm. Throughout the day there are plenty of locals trying to sell you something. Plenty of offered activities such as jetski, banana boat, donuts, parachuting and so on. There are toilet blocks on the beach. May cost you a few baht for use.  If you see a local called Mike trying get you to buy tourism packages, I recommend him.",
+   "Name": "Will Taffe",
+   "Address": "-",
+   "Time": "Nov 2019",
+   "Rating": 5,
+   "thai": "ชายหาดที่สวยงาม โดยเฉพาะอย่างยิ่งเมื่อมันยุ่งน้อย เดินลงและเป็นผ้าขนหนูชายหาดและเพลิดเพลินกับดวงอาทิตย์และว่ายน้ำ คลื่นสงบ ตลอดทั้งวันมีชาวบ้านมากมายพยายามขายของคุณ มีกิจกรรมที่นำเสนอมากมายเช่น jetski, เรือกล้วย, โดนัท, กระโดดร่มและอื่น ๆ มีบล็อกห้องน้ำอยู่บนชายหาด อาจมีค่าใช้จ่ายไม่กี่บาทสำหรับการใช้งาน หากคุณเห็นไมค์ที่เรียกว่าท้องถิ่นพยายามพาคุณไปซื้อแพ็คเกจการท่องเที่ยวฉันแนะนำเขา"
+ },
+ {
+   "Review": "Nice experience, Beach is clean and beautiful place to relax.",
+   "Name": "Adarsha Bhosale",
+   "Address": "-",
+   "Time": "a month ago",
+   "Rating": 4,
+   "thai": "ประสบการณ์ที่ดีชายหาดสะอาดและสวยงามเหมาะแก่การพักผ่อน"
+ },
+ {
+   "Review": "Nice, but local sellers are heavy talkers and sticky , smoking is not allowed at the beach which is awful",
+   "Name": "Mahmoud Yousef",
+   "Address": "-",
+   "Time": "Nov 2019",
+   "Rating": 3,
+   "thai": "ดี แต่ผู้ขายในท้องถิ่นเป็นนักพูดหนักและเหนียวไม่อนุญาตให้สูบบุหรี่ที่ชายหาดซึ่งน่ากลัว"
+ },
+ {
+   "Review": "Had a great time in Patong beach. Clean beach with very fine sands. The waves at the beach go up and down all day gives a wonderful swimming experience.  I tried the parasailing at 1300 baht but for only 4 minutes. Expensive but great experience",
+   "Name": "Chiwa C",
+   "Address": "-",
+   "Time": "Nov 2019",
+   "Rating": 5,
+   "thai": "มีช่วงเวลาที่ดีในหาดป่าตอง ชายหาดที่สะอาดพร้อมหาดทรายที่สวยงามมาก คลื่นที่ชายหาดขึ้นและลงทั้งวันให้ประสบการณ์การว่ายน้ำที่ยอดเยี่ยม ฉันลองเล่นพาราเซลที่หนึ่งพันสามร้อยบาท แต่ใช้เวลาเพียงสี่นาที ประสบการณ์ราคาแพง แต่เยี่ยมยอด"
+ },
+ {
+   "Review": "Clean, beautiful and lively. They charge 300 baht for an umbrella and 2 loungers during daytime. You can sit there and relax as long as you want. They sell drinks and fruits there also.Another option, you can buy your own mat and there's a designated area for free seating. You can buy your drinks and food from outside and have it there.",
+   "Name": "Jeet Amin",
+   "Address": "-",
+   "Time": "Nov 2019",
+   "Rating": 5,
+   "thai": "สะอาดสวยงามและมีชีวิตชีวา พวกเขาคิดเงินสามร้อยบาทสำหรับร่มและเก้าอี้สองตัวในเวลากลางวัน คุณสามารถนั่งที่นั่นและผ่อนคลายได้นานเท่าที่คุณต้องการ พวกเขาขายเครื่องดื่มและผลไม้ที่นั่นเช่นกัน อีกตัวเลือกหนึ่งคุณสามารถซื้อเสื่อของคุณเองและมีพื้นที่กำหนดไว้สำหรับที่นั่งฟรี คุณสามารถซื้อเครื่องดื่มและอาหารจากข้างนอกแล้วซื้อได้"
+ },
+ {
+   "Review": "Worst experience in my life. Don't bother come in here for New Year. Over crowded and the traffic controller prioritise cars and bikes over pedestrians. Screaming \"Move Move!\" And pushing people. I got tased, kids around were crying. It's a nightmare. It will ruin your trip. Don't come to Patong. Phuket isn't even good. There are a lot of better places to go in Thailand.",
+   "Name": "Bruno Rafael Becker",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 1,
+   "thai": "ประสบการณ์ที่เลวร้ายที่สุดในชีวิตของฉัน อย่ามาที่นี่เพื่อปีใหม่ ที่แออัดและผู้ควบคุมการจราจรให้ความสำคัญกับรถยนต์และจักรยานมากกว่าคนเดินเท้า กรีดร้องย้ายย้ายและผลักดันคน ฉันได้รับการทารุณเด็ก ๆ กำลังร้องไห้ มันเป็นฝันร้าย มันจะทำลายการเดินทางของคุณ อย่ามาที่ป่าตอง ภูเก็ตยังไม่ดี มีหลายสถานที่ที่ดีกว่าที่จะไปในประเทศไทย"
+ },
+ {
+   "Review": "A nice beach, a lot of water-based attraction like banana boat or flying with reasonable price, not quite clean but the view during the sunset is really good.",
+   "Name": "HTMSD Freecss",
+   "Address": "-",
+   "Time": "Dec 2019",
+   "Rating": 4,
+   "thai": "เป็นชายหาดที่สวยงามแหล่งท่องเที่ยวทางน้ำมากมายเช่นบานาน่าโบ๊ตหรือบินด้วยราคาที่สมเหตุสมผลไม่ค่อยสะอาด แต่วิวในช่วงพระอาทิตย์ตกดินก็ดีจริงๆ"
+ },
+ {
+   "Review": "Beautiful beach but there is so much commercialization. Prices of goods and services around are also sky high. Beach is still good for relaxing overall.",
+   "Name": "Daryl Bueno",
+   "Address": "-",
+   "Time": "Nov 2019",
+   "Rating": 3,
+   "thai": "ชายหาดที่สวยงาม แต่มีการค้าขายมากมาย ราคาสินค้าและบริการรอบ ๆ ก็สูงขึ้นเช่นกัน ชายหาดยังคงดีสำหรับการผ่อนคลายโดยรวม"
+ },
+ {
+   "Review": "patong beach is good beach on the road side and you can see crowd enjoying and relaxing there . There are few hotels and resorts nearby and also walking street is nearby so you can enjoy the evenings there too. If you want to enjoy beach like a private experience go at the beach side which is just in front of the novotel resort.",
+   "Name": "UMESH TRIPATHI",
+   "Address": "-",
+   "Time": "Jan 2020",
+   "Rating": 5,
+   "thai": "หาดป่าตองเป็นชายหาดที่ดีบนถนนและคุณสามารถเห็นฝูงชนเพลิดเพลินและผ่อนคลายที่นั่น มีโรงแรมและรีสอร์ทไม่กี่แห่งในบริเวณใกล้เคียงและถนนคนเดินก็อยู่ใกล้ ๆ ดังนั้นคุณสามารถเพลิดเพลินกับตอนเย็นที่นั่นได้เช่นกัน หากคุณต้องการเพลิดเพลินไปกับชายหาดเหมือนประสบการณ์ส่วนตัวไปที่ชายหาดซึ่งอยู่หน้ารีสอร์ทโนโวเทล"
+ },
+ {
+   "Review": "It's a lovely place, lovely beach, you can enjoy here throughout the day and night also, all kind of water sports are available here, you can enjoy the same or just lay down and enjoy the beautiful sea, you can also take bath in the sea. Nightlife is also very happening over here, you can do lots of activities. Also you can find variety of food and drinks in the restaurant along with the beach.",
+   "Name": "Santanu Mukherjee",
+   "Address": "-",
+   "Time": "Sep 2019",
+   "Rating": 5,
+   "thai": "มันเป็นสถานที่ที่น่ารักชายหาดที่สวยงามคุณสามารถเพลิดเพลินกับที่นี่ตลอดทั้งวันทั้งคืนกีฬาทางน้ำทุกชนิดมีให้ที่นี่คุณสามารถเพลิดเพลินกับที่เดียวกันหรือเพียงแค่นอนลงและเพลิดเพลินกับทะเลที่สวยงามคุณยังสามารถอาบน้ำใน ทะเล. สถานบันเทิงยามค่ำคืนก็เกิดขึ้นที่นี่คุณสามารถทำกิจกรรมมากมาย คุณยังสามารถหาอาหารและเครื่องดื่มหลากหลายในร้านอาหารพร้อมกับชายหาด"
+ }
+]
