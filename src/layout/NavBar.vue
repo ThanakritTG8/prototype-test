@@ -3,9 +3,9 @@
    <div>
   <b-navbar toggleable="lg" type="dark" variant="info" id="home">
      <b-navbar-brand href="#">
-        <h4>
+        <h3>
           <b>Detect Word Sense</b>
-        </h4>
+        </h3>
       </b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -62,10 +62,14 @@ export default {
 <style scoped>
 #home {
   font-weight: 20px;
-  font-size: 20px;
+  font-size: 18px;
 }
 #font{
   color: aliceblue;
+}
+h3{
+    color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 </style>
