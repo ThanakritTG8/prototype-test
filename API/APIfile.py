@@ -544,13 +544,13 @@ def cloudVerbNegPatongName():
 
 class ClickEachwordAndText(Resource):
     def get(self,name):
-        url = './API/testjson/jsonfile/UniquewordDeepcutWordTestset.json'
+        url = './API/testjson/jsonfile/UniquewordDeepcutWordADJADVNOUNVERB.json'
         with open(url,encoding="utf-8") as f: 
           names = json.load(f)
           # obj = names[name]
         return  names[name]
         # return names[name]
-api.add_resource(ClickEachwordAndText,"/TextEachWord/<string:name>")
+api.add_resource(ClickEachwordAndText,"/senten/text/<string:name>")
 
 
 if __name__ == '__main__':
