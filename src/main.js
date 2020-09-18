@@ -9,7 +9,9 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import { NavbarPlugin } from 'bootstrap-vue'
 import { BNavbar } from 'bootstrap-vue'
+import axios from 'axios'
 
+Vue.use(axios)
 
 Vue.component('b-navbar', BNavbar)
 
