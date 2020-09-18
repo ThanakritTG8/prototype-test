@@ -121,7 +121,6 @@ export default {
       { word: "หัว", count: 1 },
       { word: "พัทยา", count: 1 },
       { word: "ชื่อ", count: 1 },
-      { word: "ตง", count: 1 },
       { word: "รองเท้าแตะ", count: 1 },
       { word: "พริบตา", count: 1 },
       { word: "ตอนกลางคืน", count: 1 },

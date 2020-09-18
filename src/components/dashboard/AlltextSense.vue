@@ -17,7 +17,7 @@
         <h3>
           #
           <code>{{name}}</code>
-          <code>{{filter}}</code>
+        
         </h3>
       </template>
 
