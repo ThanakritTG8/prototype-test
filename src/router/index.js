@@ -4,6 +4,7 @@ import Dashboard from '@/components/dashboard/Dashboard'
 import CommentPage from '@/components/commentpage/CommentPage'
 import indexCM from '@/components/commonpage/indexCM'
 import DashboardKaron from '@/components/dashboardKaron/DashboardKaron'
+import IndexRelated from '@/components/relatedword/IndexRelated'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/dashboard/karon',
       name: 'DashboardKaron',
       component: DashboardKaron
+    },
+    {
+      path: '/related',
+      name: 'IndexRelated',
+      component: IndexRelated
     }
   ]
 })
