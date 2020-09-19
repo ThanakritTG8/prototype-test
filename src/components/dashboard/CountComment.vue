@@ -8,7 +8,8 @@
         </div>
         <div class="col-lg-4">
             <p class="head" id="text">All Comment</p>
-            <p class="lead" id="numComment">{{ data.numComment }}</p>
+            <p class="lead" id="numComment"
+            v-for="datas in data" :key="datas">{{ datas.numComment }}</p>
         </div>
     </div>
 </div>

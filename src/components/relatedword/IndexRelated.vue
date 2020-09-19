@@ -1,6 +1,6 @@
 <template>
 <div id="index-related">
-    <h1 v-for="items in item" :key="items">{{ items.tg1 }}</h1>
+    <h1 v-for="items in item" :key="items">{{ items.id }}</h1>
     {{item}}
     <b-container scrollable>
         <b-row align-v="center">
