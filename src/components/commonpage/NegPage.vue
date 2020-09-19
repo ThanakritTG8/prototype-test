@@ -1,25 +1,26 @@
 <template>
   <div>
     
-    <b-container class="margin-top">
+   <b-container class="margin-top">
       <b-row>
-        <b-col lg="4"></b-col>
+        <b-col cols="2" lg="4"></b-col>
 
-        <b-col>
-          <PieNeg />
+        <b-col cols="8" lg="4"> 
+          <PieNeg/>
         </b-col>
+        <b-col cols="2"></b-col>
 
-        <b-col></b-col>
       </b-row>
     </b-container>
 
    <b-container class="margin-top">
       <b-row>
-        <b-col>
-          <b-button variant="info" @click="Bar">Bar</b-button>
+        <b-col cols="2" style="text-align: right;"> 
+          <b-button variant="info" @click="Bar">Bar</b-button>          
+        </b-col>
+       <b-col cols="3" style="text-align: left;"> 
           <b-button variant="info" @click="Wc">WordCloud</b-button>
         </b-col>
-        <b-col></b-col>
         <b-col></b-col>
       </b-row>
     </b-container>
