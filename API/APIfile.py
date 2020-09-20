@@ -453,7 +453,7 @@ def top10NegVerbPatong():
  
 class ClickEachwordAndText(Resource):
     def get(self,name):
-        url = './API/testjson/jsonfile/UniquewordDeepcutWordADJADVNOUNVERB.json'
+        url = './API/testjson/jsonfile/UniquewordDeepcutWordADJADVNOUNVERBtesttest.json'
         with open(url,encoding="utf-8") as f: 
           names = json.load(f)
      
@@ -467,6 +467,15 @@ class WordCloud(Resource):
      
         return  names[name]
   
+class ADJADVNOUN(Resource):
+    def get(self,name):
+        url = './API/testjson/jsonfile/UniquewordDeepcutWordADJADVNOUNVERBSpace.json'
+        with open(url,encoding="utf-8") as f: 
+          names = json.load(f)
+     
+        return  names[name]
+
+api.add_resource(ADJADVNOUN,"/senten/text/test/<string:name>")
 api.add_resource(ClickEachwordAndText,"/senten/text/<string:name>")
 api.add_resource(WordCloud,"/wordcloud/<string:name>")
 
