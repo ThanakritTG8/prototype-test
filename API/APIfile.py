@@ -315,39 +315,6 @@ def TOP10VerbPatong():
  return json.dumps(obj,indent=4,ensure_ascii=False)
 
 
-@app.route('/cloudAdjPatong')
-def cloudAdjPatong(): 
- 
- url="./API/testjson/jsonfile/cloudAdjPatong.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/cloudAdvPatong')
-def cloudAdvPatong(): 
- 
- url="./API/testjson/jsonfile/cloudAdvPatong.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/cloudNounPatong')
-def cloudNounPatong(): 
- 
- url="./API/testjson/jsonfile/cloudNounPatong.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-
-@app.route('/cloudVerbPatong')
-def cloudVerbPatong(): 
- 
- url="./API/testjson/jsonfile/cloudVerbPatong.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
 @app.route('/CorrectIDFSpecialType1Promthep')
 def CorrectIDFSpecialType1Promthep(): 
  
@@ -428,40 +395,6 @@ def SentenceWatLolipop():
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
 
-
-@app.route('/cloudAdjPatongName')
-def cloudAdjPatongName(): 
- 
- url="./API/testjson/jsonfile/cloudAdjPatongName.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-
-@app.route('/cloudAdvPatongName')
-def cloudAdvPatongName(): 
- 
- url="./API/testjson/jsonfile/cloudAdvPatongName.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/cloudNounPatongName')
-def cloudNounPatongName(): 
- 
- url="./API/testjson/jsonfile/cloudNounPatongName.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/cloudVerbPatongName')
-def cloudVerbPatongName(): 
- 
- url="./API/testjson/jsonfile/cloudVerbPatongName.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
 @app.route('/MuchinPatongNegArray')
 def MuchinPatongNegArray(): 
  
@@ -510,48 +443,41 @@ def top10NegVerbPatong():
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
 
-@app.route('/cloudAdvNegPatongName')
-def cloudAdvNegPatongName(): 
+@app.route('/allcomments')
+def top10NegVerbPatong(): 
  
- url="./API/testjson/jsonfile/cloudAdvNegPatongName.json"
+ url="./API/testjson/jsonfile/dataTestset.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/cloudAdjNegPatongName')
-def cloudAdjNegPatongName(): 
  
- url="./API/testjson/jsonfile/cloudAdjNegPatongName.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/cloudNounNegPatongName')
-def cloudNounNegPatongName(): 
- 
- url="./API/testjson/jsonfile/cloudNounNegPatongName.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/cloudVerbNegPatongName')
-def cloudVerbNegPatongName(): 
- 
- url="./API/testjson/jsonfile/cloudVerbNegPatongName.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
 class ClickEachwordAndText(Resource):
     def get(self,name):
-        url = './API/testjson/jsonfile/UniquewordDeepcutWordADJADVNOUNVERB.json'
+        url = './API/testjson/jsonfile/UniquewordDeepcutWordADJADVNOUNVERBtesttest.json'
         with open(url,encoding="utf-8") as f: 
           names = json.load(f)
-          # obj = names[name]
+     
         return  names[name]
-        # return names[name]
-api.add_resource(ClickEachwordAndText,"/senten/text/<string:name>")
+  
+class WordCloud(Resource):
+    def get(self,name):
+        url = './API/testjson/jsonfile/WordClould.json'
+        with open(url,encoding="utf-8") as f: 
+          names = json.load(f)
+     
+        return  names[name]
+  
+class ADJADVNOUN(Resource):
+    def get(self,name):
+        url = './API/testjson/jsonfile/UniquewordDeepcutWordADJADVNOUNVERBSpace.json'
+        with open(url,encoding="utf-8") as f: 
+          names = json.load(f)
+     
+        return  names[name]
 
+api.add_resource(ADJADVNOUN,"/senten/text/test/<string:name>")
+api.add_resource(ClickEachwordAndText,"/senten/text/<string:name>")
+api.add_resource(WordCloud,"/wordcloud/<string:name>")
 
 if __name__ == '__main__':
    app.run(host="0.0.0.0", port=5000, debug=True)
