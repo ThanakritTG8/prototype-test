@@ -30,14 +30,14 @@
         <b-col class="margin-top">
           <b-card class="card">
             <BarNounPos v-if="bar"/>
-            <WcNoun v-if="wc"/>
+            <WcNounNeg v-if="wc"/>
           </b-card>
         </b-col>
 
         <b-col class="margin-top">
           <b-card class="card">
             <BarVerbPos v-if="bar"/>
-            <WcVerb v-if="wc"/>
+            <WcVerbNeg v-if="wc"/>
           </b-card>
         </b-col>
 
@@ -62,15 +62,15 @@
 </template>
 <script>
 import PieNeg from "@/components/commonpage/PieNeg";
-import BarNounPos from "@/components/commonpage/BarNounPos";
-import BarVerbPos from "@/components/commonpage/BarVerbPos";
-import BarAdjPos from "@/components/commonpage/BarAdjPos";
-import BarAdvPos from "@/components/commonpage/BarAdvPos";
+import BarNounPos from "@/components/commonpage/BarPos/BarNounPos";
+import BarVerbPos from "@/components/commonpage/BarPos/BarVerbPos";
+import BarAdjPos from "@/components/commonpage/BarPos/BarAdjPos";
+import BarAdvPos from "@/components/commonpage/BarPos/BarAdvPos";
 
-import WcNoun from "@/components/commonpage/WcNoun";
-import WcVerb from "@/components/commonpage/WcVerb";
-import WcAdvNeg from "@/components/commonpage/WcAdvNeg";
-import WcAdjNeg from "@/components/commonpage/WcAdjNeg";
+import WcNounNeg from "@/components/commonpage/WordCloudNeg/WcNounNeg";
+import WcVerbNeg from "@/components/commonpage/WordCloudNeg/WcVerbNeg";
+import WcAdvNeg from "@/components/commonpage/WordCloudNeg/WcAdvNeg";
+import WcAdjNeg from "@/components/commonpage/WordCloudNeg/WcAdjNeg";
 export default {
     data:()=>({
         bar : true,
@@ -97,8 +97,9 @@ export default {
     BarVerbPos,
     BarAdjPos,
     BarAdvPos,
-    WcNoun,
-    WcVerb,
+
+    WcNounNeg,
+    WcVerbNeg,
     WcAdvNeg,
     WcAdjNeg
   },
