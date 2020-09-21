@@ -410,12 +410,7 @@ def top10NegVerbPatong():
  return json.dumps(obj,indent=4,ensure_ascii=False)
 
 @app.route('/allcomments')
-<<<<<<< HEAD
-def Allcomments(): 
-=======
 def dataTestset():
->>>>>>> ed0d4a666efafed1b5befd5fba52090913e023dc
- 
  url="./API/testjson/jsonfile/dataTestset.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
