@@ -9,7 +9,7 @@
 
       <div class="col-lg-5">
         <p class="head" id="text">Negative Comment</p>
-        <p class="lead" id="numComment">1200</p>
+        <p class="lead" id="numComment">{{data}}</p>
       </div>
     </div>
   </div>
@@ -18,6 +18,28 @@
 <script>
 export default {
   name: "count-neg",
+   data: () => ({
+        data: undefined
+    }),
+    mounted() {
+      var arr =[]
+        this.$axios
+            .get("http://localhost:5000/PositiveAndNegative")
+            .then(({ data }) => { 
+              for (const key in data) {
+               arr = data
+               for (const keys in arr) {
+                 
+                      for (let index = 0; index < 2; index++) {
+                         this.data = arr[2][1];
+                        
+                      }
+                 }
+               }
+              
+                
+            });
+    },
 };
 </script>
 

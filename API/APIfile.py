@@ -5,40 +5,6 @@ import pandas as pd
 
 app = Flask(__name__)
 api = Api(app)
-@app.route('/CorrectIDFRatingType1Patong')
-def CorrectIDFRatingType1Patong(): 
- 
- url="./API/testjson/jsonfile/CorrectIDFRatingType1Patong.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,ensure_ascii=False)
-
-
-@app.route('/CorrectIDFSpecialType1Patong')
-def CorrectIDFSpecialType1Patong(): 
- 
- url="./API/testjson/jsonfile/CorrectIDFSpecialType1Patong.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-
-@app.route('/CorrectNodeRatingType1Patong')
-def CorrectNodeRatingType1Patong(): 
- 
- url="./API/testjson/jsonfile/CorrectNodeRatingType1Patong.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
- 
-@app.route('/CorrectNodeSpecialType1Patong')
-def CorrectNodeSpecialType1Patong(): 
- 
- url="./API/testjson/jsonfile/CorrectNodeSpecialType1Patong.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
 
  
 @app.route('/CountOfNumberMessage')

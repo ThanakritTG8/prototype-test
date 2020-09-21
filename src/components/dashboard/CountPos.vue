@@ -8,7 +8,7 @@
       </div>
       <div class="col-lg-5">
         <p class="head" id="text">Positive Comment</p>
-        <p class="lead" id="numComment">1800</p>
+        <p class="lead" id="numComment">{{data}}</p>
       </div>
     </div>
   </div>
@@ -17,7 +17,28 @@
 <script>
 export default {
   name: "count-pos",
-};
+  data: () => ({
+        data: undefined
+    }),
+    mounted() {
+      var arr =[]
+        this.$axios
+            .get("http://localhost:5000/PositiveAndNegative")
+            .then(({ data }) => { 
+              for (const key in data) {
+               arr = data
+               for (const keys in arr) {
+                      for (let index = 0; index < 2; index++) {
+                         this.data = arr[1][1];
+                        
+                      }
+                 }
+               }
+              
+                
+            });
+    },
+}
 </script>
 
 <style scoped>
