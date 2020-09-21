@@ -444,7 +444,7 @@ def top10NegVerbPatong():
  return json.dumps(obj,indent=4,ensure_ascii=False)
 
 @app.route('/allcomments')
-def top10NegVerbPatong(): 
+def dataTestset():
  
  url="./API/testjson/jsonfile/dataTestset.json"
  with open(url, encoding="utf8") as f: 
@@ -453,7 +453,7 @@ def top10NegVerbPatong():
  
 class ClickEachwordAndText(Resource):
     def get(self,name):
-        url = './API/testjson/jsonfile/UniquewordDeepcutWordADJADVNOUNVERBtesttest.json'
+        url = './API/testjson/jsonfile/UniquewordDeepcutWordADJADVNOUNVERBNtesttest.json'
         with open(url,encoding="utf-8") as f: 
           names = json.load(f)
      
@@ -469,7 +469,7 @@ class WordCloud(Resource):
   
 class ADJADVNOUN(Resource):
     def get(self,name):
-        url = './API/testjson/jsonfile/UniquewordDeepcutWordADJADVNOUNVERBSpace.json'
+        url = './API/testjson/jsonfile/test.json'
         with open(url,encoding="utf-8") as f: 
           names = json.load(f)
      

@@ -12,7 +12,6 @@
             </b-card>
         </b-card>
     </b-col>
-    {{item}}
 </div>
 </template>
 
@@ -24,7 +23,7 @@ export default {
      mounted() {
 
         this.$axios
-            .get("http://localhost:5000/senten/text/NOUN")
+            .get("http://localhost:5000/senten/text/test/NOUN")
             .then(({ data }) => {             
                 this.item = data;
                 console.log(this.item);
