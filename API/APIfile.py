@@ -434,7 +434,7 @@ class WordCloud(Resource):
   
 class ADJADVNOUN(Resource):
     def get(self,name):
-        url = './API/testjson/jsonfile/test.json'
+        url = './API/testjson/jsonfile/UniquewordDeepcutWordADJADVNOUNVERB.json'
         with open(url,encoding="utf-8") as f: 
           names = json.load(f)
      
