@@ -410,7 +410,8 @@ def top10NegVerbPatong():
  return json.dumps(obj,indent=4,ensure_ascii=False)
 
 @app.route('/allcomments')
-def dataTestset():
+def allcomment(): 
+ 
  url="./API/testjson/jsonfile/dataTestset.json"
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
@@ -431,15 +432,38 @@ class WordCloud(Resource):
           names = json.load(f)
      
         return  names[name]
-  
-class ADJADVNOUN(Resource):
+
+
+class Piechart(Resource):
     def get(self,name):
-        url = './API/testjson/jsonfile/test.json'
+        url = './API/testjson/jsonfile/CountsPieChart.json'
         with open(url,encoding="utf-8") as f: 
           names = json.load(f)
      
         return  names[name]
 
+class ADJADVNOUN(Resource):
+    def get(self,name):
+<<<<<<< HEAD
+        url = './API/testjson/jsonfile/test.json'
+=======
+        url = './API/testjson/jsonfile/UniquewordDeepcutWordADJADVNOUNVERB.json'
+        with open(url,encoding="utf-8") as f: 
+          names = json.load(f)
+     
+        return  names[name]
+
+class topten(Resource):
+    def get(self,name):
+        url = './API/testjson/jsonfile/toptensentens.json'
+>>>>>>> 762275d25f49d57a7871e7b85adad7cf2b1bdff5
+        with open(url,encoding="utf-8") as f: 
+          names = json.load(f)
+     
+        return  names[name]
+
+api.add_resource(topten,"/topten/<string:name>")
+api.add_resource(Piechart,"/piechart/<string:name>")
 api.add_resource(ADJADVNOUN,"/senten/text/test/<string:name>")
 api.add_resource(ClickEachwordAndText,"/senten/text/<string:name>")
 api.add_resource(WordCloud,"/wordcloud/<string:name>")
