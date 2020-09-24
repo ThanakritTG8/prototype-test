@@ -7,6 +7,15 @@
 <script>
 export default {
   mounted() {
+      var datas = [];
+    var label = [];
+    this.$axios.get("http://localhost:5000//piechart/neg").then(({ data }) => {
+      for (const key in data) {
+        for (let index = 0; index < 1; index++) {
+          datas.push(data[key][1]);
+          label.push(data[key][0]);
+        }
+      }
       var ctx = document.getElementById("PieNeg").getContext("2d");
     var myDoughnutChart = new Chart(ctx, {
       type: "doughnut",
@@ -14,7 +23,7 @@ export default {
           
         datasets: [
           {
-            data: [30 , 40 , 26 ,10 ],
+            data: datas,
           
                 backgroundColor: [
                 'rgba(255, 46, 70, 0.63)',
@@ -27,10 +36,11 @@ export default {
           }],
 
         // These labels appear in the legend and in the tooltips when hovering different arcs
-        labels: ["ADJ", "ADV", "NOUN","VERB"],
+        labels: label,
       },
     
     });
+ });
   },
 };
 </script>

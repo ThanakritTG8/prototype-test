@@ -5,16 +5,15 @@
 </template>
 <script>
 export default {
-   mounted() {
+  mounted() {
     var text = [];
     var datas = [];
     var label = [];
     this.$axios
-      .get("http://localhost:5000/TOP10VerbPatong")
+      .get(" http://localhost:5000//topten/posVERB")
       .then(({ data }) => {
         for (const key in data) {
           if (key > 0) {
-            console.log(data[key]);
             text.push(data[key]);
           }
         }
@@ -29,18 +28,16 @@ export default {
           type: "bar",
           data: {
             labels: label,
-              datasets: [
-          {
-            data: datas,
-            backgroundColor: 
-              "rgba(0, 230, 46, 0.77)",
-            
-            borderColor: 
-              "#66CC00",
-            
-            borderWidth: 1,
-          },
-        ],
+            datasets: [
+              {
+                data: datas,
+                backgroundColor: "rgba(0, 230, 46, 0.77)",
+
+                borderColor: "#66CC00",
+
+                borderWidth: 1,
+              },
+            ],
           },
           options: {
             responsive: true,
