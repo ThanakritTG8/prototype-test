@@ -12,7 +12,15 @@
         active-tab-class=""
       >
         <b-tab title="Place" active>
-          <noun-card v-if="item" :itemData="item" :arrData="arr" :getRows="getRows"/>
+          <noun-card
+            id="noun"
+            v-if="item"
+            :itemData="item"
+            :arrData="arr"
+            :getRows="rows"
+            :current-page="currentPage"
+            :per-page="perPage"
+          />
         </b-tab>
         <b-tab title="Action">
           <verb-card />
@@ -24,15 +32,26 @@
           <adv-card />
         </b-tab>
       </b-tabs>
+      <b-pagination
+        v-if="item"
+        v-model="currentPage"
+        :total-rows="rows"
+        :per-page="perPage"
+        first-text="First"
+        prev-text="Prev"
+        next-text="Next"
+        last-text="Last"
+        aria-controls="noun"
+      ></b-pagination>
     </div>
   </div>
 </template>
 
 <script>
 import NounCard from "@/components/relatedword/NounCard";
-import VerbCard from '@/components/relatedword/VerbCard'
-import AdjCard from '@/components/relatedword/AdjCard'
-import AdvCard from '@/components/relatedword/AdvCard'
+import VerbCard from "@/components/relatedword/VerbCard";
+import AdjCard from "@/components/relatedword/AdjCard";
+import AdvCard from "@/components/relatedword/AdvCard";
 
 export default {
   name: "index-related",
@@ -45,7 +64,8 @@ export default {
   data: () => ({
     item: undefined,
     arr: [],
-    getRows:undefined
+    currentPage: 1,
+    perPage: 3
   }),
   mounted() {
     this.$axios
@@ -56,13 +76,17 @@ export default {
           this.arr.push(key);
         }
       });
+  },
+  computed: {
+    rows() {
+      return this.item.length;
+    }
   }
 };
 </script>
 
-<styles scoped>
+<style scoped>
 #group {
-  margin-top: 40px;
-  margin-bottom: 50px;
+  margin: 30px;
 }
 </style>
