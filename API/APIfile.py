@@ -464,5 +464,7 @@ api.add_resource(ADJADVNOUN,"/senten/text/test/<string:name>")
 api.add_resource(ClickEachwordAndText,"/senten/text/<string:name>")
 api.add_resource(WordCloud,"/wordcloud/<string:name>")
 
+ print("test")
+
 if __name__ == '__main__':
    app.run(host="0.0.0.0", port=5000, debug=True)
