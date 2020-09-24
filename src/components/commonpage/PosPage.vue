@@ -63,15 +63,15 @@
 <script>
 
 import PiePos from "@/components/commonpage/PiePos";
-import BarNounPos from "@/components/commonpage/BarNounPos";
-import BarVerbPos from "@/components/commonpage/BarVerbPos";
-import BarAdjPos from "@/components/commonpage/BarAdjPos";
-import BarAdvPos from "@/components/commonpage/BarAdvPos";
+import BarNounPos from "@/components/commonpage/BarPos/BarNounPos";
+import BarVerbPos from "@/components/commonpage/BarPos/BarVerbPos";
+import BarAdjPos from "@/components/commonpage/BarPos/BarAdjPos";
+import BarAdvPos from "@/components/commonpage/BarPos/BarAdvPos";
 
-import WcNoun from "@/components/commonpage/WcNoun";
-import WcVerb from "@/components/commonpage/WcVerb";
-import WcAdv from "@/components/commonpage/WcAdv";
-import WcAdj from "@/components/commonpage/WcAdj";
+import WcNoun from "@/components/commonpage/WordCloudPos/WcNoun";
+import WcVerb from "@/components/commonpage/WordCloudPos/WcVerb";
+import WcAdv from "@/components/commonpage/WordCloudPos/WcAdv";
+import WcAdj from "@/components/commonpage/WordCloudPos/WcAdj";
 export default {
     data:()=>({
         bar : true,

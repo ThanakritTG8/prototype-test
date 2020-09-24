@@ -149,7 +149,7 @@ export default {
   },
   mounted() {
      this.$axios
-      .get("http://localhost:5000/PatongBeachTripadvisor")
+      .get("http://localhost:5000/allcomments")
       .then(({ data }) => {
         this.item = data;
       });
