@@ -444,9 +444,6 @@ class Piechart(Resource):
 
 class ADJADVNOUN(Resource):
     def get(self,name):
-<<<<<<< HEAD
-        url = './API/testjson/jsonfile/test.json'
-=======
         url = './API/testjson/jsonfile/UniquewordDeepcutWordADJADVNOUNVERB.json'
         with open(url,encoding="utf-8") as f: 
           names = json.load(f)
@@ -456,7 +453,6 @@ class ADJADVNOUN(Resource):
 class topten(Resource):
     def get(self,name):
         url = './API/testjson/jsonfile/toptensentens.json'
->>>>>>> 762275d25f49d57a7871e7b85adad7cf2b1bdff5
         with open(url,encoding="utf-8") as f: 
           names = json.load(f)
      

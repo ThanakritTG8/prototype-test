@@ -1,13 +1,13 @@
 <template>
-  <div id="noun-card">
+  <div id="adj-card">
     <b-container scrollable>
       <b-row align-v="center">
         <!-- // num เพื่อ ใช้วนหาค่าใน item   -->
-        <b-col cols="4" v-for="num in arrData" :key="num">
+        <b-col cols="4" v-for="num in arr" :key="num">
           <!-- // รูปแบบ joson [{"ชาย": [arr] }]  -->
           <div
             class="card"
-            v-for="(items, index) in itemData[num]"
+            v-for="(items, index) in item[num]"
             :key="index"
             id="frame"
             :per-page="perPage"
@@ -46,18 +46,25 @@
 
 <script>
 export default {
-  name: "noun-card",
+  name: "adj-card",
   components: {
   },
   data: () => ({
-    currentPage: 1,
-    perPage: 3
+    item: undefined,
+    arr: [],
+    getRows:undefined,
+    currentPage:1,
+    perPage:3
   }),
-  props: ["itemData", "arrData"],
-  methods: {
-
-  },
-  computed: {
+  mounted() {
+    this.$axios
+      .get("http://localhost:5000/senten/text/test/ADJ")
+      .then(({ data }) => {
+        this.item = data;
+        for (const key in data) {
+          this.arr.push(key);
+        }
+      });
   }
 };
 </script>
