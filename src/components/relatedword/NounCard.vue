@@ -9,9 +9,6 @@
             class="card"
             v-for="(items, index) in itemData[num]"
             :key="index"
-            id="frame"
-            :per-page="perPage"
-            :current-page="currentPage"
           >
             <!-- // ประกาศ index เพื่อ โชว์ค่า key  -->
             <div class="card-body">
@@ -30,34 +27,35 @@
           </div>
         </b-col>
       </b-row>
-      <b-pagination
-        v-model="currentPage"
-        :total-rows="rows"
-        :per-page="perPage"
-        first-text="First"
-        prev-text="Prev"
-        next-text="Next"
-        last-text="Last"
-        aria-controls="frame"
-      ></b-pagination>
     </b-container>
+    <!-- <b-pagination
+      v-if="itemData"
+      v-model="currentPage"
+      :total-rows="rows"
+      :per-page="perPage"
+      first-text="First"
+      prev-text="Prev"
+      next-text="Next"
+      last-text="Last"
+      aria-controls="nCard"
+    ></b-pagination> -->
   </div>
 </template>
 
 <script>
 export default {
   name: "noun-card",
-  components: {
-  },
+  components: {},
   data: () => ({
-    currentPage: 1,
-    perPage: 3
+    // currentPage: 1,
+    // perPage: 3
   }),
   props: ["itemData", "arrData"],
-  methods: {
-
-  },
+  methods: {},
   computed: {
+    // rows() {
+    //   return this.itemData.length;
+    // }
   }
 };
 </script>
@@ -71,7 +69,7 @@ export default {
   height: 500px;
   overflow-y: scroll;
 }
-#frame {
+#nCard {
   width: 340px;
 }
 .card {
