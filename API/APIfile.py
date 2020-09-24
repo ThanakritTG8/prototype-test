@@ -432,15 +432,34 @@ class WordCloud(Resource):
           names = json.load(f)
      
         return  names[name]
-  
-class ADJADVNOUN(Resource):
+
+
+class Piechart(Resource):
     def get(self,name):
-        url = './API/testjson/jsonfile/UniquewordDeepcutWordADJADVNOUNVERBNtest.json'
+        url = './API/testjson/jsonfile/CountsPieChart.json'
         with open(url,encoding="utf-8") as f: 
           names = json.load(f)
      
         return  names[name]
 
+class ADJADVNOUN(Resource):
+    def get(self,name):
+        url = './API/testjson/jsonfile/UniquewordDeepcutWordADJADVNOUNVERB.json'
+        with open(url,encoding="utf-8") as f: 
+          names = json.load(f)
+     
+        return  names[name]
+
+class topten(Resource):
+    def get(self,name):
+        url = './API/testjson/jsonfile/toptensentens.json'
+        with open(url,encoding="utf-8") as f: 
+          names = json.load(f)
+     
+        return  names[name]
+
+api.add_resource(topten,"/topten/<string:name>")
+api.add_resource(Piechart,"/piechart/<string:name>")
 api.add_resource(ADJADVNOUN,"/senten/text/test/<string:name>")
 api.add_resource(ClickEachwordAndText,"/senten/text/<string:name>")
 api.add_resource(WordCloud,"/wordcloud/<string:name>")
