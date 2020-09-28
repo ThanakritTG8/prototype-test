@@ -1,17 +1,14 @@
 <template>
-  <div id="verb-card">
+  <div id="noun-card-neg">
     <b-container scrollable>
       <b-row align-v="center">
         <!-- // num เพื่อ ใช้วนหาค่าใน item   -->
-        <b-col cols="4" v-for="num in arr" :key="num">
+        <div class="col-lg-4" v-for="num in arrData" :key="num">
           <!-- // รูปแบบ joson [{"ชาย": [arr] }]  -->
           <div
             class="card"
-            v-for="(items, index) in item[num]"
+            v-for="(items, index) in itemData[num]"
             :key="index"
-            id="frame"
-            :per-page="perPage"
-            :current-page="currentPage"
           >
             <!-- // ประกาศ index เพื่อ โชว์ค่า key  -->
             <div class="card-body">
@@ -28,44 +25,37 @@
               </div>
             </div>
           </div>
-        </b-col>
+        </div>
       </b-row>
-      <b-pagination
-        v-model="currentPage"
-        :total-rows="rows"
-        :per-page="perPage"
-        first-text="First"
-        prev-text="Prev"
-        next-text="Next"
-        last-text="Last"
-        aria-controls="frame"
-      ></b-pagination>
     </b-container>
+    <!-- <b-pagination
+      v-if="itemData"
+      v-model="currentPage"
+      :total-rows="rows"
+      :per-page="perPage"
+      first-text="First"
+      prev-text="Prev"
+      next-text="Next"
+      last-text="Last"
+      aria-controls="nCard"
+    ></b-pagination> -->
   </div>
 </template>
 
 <script>
 export default {
-  name: "verb-card",
-  components: {
-    
-  },
+  name: "noun-card-neg",
+  components: {},
   data: () => ({
-    item: undefined,
-    arr: [],
-    getRows:undefined,
-    currentPage:1,
-    perPage:3
+    // currentPage: 1,
+    // perPage: 3
   }),
-  mounted() {
-    this.$axios
-      .get("http://localhost:5000/senten/text/test/VERB")
-      .then(({ data }) => {
-        this.item = data;
-        for (const key in data) {
-          this.arr.push(key);
-        }
-      });
+  props: ["itemData", "arrData"],
+  methods: {},
+  computed: {
+    // rows() {
+    //   return this.itemData.length;
+    // }
   }
 };
 </script>
@@ -79,7 +69,7 @@ export default {
   height: 500px;
   overflow-y: scroll;
 }
-#frame {
+#nCard {
   width: 340px;
 }
 .card {
