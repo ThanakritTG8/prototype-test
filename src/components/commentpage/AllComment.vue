@@ -121,7 +121,7 @@ export default {
           class: "text-center",
         },
       ],
-      totalRows: 3,
+      totalRows: 0,
       currentPage: null,
       perPage: 5,
       pageOptions: [5, 10, 50],
@@ -152,10 +152,11 @@ export default {
       .get("http://localhost:5000/allcomments")
       .then(({ data }) => {
         this.item = data;
+        this.totalRows = this.item.length;
       });
 
     // Set the initial number of items
-    this.totalRows = this.item.length;
+    
   },
   methods: {
     info(item, index, button) {
