@@ -11,35 +11,31 @@
       :showTooltip="true"
       :wordClick="wordClickHandler"
     ></wordcloud>
-   
   </div>
 </template>
 
 <script>
-
 import wordcloud from "vue-wordcloud";
 export default {
   name: "common-word-cloud-adj",
   components: {
     wordcloud,
- 
   },
   data: () => ({
     defaultWords: [],
-
   }),
-//  methods: {
-//     wordClickHandler(name) {
-//       this.name = name;
-//     },
-//   },
- mounted() {
-     this.$axios
+  //  methods: {
+  //     wordClickHandler(name) {
+  //       this.name = name;
+  //     },
+  //   },
+  mounted() {
+    
+    this.$axios
       .get("http://localhost:5000/wordcloud/negADJ")
       .then(({ data }) => {
         this.defaultWords = data;
       });
-
   },
 };
 </script>

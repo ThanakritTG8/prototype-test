@@ -3,13 +3,15 @@
     <div class="row">
       <div class="col-lg-6">
         <p class="head text-left" id="comment-icon">
-          <i class="fa fa-minus-circle" style="color:red"></i>
+          <i class="fa fa-minus-circle" style="color: red"></i>
         </p>
       </div>
 
       <div class="col-lg-5">
         <p class="head" id="text">Negative Comment</p>
-        <p class="lead" id="numComment">{{data}}</p>
+        <p class="lead" id="numComment" v-for="datas in data" :key="datas">
+          {{ datas.numComment }}
+        </p>
       </div>
     </div>
   </div>
@@ -18,28 +20,15 @@
 <script>
 export default {
   name: "count-neg",
-   data: () => ({
-        data: undefined
-    }),
-    mounted() {
-      var arr =[]
-        this.$axios
-            .get("http://localhost:5000/PositiveAndNegative")
-            .then(({ data }) => { 
-              for (const key in data) {
-               arr = data
-               for (const keys in arr) {
-                 
-                      for (let index = 0; index < 2; index++) {
-                         this.data = arr[2][1];
-                        
-                      }
-                 }
-               }
-              
-                
-            });
-    },
+  data: () => ({
+    data: undefined,
+  }),
+  mounted() {
+    var arr = [];
+    this.$axios.get("http://localhost:5000/counts/neg").then(({ data }) => {
+      this.data = data;
+    });
+  },
 };
 </script>
 

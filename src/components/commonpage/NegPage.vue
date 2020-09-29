@@ -25,33 +25,41 @@
 
     <b-container class="margin-top">
       <b-row>
-        <b-col class="margin-top">
+        <b-col class="margin-top" col-lg-6>
           <b-card class="card">
-            <BarNounNeg v-if="bar" />
-            <WcNounNeg v-if="wc" />
+            <b-overlay :show="busy" rounded="lg" opacity="0.6">
+              <BarNounNeg v-if="bar" />
+              <WcNounNeg v-if="wc" />
+            </b-overlay>
           </b-card>
         </b-col>
 
-        <b-col class="margin-top">
+        <b-col class="margin-top" col-lg-6>
           <b-card class="card">
-            <BarVerbNeg v-if="bar" />
-            <WcVerbNeg v-if="wc" />
+            <b-overlay :show="busy" rounded="lg" opacity="0.6">
+              <BarVerbNeg v-if="bar" />
+              <WcVerbNeg v-if="wc" />
+            </b-overlay>
           </b-card>
         </b-col>
 
         <div class="w-100"></div>
 
-        <b-col class="margin-top">
+        <b-col class="margin-top" col-lg-6>
           <b-card class="card">
-            <BarAdjNeg v-if="bar" />
-            <WcAdjNeg v-if="wc" />
+            <b-overlay :show="busy" rounded="lg" opacity="0.6">
+              <BarAdjNeg v-if="bar" />
+              <WcAdjNeg v-if="wc" />
+            </b-overlay>
           </b-card>
         </b-col>
 
-        <b-col class="margin-top">
+        <b-col class="margin-top" col-lg-6>
           <b-card class="card">
-            <BarAdvNeg v-if="bar" />
-            <WcAdvNeg v-if="wc" />
+            <b-overlay :show="busy" rounded="lg" opacity="0.6">
+              <BarAdvNeg v-if="bar" />
+              <WcAdvNeg v-if="wc" />
+            </b-overlay>
           </b-card>
         </b-col>
       </b-row>
@@ -73,11 +81,17 @@ export default {
   data: () => ({
     bar: true,
     wc: false,
+    busy: false,
+    timeout: null,
   }),
   methods: {
     Wc() {
       this.bar = false;
       this.wc = true;
+      this.busy = true;
+      setTimeout(() => {
+        this.busy = false;
+      }, 2200);
     },
     Bar() {
       this.bar = true;

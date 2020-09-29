@@ -16,7 +16,7 @@ export default {
       .then(({ data }) => {
         for (const key in data) {
           if (key > 0) {
-            console.log(data[key]);
+           
             text.push(data[key]);
           }
         }

@@ -1,6 +1,7 @@
 <template>
   <div id="all-text-sense">
     <h4 class="text-center">Emotion</h4>
+    
     <wordcloud
       v-b-modal.modal-scrollable
       class="wordcloud"
@@ -16,15 +17,21 @@
       <template v-slot:modal-title>
         <h3>
           #
-          <code>{{name}}</code>
-        
+          <code>{{ name }}</code>
         </h3>
       </template>
 
       <div class="card">
         <div class="card-body">
           <!-- Main table element -->
-          <b-table show-empty small stacked="md" :items="item" :fields="fields" :filter="filter"></b-table>
+          <b-table
+            show-empty
+            small
+            stacked="md"
+            :items="item"
+            :fields="fields"
+            :filter="filter"
+          ></b-table>
         </div>
       </div>
     </b-modal>
@@ -59,19 +66,23 @@ export default {
     ],
     filter: null,
   }),
-   mounted() {
-     this.$axios
-      .get("http://localhost:5000/wordcloud/all")
-      .then(({ data }) => {
-        this.defaultWords = data;
-      });
-        this.$axios
-      .get("http://localhost:5000/allcomments")
-      .then(({ data }) => {
-        this.item = data;
-      });
-}
-}
+  mounted() {
+    var arr = [];
+    this.$axios.get("http://localhost:5000/wordcloud/all").then(({ data }) => {
+      for (const key in data) {
+        for (let s = 0; s < 1; s++) {
+          if (data[key].count > 20) {
+            arr.push(data[key]);
+          }
+        }
+      }
+      this.defaultWords = arr;
+    });
+    this.$axios.get("http://localhost:5000/allcomments").then(({ data }) => {
+      this.item = data;
+    });
+  },
+};
 </script>
 
 <style scoped>

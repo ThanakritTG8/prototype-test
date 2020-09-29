@@ -35,7 +35,9 @@
       <div class="col-lg-6">
         <div class="card">
           <div class="card-body">
-            <alltext-sense />
+            <b-overlay :show="busy" rounded="lg" opacity="0.6">
+              <alltext-sense />
+            </b-overlay>
           </div>
         </div>
       </div>
@@ -58,6 +60,18 @@ export default {
     CountPos,
     CountNeg,
     AlltextSense,
+  },
+  data() {
+    return {
+      busy: true,
+      timeout: null,
+    };
+  },
+
+  mounted() {
+    setTimeout(() => {
+      this.busy = false;
+    }, 2000);
   },
 };
 </script>

@@ -8,7 +8,8 @@
       </div>
       <div class="col-lg-5">
         <p class="head" id="text">Positive Comment</p>
-        <p class="lead" id="numComment">{{data}}</p>
+         <p class="lead" id="numComment"
+            v-for="datas in data" :key="datas">{{ datas.numComment }}</p>
       </div>
     </div>
   </div>
@@ -23,18 +24,9 @@ export default {
     mounted() {
       var arr =[]
         this.$axios
-            .get("http://localhost:5000/PositiveAndNegative")
+            .get("http://localhost:5000/counts/pos")
             .then(({ data }) => { 
-              for (const key in data) {
-               arr = data
-               for (const keys in arr) {
-                      for (let index = 0; index < 2; index++) {
-                         this.data = arr[1][1];
-                        
-                      }
-                 }
-               }
-              
+             this.data=data
                 
             });
     },

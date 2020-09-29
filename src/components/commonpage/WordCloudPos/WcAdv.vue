@@ -11,35 +11,38 @@
       :showTooltip="true"
       :wordClick="wordClickHandler"
     ></wordcloud>
-
   </div>
 </template>
 
 <script>
-
 import wordcloud from "vue-wordcloud";
 export default {
   name: "common-word-cloud-adv",
   components: {
     wordcloud,
- 
   },
-   data: () => ({
+  data: () => ({
     defaultWords: [],
-
   }),
-//  methods: {
-//     wordClickHandler(name) {
-//       this.name = name;
-//     },
-//   },
- mounted() {
-     this.$axios
+  //  methods: {
+  //     wordClickHandler(name) {
+  //       this.name = name;
+  //     },
+  //   },
+  mounted() {
+    var arr = [];
+    this.$axios
       .get("http://localhost:5000/wordcloud/posADV")
       .then(({ data }) => {
-        this.defaultWords = data;
+        for (const key in data) {
+          for (let s = 0; s < 1; s++) {
+            if (data[key].count > 5) {
+              arr.push(data[key]);
+            }
+          }
+        }
+        this.defaultWords = arr;
       });
-
   },
 };
 </script>

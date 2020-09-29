@@ -12,7 +12,6 @@ export default {
     this.$axios.get("http://localhost:5000//topten/negADV").then(({ data }) => {
       for (const key in data) {
         if (key > 0) {
-          console.log(data[key]);
           text.push(data[key]);
         }
       }

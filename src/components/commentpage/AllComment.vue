@@ -1,6 +1,7 @@
 <template>
   <div id="all-comment">
     <b-container fluid>
+     
       <!-- User Interface controls -->
       <b-row>
         <b-col lg="6" class="my-1">

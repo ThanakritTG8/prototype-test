@@ -2,7 +2,7 @@
   <div>
     <h4 class="text-center">Action</h4>
     <wordcloud
-    v-b-modal.modal-scrollableVerb
+      v-b-modal.modal-scrollableVerb
       class="wordcloud"
       :data="defaultWords"
       nameKey="word"
@@ -11,52 +11,52 @@
       :showTooltip="true"
       :wordClick="wordClickHandlerVerb"
     ></wordcloud>
-
-   
-</div>
-
-
+  </div>
 </template>
 
 <script>
-
 import wordcloud from "vue-wordcloud";
 export default {
   name: "common-word-cloud-vreb",
   components: {
     wordcloud,
-
   },
 
-   data: () => ({
+  data: () => ({
     defaultWords: [],
-
   }),
-//  methods: {
-//     wordClickHandler(name) {
-//       this.name = name;
-//     },
-//   },
- mounted() {
-     this.$axios
+  //  methods: {
+  //     wordClickHandler(name) {
+  //       this.name = name;
+  //     },
+  //   },
+  mounted() {
+    var arr = [];
+    this.$axios
       .get("http://localhost:5000/wordcloud/posVERB")
       .then(({ data }) => {
-        this.defaultWords = data;
+        for (const key in data) {
+          for (let s = 0; s < 1; s++) {
+            if (data[key].count > 10) {
+              arr.push(data[key]);
+            }
+          }
+        }
+        this.defaultWords = arr;
       });
-
   },
 };
 </script>
 <style  scoped>
-.wordcloud{
+.wordcloud {
   height: 250px;
 }
- .position{
-   margin: 30px;
- }
- .boder{
-   border-radius: 30px;
-   margin: 15px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
- }
+.position {
+  margin: 30px;
+}
+.boder {
+  border-radius: 30px;
+  margin: 15px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
 </style>

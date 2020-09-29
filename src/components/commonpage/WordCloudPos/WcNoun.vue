@@ -11,36 +11,39 @@
       :showTooltip="true"
       :wordClick="wordClickHandler"
     ></wordcloud>
-  
   </div>
 </template>
 
 <script>
-
 import wordcloud from "vue-wordcloud";
 export default {
   name: "common-word-cloud-noun",
   components: {
     wordcloud,
-    
   },
 
-   data: () => ({
+  data: () => ({
     defaultWords: [],
-
   }),
-//  methods: {
-//     wordClickHandler(name) {
-//       this.name = name;
-//     },
-//   },
- mounted() {
-     this.$axios
+  //  methods: {
+  //     wordClickHandler(name) {
+  //       this.name = name;
+  //     },
+  //   },
+  mounted() {
+    var arr = [];
+    this.$axios
       .get("http://localhost:5000/wordcloud/posNOUN")
       .then(({ data }) => {
-        this.defaultWords = data;
+        for (const key in data) {
+          for (let s = 0; s < 1; s++) {
+            if (data[key].count > 10) {
+              arr.push(data[key]);
+            }
+          }
+        }
+        this.defaultWords = arr;
       });
-
   },
 };
 </script>

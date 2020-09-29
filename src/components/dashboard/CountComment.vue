@@ -23,7 +23,7 @@ export default {
     }),
     mounted() {
         this.$axios
-            .get("http://localhost:5000/CountOfNumberMessage")
+            .get("http://localhost:5000/counts/all")
             .then(({ data }) => { 
                 this.data = data;
             });
