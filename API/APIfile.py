@@ -6,7 +6,11 @@ import pandas as pd
 app = Flask(__name__)
 api = Api(app)
 
+#  จำนวน comment in mounth / year 
+@app.route('/year')
+def CountYears(): 
  
+<<<<<<< HEAD
 @app.route('/CountOfNumberMessage')
 def CountOfNumberMessage(): 
  
@@ -244,179 +248,13 @@ def SentenceTripPatongNegative():
 def SentenceTripPatongPositive(): 
  
  url="./API/testjson/jsonfile/SentenceTripPatongPositive.json"
+=======
+ url="./API/testjson/jsonfile/CountsYearsMounth.json"
+>>>>>>> 62cf791d66bd5ad3a22e8cd8ca446884a89b7a9a
  with open(url, encoding="utf8") as f: 
   obj = json.load(f)
  return json.dumps(obj,indent=4,ensure_ascii=False)
 
-
-@app.route('/SentenceWat')
-def SentenceWat(): 
- 
- url="./API/testjson/jsonfile/SentenceWat.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/TOP10AdjPatong')
-def TOP10AdjPatong(): 
- 
- url="./API/testjson/jsonfile/TOP10AdjPatong.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/TOP10AdvPatong')
-def TOP10AdvPatong(): 
- 
- url="./API/testjson/jsonfile/TOP10AdvPatong.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/TOP10NounPatong')
-def TOP10NounPatong(): 
- 
- url="./API/testjson/jsonfile/TOP10NounPatong.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/TOP10VerbPatong')
-def TOP10VerbPatong(): 
- 
- url="./API/testjson/jsonfile/TOP10VerbPatong.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-
-@app.route('/CorrectIDFSpecialType1Promthep')
-def CorrectIDFSpecialType1Promthep(): 
- 
- url="./API/testjson/jsonfile/CorrectIDFSpecialType1Promthep.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/CorrectNodeRatingType1Promthep')
-def CorrectNodeRatingType1Promthep(): 
- 
- url="./API/testjson/jsonfile/CorrectNodeRatingType1Promthep.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/CorrectNodeSpecialType1Promthep')
-def CorrectNodeSpecialType1Promthep(): 
- 
- url="./API/testjson/jsonfile/CorrectNodeSpecialType1Promthep.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/CorrectIDFRatingType1Wat')
-def CorrectIDFRatingType1Wat(): 
- 
- url="./API/testjson/jsonfile/CorrectIDFRatingType1Wat.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/CorrectIDFSpecialType1Wat')
-def CorrectIDFSpecialType1Wat(): 
- 
- url="./API/testjson/jsonfile/CorrectIDFSpecialType1Wat.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/CorrectNodeRatingType1Wat')
-def CorrectNodeRatingType1Wat(): 
- 
- url="./API/testjson/jsonfile/CorrectNodeRatingType1Wat.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/CorrectNodeSpecialType1Wat')
-def CorrectNodeSpecialType1Wat(): 
- 
- url="./API/testjson/jsonfile/CorrectNodeSpecialType1Wat.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/SentencePatongLolipop')
-def SentencePatongLolipop(): 
- 
- url="./API/testjson/jsonfile/SentencePatongLolipop.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/SentencePromthepLolipop')
-def SentencePromthepLolipop(): 
- 
- url="./API/testjson/jsonfile/SentencePromthepLolipop.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/SentenceWatLolipop')
-def SentenceWatLolipop(): 
- 
- url="./API/testjson/jsonfile/SentenceWatLolipop.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/MuchinPatongNegArray')
-def MuchinPatongNegArray(): 
- 
- url="./API/testjson/jsonfile/MuchinPatongNegArray.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/MuchinPatongPosArray')
-def MuchinPatongPosArray(): 
- 
- url="./API/testjson/jsonfile/MuchinPatongPosArray.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/top10NegAdjPatong')
-def top10NegAdjPatong(): 
- 
- url="./API/testjson/jsonfile/top10NegAdjPatong.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/top10NegAdvPatong')
-def top10NegAdvPatong(): 
- 
- url="./API/testjson/jsonfile/top10NegAdvPatong.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/top10NegNounPatong')
-def top10NegNounPatong(): 
- 
- url="./API/testjson/jsonfile/top10NegNounPatong.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
-
-@app.route('/top10NegVerbPatong')
-def top10NegVerbPatong(): 
- 
- url="./API/testjson/jsonfile/top10NegVerbPatong.json"
- with open(url, encoding="utf8") as f: 
-  obj = json.load(f)
- return json.dumps(obj,indent=4,ensure_ascii=False)
 
 @app.route('/allcomments')
 def allcomment(): 
@@ -442,7 +280,6 @@ class WordCloud(Resource):
      
         return  names[name]
 
-
 class Piechart(Resource):
     def get(self,name):
         url = './API/testjson/jsonfile/CountsPieChart.json'
@@ -453,11 +290,18 @@ class Piechart(Resource):
 
 class ADJADVNOUN(Resource):
     def get(self,name):
+<<<<<<< HEAD
         url = './API/testjson/jsonfile/jsontest.json'
+=======
+        url = './API/testjson/jsonfile/UniquewordDeepcutWordADJADVNOUNVERB.json'
+>>>>>>> 62cf791d66bd5ad3a22e8cd8ca446884a89b7a9a
         with open(url,encoding="utf-8") as f: 
           names = json.load(f)
      
         return  names[name]
+
+#  จำนวน topten 
+# /posNOUN /posVERB /posADJ /posADV /negNOUN /negVERB /negADJ /negADV
 
 class topten(Resource):
     def get(self,name):
@@ -467,6 +311,19 @@ class topten(Resource):
      
         return  names[name]
 
+# จำนวน คำทั้งหมด positive,negative ทั้งหมด 
+# /pos /neg /all
+class Counts(Resource):
+    def get(self,name):
+        url = './API/testjson/jsonfile/Counts.json'
+        with open(url,encoding="utf-8") as f: 
+          names = json.load(f)
+     
+        return  names[name]
+
+
+
+api.add_resource(Counts,"/counts/<string:name>")
 api.add_resource(topten,"/topten/<string:name>")
 api.add_resource(Piechart,"/piechart/<string:name>")
 api.add_resource(ADJADVNOUN,"/senten/text/test/<string:name>")
