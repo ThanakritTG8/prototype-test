@@ -3,7 +3,7 @@
     <b-container scrollable>
       <b-row align-v="center">
         <!-- // num เพื่อ ใช้วนหาค่าใน item   -->
-        <b-col cols="4" v-for="num in arrData" :key="num">
+        <div class="col-lg-4" v-for="num in arrData" :key="num">
           <!-- // รูปแบบ joson [{"ชาย": [arr] }]  -->
           <div
             class="card"
@@ -25,7 +25,7 @@
               </div>
             </div>
           </div>
-        </b-col>
+        </div>
       </b-row>
     </b-container>
     <!-- <b-pagination
