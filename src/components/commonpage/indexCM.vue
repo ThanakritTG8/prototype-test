@@ -3,7 +3,7 @@
     <div class="margin-top">
       <b-row>
         <b-col cols="1"></b-col>
-        <b-col cols="3" style="text-align: right;">
+        <b-col cols="3" style="text-align: right; margin-left:20px;">
             <b-button variant="info" @click="PosBtn">Positive</b-button>
         </b-col>
            <b-col cols="3" style="text-align: left;">

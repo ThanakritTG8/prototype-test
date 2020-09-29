@@ -1,6 +1,7 @@
 <template>
   <div>
-      <h3>Negative</h3><br>
+      <center><h3>Negative</h3></center>
+      <br>
     <canvas id="PieNeg" weight="300" height="300"></canvas>
   </div>
 </template>

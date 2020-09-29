@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3>Positive</h3>
+    <center><h3>Positive</h3></center>
     <br />
     <canvas id="Pie" weight="300" height="300"></canvas>
   </div>
