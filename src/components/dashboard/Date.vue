@@ -1,6 +1,6 @@
 <template>
   <div id="date">
-  <p class="title">Monthly Comments</p>
+    <p class="title">Monthly Comments</p>
     <canvas id="line"></canvas>
   </div>
 </template>
@@ -12,29 +12,47 @@ export default {
   name: "date",
   data: () => ({}),
   mounted: function () {
+   
+    var labelA = [];
+    var color = ["#A4C8F0","#A4C8F0","#B9E3AE","#BACAB3","#FFFF88","#E1FD8E","#CBAB8D","#FDB4BF","#FFBE7D","#D0B3E1","#B3B3D9","#6E7EF5"];
     var ctx = document.getElementById("line").getContext("2d");
-    var line = new Chart(ctx, {
-      type: "line",
-      data: {
-        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-        datasets: [
-          {
-            label: "2019",
-            data: [61, 122, 107, 73, 80 ,75 ,45, 99, 250 ,300 ,750 ,350],
-            borderColor: "#6E7EF5",
+    this.$axios.get("http://localhost:5000/year").then(({ data }) => {
+      for (let index = 0; index < data.length; index++) {
+        for (let indexs = 0; indexs < 1; indexs++) {
+              
+          var la = {
+            label: data[index][0],
+            data: data[index][1],
+            borderColor: color[index],
             fill: false,
-          },
-          {
-            label: "2018",
-            data: [18, 170, 135, 92, 77 ,80 ,75 ,80 ,60 ,45 ,700 ,250],
-            borderColor: "#B277DE",
-            fill: false,
-          },
-        ],
-      },
-      options: {
-        responsive: true,
-      },
+          };
+          labelA.push(la)
+        }
+      }
+
+      var line = new Chart(ctx, {
+        type: "line",
+        data: {
+          labels: [
+            "Jan",
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+            "Nov",
+            "Dec",
+          ],
+          datasets: labelA,
+        },
+        options: {
+          responsive: true,
+        },
+      });
     });
   },
 };
@@ -42,7 +60,7 @@ export default {
 
 <style scoped>
 #line {
-    width: 90%;
-    height: 370;
+  width: 90%;
+  height: 370;
 }
 </style>

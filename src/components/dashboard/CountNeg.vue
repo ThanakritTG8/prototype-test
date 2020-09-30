@@ -1,18 +1,18 @@
 <template>
   <div id="count-neg">
     <div class="row">
-      <div class="col-lg-6">
-        <p class="head text-left" id="comment-icon">
+      <b-col cols="6">
+        <p class="head text-center" id="comment-icon">
           <i class="fa fa-minus-circle" style="color: red"></i>
         </p>
-      </div>
+      </b-col>
 
-      <div class="col-lg-5">
-        <p class="head" id="text">Negative Comment</p>
-        <p class="lead" id="numComment" v-for="datas in data" :key="datas">
+      <b-col cols="4">
+        <p class="head text-center" id="text">Negative Comment</p>
+        <p class="lead text-center" id="numComment" v-for="datas in data" :key="datas">
           {{ datas.numComment }}
         </p>
-      </div>
+      </b-col>
     </div>
   </div>
 </template>
@@ -41,18 +41,18 @@ export default {
 #text {
   padding-top: 0px;
   font-size: 15px;
-  margin-right: 5px;
+
 }
 #numComment {
   font-size: 45px;
   padding-top: 0;
-  margin-right: 20px;
+
 }
 #comment-icon {
   margin-left: 20px;
   font-size: 40px;
   margin-top: 10px;
-  margin-right: 20px;
+ margin-right: 20px;
 }
 
 i.fa {

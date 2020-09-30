@@ -1,16 +1,16 @@
 <template>
   <div id="count-pos">
     <div class="row">
-      <div class="col-lg-6">
-        <p class="head text-left" id="comment-icon">
+      <b-col cols="6">
+        <p class="head text-center" id="comment-icon">
           <i class="fa fa-plus-circle" style="color:rgb(85, 253, 139)"></i>
         </p>
-      </div>
-      <div class="col-lg-5">
-        <p class="head" id="text">Positive Comment</p>
-         <p class="lead" id="numComment"
+      </b-col>
+     <b-col cols="4">
+        <p class="head text-center" id="text">Positive Comment</p>
+         <p class="lead text-center" id="numComment"
             v-for="datas in data" :key="datas">{{ datas.numComment }}</p>
-      </div>
+     </b-col>
     </div>
   </div>
 </template>
@@ -42,18 +42,18 @@ export default {
 #text {
   padding-top: 0px;
   font-size: 15px;
-  margin-right: 5px;
+  
 }
 #numComment {
   font-size: 45px;
   padding-top: 0;
-  margin-right: 20px;
+  
 }
 #comment-icon {
   margin-left: 20px;
   font-size: 40px;
   margin-top: 10px;
-  margin-right: 20px;
+ 
 }
 
 i.fa {

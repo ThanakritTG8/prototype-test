@@ -52,7 +52,7 @@
             variant="warning"
             @click="Confirm"
           >
-            Confirm</b-button >
+            Place</b-button >
           </router-link>
                
             </b-navbar-nav>
