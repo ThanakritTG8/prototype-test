@@ -1,5 +1,6 @@
 <template>
   <div id="index-related">
+    <NavBar />
     <div id="group">
       <h1 class="title text-center">Related Word</h1>
     </div>
@@ -15,7 +16,7 @@
           <b-tab title="Positive" class="tab" active>
             <pos-type-card />
           </b-tab>
-          <b-tab title="Negative" class="tab"> 
+          <b-tab title="Negative" class="tab">
             <neg-type-card />
           </b-tab>
         </b-tabs>
@@ -25,15 +26,17 @@
 </template>
 
 <script>
+import NavBar from "@/layout/NavBar";
 import PosTypeCard from "@/components/relatedword/PosTypeCard";
-import NegTypeCard from '@/components/negrelatedword/NegTypeCard'
+import NegTypeCard from "@/components/negrelatedword/NegTypeCard";
 export default {
   name: "index-related",
   components: {
     PosTypeCard,
-    NegTypeCard
+    NegTypeCard,
+    NavBar,
   },
-  methods: {}
+  methods: {},
 };
 </script>
 

@@ -1,5 +1,6 @@
 <template>
   <div id="comment-page">
+    <NavBar/>
     <h1>Comment Page</h1>
     <div class="row" id="body-comment-page">
       <div class="col-1"></div>
@@ -20,11 +21,12 @@
 
 <script>
 import AllComment from "@/components/commentpage/AllComment";
-
+import NavBar from "@/layout/NavBar";
 export default {
   name: "comment-page",
   components: {
     AllComment,
+    NavBar
   },
 };
 </script>

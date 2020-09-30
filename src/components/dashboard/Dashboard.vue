@@ -1,16 +1,18 @@
 <template>
   <div class="dashboard">
+    <NavBar/>
     <index-dashboard/>
   </div>
 </template>
 
 <script>
 import IndexDashboard from '@/components/dashboard/IndexDashboard'
-
+import NavBar from "@/layout/NavBar";
 export default {
   name: "dashboard",
   components: {
-    IndexDashboard
+    IndexDashboard,
+    NavBar
   },
 };
 </script>

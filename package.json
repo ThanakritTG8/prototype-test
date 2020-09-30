@@ -14,15 +14,19 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
     "apexcharts": "^3.20.0",
     "axios": "^0.19.2",
     "bootstrap": "^4.5.2",
     "bootstrap-vue": "^2.16.0",
     "chart.js": "^2.9.3",
+    "fullpage-vue": "^2.1.1",
     "vue": "^2.6.11",
     "vue-apexcharts": "^1.6.0",
     "vue-axios": "^2.1.5",
+    "vue-dynamic-dropdown": "^1.0.12",
     "vue-router": "^3.0.1",
+    "vue-text-transition": "^1.0.19",
     "vue-wordcloud": "^1.1.1"
   },
   "devDependencies": {

@@ -10,7 +10,16 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import { NavbarPlugin } from 'bootstrap-vue'
 import { BNavbar } from 'bootstrap-vue'
 import axios from 'axios'
+import VueDropdown from 'vue-dynamic-dropdown'
 
+import 'animate.css'
+import 'fullpage-vue/src/fullpage.css'
+import VueFullpage from 'fullpage-vue'
+
+import VueTextTransition from 'vue-text-transition'
+Vue.component('vue-text-transition', VueTextTransition)
+Vue.use(VueFullpage)
+Vue.component('vue-dropdown', VueDropdown);
 Vue.component('b-navbar', BNavbar)
 
 Vue.use(NavbarPlugin)

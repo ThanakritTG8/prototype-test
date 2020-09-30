@@ -11,7 +11,7 @@
 
         <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav>
-                <router-link to="/" class="navbar" id="font">
+                <router-link to="/dashboard" class="navbar" id="font">
                     <div class="navlink">
                         <i class="fas fa-desktop" id="icon"></i>
                         <span>Dashboard</span>
@@ -44,16 +44,17 @@
 
             <!-- Right aligned nav items -->
             <b-navbar-nav class="ml-auto">
-                <b-nav-form>
-                    <b-dropdown id="dropdown-1" text="Place" class="m-md-2">
-                        <b-dropdown-item>
-                            <router-link to="/">Patong</router-link>
-                        </b-dropdown-item>
-                        <b-dropdown-item>
-                            <router-link to="/dashboard/karon">Karon</router-link>
-                        </b-dropdown-item>
-                    </b-dropdown>
-                </b-nav-form>
+             
+               <router-link to="/">
+          <b-button
+            class="button"
+            pill
+            variant="warning"
+            @click="Confirm"
+          >
+            Confirm</b-button >
+          </router-link>
+               
             </b-navbar-nav>
         </b-collapse>
     </b-navbar>

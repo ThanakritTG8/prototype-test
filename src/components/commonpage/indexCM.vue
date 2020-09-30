@@ -1,5 +1,6 @@
 <template>
   <div id="index" >
+    <NavBar/>
     <div class="margin-top">
       <b-row>
         <b-col cols="1"></b-col>
@@ -17,6 +18,7 @@
   </div>
 </template>
 <script>
+import NavBar from "@/layout/NavBar";
 import NegPage from "@/components/commonpage/NegPage";
 import PosPage from "@/components/commonpage/PosPage";
 export default {
@@ -37,6 +39,7 @@ export default {
   components: {
     PosPage,
     NegPage,
+    NavBar
   },
 };
 </script>

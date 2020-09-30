@@ -5,6 +5,8 @@ import CommentPage from '@/components/commentpage/CommentPage'
 import indexCM from '@/components/commonpage/indexCM'
 import DashboardKaron from '@/components/dashboardKaron/DashboardKaron'
 import IndexRelated from '@/components/relatedword/IndexRelated'
+import Home from '@/components/Home'
+
 
 Vue.use(Router)
 
@@ -12,6 +14,11 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'Home',
+      component: Home
+    },
+    {
+      path: '/dashboard',
       name: 'Dashboard',
       component: Dashboard
     },    
