@@ -67,16 +67,16 @@
   </div>
 </template>
 <script>
-import PiePos from "@/components/commonpage/PiePos";
-import BarNounPos from "@/components/commonpage/BarPos/BarNounPos";
-import BarVerbPos from "@/components/commonpage/BarPos/BarVerbPos";
-import BarAdjPos from "@/components/commonpage/BarPos/BarAdjPos";
-import BarAdvPos from "@/components/commonpage/BarPos/BarAdvPos";
+import PiePos from "@/components/Patong/commonpage/PiePos";
+import BarNounPos from "@/components/Patong/commonpage/BarPos/BarNounPos";
+import BarVerbPos from "@/components/Patong/commonpage/BarPos/BarVerbPos";
+import BarAdjPos from "@/components/Patong/commonpage/BarPos/BarAdjPos";
+import BarAdvPos from "@/components/Patong/commonpage/BarPos/BarAdvPos";
 
-import WcNoun from "@/components/commonpage/WordCloudPos/WcNoun";
-import WcVerb from "@/components/commonpage/WordCloudPos/WcVerb";
-import WcAdv from "@/components/commonpage/WordCloudPos/WcAdv";
-import WcAdj from "@/components/commonpage/WordCloudPos/WcAdj";
+import WcNoun from "@/components/Patong/commonpage/WordCloudPos/WcNoun";
+import WcVerb from "@/components/Patong/commonpage/WordCloudPos/WcVerb";
+import WcAdv from "@/components/Patong/commonpage/WordCloudPos/WcAdv";
+import WcAdj from "@/components/Patong/commonpage/WordCloudPos/WcAdj";
 export default {
   data: () => ({
     bar: true,

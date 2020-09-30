@@ -67,16 +67,16 @@
   </div>
 </template>
 <script>
-import PieNeg from "@/components/commonpage/PieNeg";
-import BarNounNeg from "@/components/commonpage/BarNeg/BarNounNeg";
-import BarVerbNeg from "@/components/commonpage/BarNeg/BarVerbNeg";
-import BarAdjNeg from "@/components/commonpage/BarNeg/BarAdjNeg";
-import BarAdvNeg from "@/components/commonpage/BarNeg/BarAdvNeg";
+import PieNeg from "@/components/Patong/commonpage/PieNeg";
+import BarNounNeg from "@/components/Patong/commonpage/BarNeg/BarNounNeg";
+import BarVerbNeg from "@/components/Patong/commonpage/BarNeg/BarVerbNeg";
+import BarAdjNeg from "@/components/Patong/commonpage/BarNeg/BarAdjNeg";
+import BarAdvNeg from "@/components/Patong/commonpage/BarNeg/BarAdvNeg";
 
-import WcNounNeg from "@/components/commonpage/WordCloudNeg/WcNounNeg";
-import WcVerbNeg from "@/components/commonpage/WordCloudNeg/WcVerbNeg";
-import WcAdvNeg from "@/components/commonpage/WordCloudNeg/WcAdvNeg";
-import WcAdjNeg from "@/components/commonpage/WordCloudNeg/WcAdjNeg";
+import WcNounNeg from "@/components/Patong/commonpage/WordCloudNeg/WcNounNeg";
+import WcVerbNeg from "@/components/Patong/commonpage/WordCloudNeg/WcVerbNeg";
+import WcAdvNeg from "@/components/Patong/commonpage/WordCloudNeg/WcAdvNeg";
+import WcAdjNeg from "@/components/Patong/commonpage/WordCloudNeg/WcAdjNeg";
 export default {
   data: () => ({
     bar: true,

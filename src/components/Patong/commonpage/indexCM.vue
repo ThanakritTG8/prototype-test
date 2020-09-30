@@ -19,8 +19,8 @@
 </template>
 <script>
 import NavBar from "@/layout/NavBar";
-import NegPage from "@/components/commonpage/NegPage";
-import PosPage from "@/components/commonpage/PosPage";
+import NegPage from "@/components/Patong/commonpage/NegPage";
+import PosPage from "@/components/Patong/commonpage/PosPage";
 export default {
   data: () => ({
     pos: true,

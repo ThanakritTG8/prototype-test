@@ -48,7 +48,7 @@ import CountCommentKaron from '@/components/dashboardKaron/CountCommentKaron'
 import CountNegKaron from '@/components/dashboardKaron/CountNegKaron'
 import CountPosKaron from '@/components/dashboardKaron/CountPosKaron'
 import DateKaron from '@/components/dashboardKaron/DateKaron'
-import AlltextSense from '@/components/dashboard/AlltextSense'
+import AlltextSense from '@/components/Patong/dashboard/AlltextSense'
 
 export default {
   name: "index-dashboard-karon",

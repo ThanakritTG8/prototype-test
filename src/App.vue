@@ -5,8 +5,8 @@
   </div>
 </template>
 
-<script>import Dashboard from "@/components/dashboard/Dashboard";
-import NavBar from "@/layout/NavBar";
+<script>
+
 export default {
   name: "App",
  

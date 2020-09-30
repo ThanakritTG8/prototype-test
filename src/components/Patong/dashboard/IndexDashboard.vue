@@ -48,11 +48,11 @@
 </template>
 
 <script>
-import Date from "@/components/dashboard/Date";
-import CountComment from "@/components/dashboard/CountComment";
-import CountPos from "@/components/dashboard/CountPos";
-import CountNeg from "@/components/dashboard/CountNeg";
-import AlltextSense from "@/components/dashboard/AlltextSense";
+import Date from "@/components/Patong/dashboard/Date";
+import CountComment from "@/components/Patong/dashboard/CountComment";
+import CountPos from "@/components/Patong/dashboard/CountPos";
+import CountNeg from "@/components/Patong/dashboard/CountNeg";
+import AlltextSense from "@/components/Patong/dashboard/AlltextSense";
 
 export default {
   name: "index-dashboard",

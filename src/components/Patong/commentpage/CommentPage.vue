@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import AllComment from "@/components/commentpage/AllComment";
+import AllComment from "@/components/Patong/commentpage/AllComment";
 import NavBar from "@/layout/NavBar";
 export default {
   name: "comment-page",
