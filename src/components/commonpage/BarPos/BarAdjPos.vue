@@ -24,7 +24,7 @@ export default {
       }
       var ctx = document.getElementById("adj").getContext("2d");
       var myChart = new Chart(ctx, {
-        type: "bar",
+        type: "horizontalBar",
         data: {
           labels: label,
           datasets: [
@@ -37,6 +37,7 @@ export default {
           ],
         },
         options: {
+       
           responsive: true,
           legend: {
             display: false,
