@@ -28,14 +28,16 @@
       <div class="col-lg-6 text-center">
         <div class="card">
           <div class="card-body">
-            <date />
+            <b-overlay :show="busyLine" rounded="lg" opacity="0.6">
+              <date />
+            </b-overlay>
           </div>
         </div>
       </div>
       <div class="col-lg-6">
         <div class="card">
           <div class="card-body">
-            <b-overlay :show="busy" rounded="lg" opacity="0.6">
+            <b-overlay :show="busyWord" rounded="lg" opacity="0.6">
               <alltext-sense />
             </b-overlay>
           </div>
@@ -63,15 +65,19 @@ export default {
   },
   data() {
     return {
-      busy: true,
+      busyWord: true,
+       busyLine: true,
       timeout: null,
     };
   },
 
   mounted() {
     setTimeout(() => {
-      this.busy = false;
+      this.busyWord = false;
     }, 2000);
+    setTimeout(() => {
+      this.busyLine = false;
+    }, 500);
   },
 };
 </script>
