@@ -4,11 +4,11 @@
       <div class="scroll" id="frame">
         <div class="row">
           <div
-            class="col-lg-3"
+            class="col-lg-3 col-md-6 col-sm-12"
             v-for="items in itemData[ind].sentence"
             :key="items"
           >
-            <div class="card shadow p-3 mb-5 bg-white rounded" id="body">
+            <div class="card shadow rounded" id="body">
               <div class="card-body">
                 <div class="card-text">
                   <p>{{ items }}</p>
@@ -43,8 +43,9 @@ export default {
 }
 #body {
   margin-bottom: 10px;
-  height: 150px;
-  /* height: auto; */
+  margin-right: 10px;
+  /* height: 150px; */
+  height: auto;
   width: 300px;
 }
 </style>

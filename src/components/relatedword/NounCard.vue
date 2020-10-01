@@ -1,9 +1,9 @@
 <template>
   <div id="noun-card">
     <b-container scrollable>
-      <b-row align-v="center">
+      <div class="row">
         <!-- // num เพื่อ ใช้วนหาค่าใน item   -->
-        <div class="col-lg-4" v-for="num in arrData" :key="num">
+        <div class="col-lg-4 md-6 sm-12" v-for="num in arrData" :key="num">
           <!-- // รูปแบบ joson [{"ชาย": [arr] }]  -->
           <div
             class="card"
@@ -26,7 +26,7 @@
             </div>
           </div>
         </div>
-      </b-row>
+      </div>
     </b-container>
     <!-- <b-pagination
       v-if="itemData"
@@ -69,12 +69,13 @@ export default {
   height: 500px;
   overflow-y: scroll;
 }
-#nCard {
+/* #nCard {
   width: 340px;
-}
+} */
 .card {
   background: whitesmoke;
   margin-top: 20px;
   margin-right: 10px;
+  height: auto;
 }
 </style>

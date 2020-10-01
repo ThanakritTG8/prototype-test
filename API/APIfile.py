@@ -50,7 +50,7 @@ class Piechart(Resource):
 
 class ADJADVNOUN(Resource):
     def get(self,name):
-        url = './API/testjson/jsonfile/UniquewordDeepcutWordADJADVNOUNVERB.json'
+        url = './API/testjson/jsonfile/jsontest.json'
         with open(url,encoding="utf-8") as f: 
           names = json.load(f)
      
