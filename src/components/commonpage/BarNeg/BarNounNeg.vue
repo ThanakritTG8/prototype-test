@@ -1,7 +1,7 @@
 <template>
   <div>
     <canvas id="myChart" width="400" height="250"></canvas>
-    {{data}}
+    {{ data }}
   </div>
 </template>
 <script>
@@ -12,7 +12,7 @@ export default {
     var datas = [];
     var label = [];
     this.$axios
-      .get("http://localhost:5000/TOP10NounPatong")
+      .get("http://localhost:5000//topten/negNOUN")
       .then(({ data }) => {
         for (const key in data) {
           if (key > 0) {

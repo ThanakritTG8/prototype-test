@@ -1,5 +1,5 @@
 <template>
-  <div id="noun-card">
+  <div id="noun-card-neg">
     <b-container scrollable>
       <b-row align-v="center">
         <!-- // num เพื่อ ใช้วนหาค่าใน item   -->
@@ -44,7 +44,7 @@
 
 <script>
 export default {
-  name: "noun-card",
+  name: "noun-card-neg",
   components: {},
   data: () => ({
     // currentPage: 1,

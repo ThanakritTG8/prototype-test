@@ -1,0 +1,19 @@
+[{
+    "word": "ชาย",
+    "type": "noun",
+    "sense": "positive",
+    "sentense": ["ชายหาดลาดยาว", "ชายสี่หมี่เกี๊ยว"]
+  },
+  {
+    "word": "ยาย",
+    "type": "noun",
+    "sense": "positive",
+    "sentense": ["ยายหาดลาดยาว", "ยายสี่หมี่เกี๊ยว"]
+  }, 
+  {
+    "word": "กิน",
+    "type": "verb",
+    "sense": "positive",
+    "sentense": ["กินหาดลาดยาว", "กินสี่หมี่เกี๊ยว"]
+  }
+]

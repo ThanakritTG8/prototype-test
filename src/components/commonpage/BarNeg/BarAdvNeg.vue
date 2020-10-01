@@ -9,7 +9,7 @@ export default {
     var text = [];
     var datas = [];
     var label = [];
-    this.$axios.get("http://localhost:5000/TOP10AdvPatong").then(({ data }) => {
+    this.$axios.get("http://localhost:5000//topten/negADV").then(({ data }) => {
       for (const key in data) {
         if (key > 0) {
           console.log(data[key]);
