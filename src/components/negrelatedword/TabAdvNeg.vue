@@ -40,7 +40,7 @@ export default {
   }),
   mounted() {
     this.$axios
-      .get("http://localhost:5000/senten/text/test/NOUN")
+      .get("http://api.playz-th.com:5000/postgards/NEGADV")
       .then(({ data }) => {
         for (let key in data) {
           this.item = data;
