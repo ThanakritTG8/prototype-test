@@ -43,8 +43,8 @@ export default {
 }
 #body {
   margin-bottom: 10px;
-  height: 150px;
-  /* height: auto; */
+  /* height: 150px; */
+  height: auto;
   width: 300px;
 }
 </style>

@@ -40,7 +40,7 @@ export default {
   }),
   mounted() {
     this.$axios
-      .get("http://api.playz-th.com:5000/postgards/NEGADV")
+      .get("http://localhost:5000/postgards/NEGADV")
       .then(({ data }) => {
         for (let key in data) {
           this.item = data;
