@@ -86,7 +86,7 @@ class Postgard(Resource):
         return  names[name]
 
 
-api.add_resource(Postgard,"/postgards/<string:name>")
+api.add_resource(Postgard,"/postgrards/<string:name>")
 api.add_resource(Counts,"/counts/<string:name>")
 api.add_resource(topten,"/topten/<string:name>")
 api.add_resource(Piechart,"/piechart/<string:name>")
@@ -95,4 +95,4 @@ api.add_resource(ClickEachwordAndText,"/senten/text/<string:name>")
 api.add_resource(WordCloud,"/wordcloud/<string:name>")
 
 if __name__ == '__main__':
-   app.run(host="0.0.0.0", port=5000, debug=True)
+   app.run(host="172.19.237.130", port=5000, debug=True)
