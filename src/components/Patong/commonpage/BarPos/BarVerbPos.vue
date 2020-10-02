@@ -10,7 +10,7 @@ export default {
     var datas = [];
     var label = [];
     this.$axios
-      .get(" http://localhost:5000//topten/posVERB")
+      .get("http://api.playz-th.com:5500/topten/posVERB")
       .then(({ data }) => {
         for (const key in data) {
           if (key > 0) {

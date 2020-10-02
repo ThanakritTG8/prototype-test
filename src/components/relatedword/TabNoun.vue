@@ -55,7 +55,7 @@ export default {
   }),
   mounted() {
     this.$axios
-      .get("http://localhost:5000/postgards/POSNOUN")
+      .get("http://api.playz-th.com:5500/postgrards/POSNOUN")
       .then(({ data }) => {
         for (let key in data) {
           this.item = data;

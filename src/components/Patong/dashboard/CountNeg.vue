@@ -25,7 +25,7 @@ export default {
   }),
   mounted() {
     var arr = [];
-    this.$axios.get("http://localhost:5000/counts/neg").then(({ data }) => {
+    this.$axios.get("http://api.playz-th.com:5500/counts/neg").then(({ data }) => {
       this.data = data;
     });
   },

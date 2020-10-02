@@ -24,7 +24,7 @@ export default {
     mounted() {
       var arr =[]
         this.$axios
-            .get("http://localhost:5000/counts/pos")
+            .get("http://api.playz-th.com:5500/counts/pos")
             .then(({ data }) => { 
              this.data=data
                 

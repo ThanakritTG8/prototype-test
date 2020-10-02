@@ -28,7 +28,7 @@ export default {
     data: undefined,
   }),
   mounted() {
-    this.$axios.get("http://localhost:5000/counts/all").then(({ data }) => {
+    this.$axios.get("http://api.playz-th.com:5500/counts/all").then(({ data }) => {
       this.data = data;
     });
   },

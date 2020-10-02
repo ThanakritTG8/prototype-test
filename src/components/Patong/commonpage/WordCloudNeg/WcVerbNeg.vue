@@ -29,7 +29,7 @@ export default {
   mounted() {
     var arr=[]
     this.$axios
-      .get("http://localhost:5000/wordcloud/negVERB")
+      .get("http://api.playz-th.com:5500/wordcloud/negVERB")
       .then(({ data }) => {
         for (const key in data) {
           for (let s = 0; s < 1; s++) {

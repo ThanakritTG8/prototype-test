@@ -16,7 +16,7 @@ export default {
     var labelA = [];
     var color = ["#A4C8F0","#A4C8F0","#B9E3AE","#BACAB3","#FFFF88","#E1FD8E","#CBAB8D","#FDB4BF","#FFBE7D","#D0B3E1","#B3B3D9","#6E7EF5"];
     var ctx = document.getElementById("line").getContext("2d");
-    this.$axios.get("http://localhost:5000/year").then(({ data }) => {
+    this.$axios.get("http://api.playz-th.com:5500/year").then(({ data }) => {
       for (let index = 0; index < data.length; index++) {
         for (let indexs = 0; indexs < 1; indexs++) {
               
