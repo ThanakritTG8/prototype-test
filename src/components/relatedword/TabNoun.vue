@@ -1,5 +1,18 @@
 <template>
   <div id="tab-noun">
+    <b-form-group>
+      <b-input-group size="sm">
+        <b-form-input
+          v-model="filter"
+          type="search"
+          id="filterInput"
+          placeholder="Type to Search"
+        ></b-form-input>
+        <b-input-group-append>
+          <b-button :disabled="!filter" @click="filter = ''">Clear</b-button>
+        </b-input-group-append>
+      </b-input-group>
+    </b-form-group>
     <b-card no-body>
       <b-tabs pills card vertical class="b-tab scroll">
         <word-card-noun
@@ -8,6 +21,7 @@
           :arrData="arr"
           :per-page="perPage"
           :current-page="currentPage"
+          :filter="filter"
         />
       </b-tabs>
     </b-card>
@@ -36,7 +50,8 @@ export default {
     item: undefined,
     arr: [],
     currentPage: 1,
-    perPage: 10
+    perPage: 10,
+    filter: null
   }),
   mounted() {
     this.$axios
@@ -53,6 +68,14 @@ export default {
   computed: {
     rows() {
       return this.arr.length;
+    },
+    sortOptions() {
+      // Create an options list from our fields
+      return this.item
+        .filter()
+        .map(i => {
+          return { text: i.word, value: i.sentence };
+        });
     }
   },
   methods: {
@@ -64,7 +87,7 @@ export default {
 </script>
 
 <style scoped>
-.b-tab{
+.b-tab {
   height: 500px;
   overflow-y: scroll;
 }
