@@ -68,7 +68,7 @@ export default {
   }),
   mounted() {
     var arr = [];
-    this.$axios.get("http://localhost:5000/wordcloud/all").then(({ data }) => {
+    this.$axios.get("http://api.playz-th.com:5500/wordcloud/all").then(({ data }) => {
       for (const key in data) {
         for (let s = 0; s < 1; s++) {
           if (data[key].count > 20) {
