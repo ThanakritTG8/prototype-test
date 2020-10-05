@@ -67,7 +67,7 @@ export default {
 
 <style scoped>
 #home {
-  background-image: url("https://u01.appmifile.com/images/2019/06/01/7ed90965-208c-4057-a8e0-8cad71ac7400.jpeg ");
+  background-image: url("../assets/patong.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
