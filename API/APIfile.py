@@ -95,4 +95,4 @@ api.add_resource(ClickEachwordAndText,"/senten/text/<string:name>")
 api.add_resource(WordCloud,"/wordcloud/<string:name>")
 
 if __name__ == '__main__':
-   app.run(host="api-totaeza.herokuapp.com/", port=5000, debug=True)
+   app.run(host="https://api-totaeza.herokuapp.com", port=5000, debug=True)

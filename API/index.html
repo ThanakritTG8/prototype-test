@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ajax Api call by AXIOS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="css/style.css" rel="stylesheet">
+        <script src = 'https://unpkg.com/axios/dist/axios.min.js'></script>
+        <script>
+            axios.get('http://103.91.206.116:5500/year')
+                 .then(response => {
+                     console.log(response.data);
+                 })
+                 .catch(error => console.error(error));
+        </script>
+    </head>
+    <body>
+        <h1>  Hello  </h1>
+    
+    </body>
+</html>
