@@ -33,7 +33,7 @@ export default {
   mounted() {
     var arr = [];
     this.$axios
-      .get("http://api.playz-th.com:5500/wordcloud/posNOUN")
+      .get("http://localhost:5500/wordcloud/posNOUN")
       .then(({ data }) => {
         for (const key in data) {
           for (let s = 0; s < 1; s++) {

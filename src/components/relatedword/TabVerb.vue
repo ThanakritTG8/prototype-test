@@ -40,7 +40,7 @@ export default {
   }),
   mounted() {
     this.$axios
-      .get("http://api.playz-th.com:5500/postgrards/POSVERB")
+      .get("http://localhost:5500/postgrards/POSVERB")
       .then(({ data }) => {
         for (let key in data) {
           this.item = data;

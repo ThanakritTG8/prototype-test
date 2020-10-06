@@ -150,7 +150,7 @@ export default {
   },
   mounted() {
      this.$axios
-      .get("http://api.playz-th.com:5500/allcomments")
+      .get("http://localhost:5500/allcomments")
       .then(({ data }) => {
         this.item = data;
         this.totalRows = this.item.length;

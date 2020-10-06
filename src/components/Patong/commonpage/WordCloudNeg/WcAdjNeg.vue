@@ -32,7 +32,7 @@ export default {
   mounted() {
     
     this.$axios
-      .get("http://api.playz-th.com:5500/wordcloud/negADJ")
+      .get("http://localhost:5500/wordcloud/negADJ")
       .then(({ data }) => {
         this.defaultWords = data;
       });

@@ -95,4 +95,4 @@ api.add_resource(ClickEachwordAndText,"/senten/text/<string:name>")
 api.add_resource(WordCloud,"/wordcloud/<string:name>")
 
 if __name__ == '__main__':
-   app.run(host="0.0.0.0", port=5000, debug=True)
+   app.run(host="0.0.0.0", port=5500, debug=True)

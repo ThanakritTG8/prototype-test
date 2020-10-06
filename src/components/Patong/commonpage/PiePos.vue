@@ -10,7 +10,7 @@ export default {
   mounted() {
     var datas = [];
     var label = [];
-    this.$axios.get("http://api.playz-th.com:5500/piechart/pos").then(({ data }) => {
+    this.$axios.get("http://localhost:5500/piechart/pos").then(({ data }) => {
       for (const key in data) {
         for (let index = 0; index < 1; index++) {
           datas.push(data[key][1]);

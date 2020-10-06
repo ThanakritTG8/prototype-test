@@ -9,7 +9,7 @@ export default {
     var text = [];
     var datas = [];
     var label = [];
-    this.$axios.get("http://api.playz-th.com:5500/topten/posADJ").then(({ data }) => {
+    this.$axios.get("http://localhost:5500/topten/posADJ").then(({ data }) => {
       for (const key in data) {
         if (key > 0) {
           text.push(data[key]);
