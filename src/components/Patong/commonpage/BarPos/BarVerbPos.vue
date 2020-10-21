@@ -46,7 +46,7 @@ export default {
             },
             title: {
               display: true,
-              text: "ACtion",
+              text: "Verb",
               fontSize: 20,
             },
           },

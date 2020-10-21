@@ -1,6 +1,6 @@
 <template>
   <div id="tab-noun">
-    <b-form-group>
+    <!-- <b-form-group>
       <b-input-group size="sm">
         <b-form-input
           v-model="filter"
@@ -12,7 +12,7 @@
           <b-button :disabled="!filter" @click="filter = ''">Clear</b-button>
         </b-input-group-append>
       </b-input-group>
-    </b-form-group>
+    </b-form-group> -->
     <b-card no-body>
       <b-tabs pills card vertical class="b-tab scroll">
         <word-card-noun
@@ -23,6 +23,14 @@
           :current-page="currentPage"
           :filter="filter"
         />
+        <!-- <div class="row ">
+          <div class="col-8 text-right">
+            <p>Coming Soon</p>
+          </div>
+          <div class="col-4 overley">
+            <b-overlay :show="busy" rounded="lg" opacity="8"> </b-overlay>
+          </div>
+        </div> -->
       </b-tabs>
     </b-card>
     <!-- <b-pagination
@@ -47,6 +55,7 @@ export default {
     WordCardNoun
   },
   data: () => ({
+    busy: true,
     item: undefined,
     arr: [],
     currentPage: 1,
@@ -55,7 +64,7 @@ export default {
   }),
   mounted() {
     this.$axios
-      .get("http://localhost:5500/postgrards/POSNOUN")
+      .get("http://localhost:5500/postgards/POSNOUN")
       .then(({ data }) => {
         for (let key in data) {
           this.item = data;
@@ -71,11 +80,9 @@ export default {
     },
     sortOptions() {
       // Create an options list from our fields
-      return this.item
-        .filter()
-        .map(i => {
-          return { text: i.word, value: i.sentence };
-        });
+      return this.item.filter().map(i => {
+        return { text: i.word, value: i.sentence };
+      });
     }
   },
   methods: {
@@ -93,5 +100,15 @@ export default {
 }
 #paginate {
   margin-top: 20px;
+}
+.text-right {
+  margin-top: 60px;
+
+  margin-right: -140px;
+  font-size: 120px;
+}
+.overley {
+  margin-top: 100px;
+  font-size: 160px;
 }
 </style>

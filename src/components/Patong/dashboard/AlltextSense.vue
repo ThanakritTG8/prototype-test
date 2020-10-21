@@ -1,6 +1,6 @@
 <template>
   <div id="all-text-sense">
-    <h4 class="text-center">Emotion</h4>
+  
     
     <wordcloud
       v-b-modal.modal-scrollable
@@ -86,11 +86,7 @@ export default {
 </script>
 
 <style scoped>
-.wordcloud {
-  font-family: "Lato", Arial, sans-serif;
-  width: 100%;
-  height: 370px;
-}
+
 .right {
   text-align: right;
 }

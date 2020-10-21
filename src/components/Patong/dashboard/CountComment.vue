@@ -1,12 +1,12 @@
 <template>
   <div id="count-comment">
     <div class="row">
-      <b-col cols="6" class=" text-center">
+      <b-col cols="4" class=" text-center">
         <p id="comment-icon">
           <i class="fa fa-comments"></i>
         </p>
       </b-col>
-      <b-col cols="4">
+      <b-col cols="6">
         <p class="head text-center" id="text">All Comment</p>
         <p
           class="lead text-center"

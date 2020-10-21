@@ -24,7 +24,7 @@ export default {
       }
       var ctx = document.getElementById("adv").getContext("2d");
       var myChart = new Chart(ctx, {
-        type: "bar",
+        type: "horizontalBar",
         data: {
           labels: label,
           datasets: [
@@ -43,7 +43,7 @@ export default {
           },
           title: {
             display: true,
-            text: "Character",
+            text: "Adverb",
             fontSize: 20,
           },
         },

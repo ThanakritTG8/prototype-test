@@ -1,12 +1,12 @@
 <template>
   <div id="count-pos">
     <div class="row">
-      <b-col cols="6">
+      <b-col cols="4">
         <p class="head text-center" id="comment-icon">
           <i class="fa fa-plus-circle" style="color:rgb(85, 253, 139)"></i>
         </p>
       </b-col>
-     <b-col cols="4">
+     <b-col cols="6">
         <p class="head text-center" id="text">Positive Comment</p>
          <p class="lead text-center" id="numComment"
             v-for="datas in data" :key="datas">{{ datas.numComment }}</p>

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4 class="text-center">Emotion</h4>
+    <h4 class="text-center">Adjective</h4>
     <wordcloud
       v-b-modal.modal-scrollable
       class="wordcloud"

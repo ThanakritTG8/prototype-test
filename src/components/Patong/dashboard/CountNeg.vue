@@ -1,13 +1,13 @@
 <template>
   <div id="count-neg">
     <div class="row">
-      <b-col cols="6">
+      <b-col cols="4">
         <p class="head text-center" id="comment-icon">
           <i class="fa fa-minus-circle" style="color: red"></i>
         </p>
       </b-col>
 
-      <b-col cols="4">
+      <b-col cols="6">
         <p class="head text-center" id="text">Negative Comment</p>
         <p class="lead text-center" id="numComment" v-for="datas in data" :key="datas">
           {{ datas.numComment }}

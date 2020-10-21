@@ -43,7 +43,7 @@ export default {
           },
           title: {
             display: true,
-            text: "Character",
+            text: "Adverb",
             fontSize: 20,
           },
         },

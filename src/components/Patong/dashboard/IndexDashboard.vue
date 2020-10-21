@@ -27,20 +27,20 @@
     <div class="row">
       <div class="col-lg-6 text-center">
         <div class="card">
-          <div class="card-body">
+          
             <b-overlay :show="busyLine" rounded="lg" opacity="0.6">
               <date />
             </b-overlay>
-          </div>
+         
         </div>
       </div>
       <div class="col-lg-6">
         <div class="card">
-          <div class="card-body">
+          
             <b-overlay :show="busyWord" rounded="lg" opacity="0.6">
               <alltext-sense />
             </b-overlay>
-          </div>
+         
         </div>
       </div>
     </div>

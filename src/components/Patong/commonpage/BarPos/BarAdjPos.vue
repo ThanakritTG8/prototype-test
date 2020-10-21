@@ -44,7 +44,7 @@ export default {
           },
           title: {
             display: true,
-            text: "Emotion",
+            text: "Adjective",
             fontSize: 20,
           },
         },

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4 class="text-center">Place</h4>
+    <h4 class="text-center">Noun</h4>
     <wordcloud
       v-b-modal.modal-scrollable
       class="wordcloud"

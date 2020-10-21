@@ -46,7 +46,7 @@ export default {
             },
             title: {
               display: true,
-              text: "Place",
+              text: "Noun",
               fontSize: 20,
             },
           },

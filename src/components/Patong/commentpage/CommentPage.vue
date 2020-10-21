@@ -1,7 +1,7 @@
 <template>
   <div id="comment-page">
     <NavBar/>
-    <h1>Comment Page</h1>
+    <h1 class="text-center">Comment Page</h1>
     <div class="row" id="body-comment-page">
       <div class="col-1"></div>
       <div class="col-lg-10">
