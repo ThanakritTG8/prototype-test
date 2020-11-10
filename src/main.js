@@ -17,6 +17,9 @@ import 'fullpage-vue/src/fullpage.css'
 import VueFullpage from 'fullpage-vue'
 
 import VueTextTransition from 'vue-text-transition'
+import TextHighlight from 'vue-text-highlight';
+
+Vue.component('text-highlight', TextHighlight);
 Vue.component('vue-text-transition', VueTextTransition)
 Vue.use(VueFullpage)
 Vue.component('vue-dropdown', VueDropdown);

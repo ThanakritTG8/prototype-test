@@ -31,7 +31,13 @@
             :items="item"
             :fields="fields"
             :filter="filter"
-          ></b-table>
+          >
+           <template #cell(Thai)="data">
+              <text-highlight :queries="filter">{{
+                data.item.Thai
+              }}</text-highlight>
+            </template>
+          </b-table>
         </div>
       </div>
     </b-modal>
@@ -64,7 +70,7 @@ export default {
         label: "Review",
       },
     ],
-    filter: null,
+    filter: [],
   }),
   mounted() {
     var arr = [];

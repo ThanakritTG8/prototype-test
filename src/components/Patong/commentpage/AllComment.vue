@@ -1,7 +1,7 @@
 <template>
   <div id="all-comment">
+    <!-- <text-highlight :queries="queries">{{ item }}</text-highlight> -->
     <b-container fluid>
-     
       <!-- User Interface controls -->
       <b-row>
         <b-col lg="6" class="my-1">
@@ -14,12 +14,22 @@
             class="mb-0"
           >
             <b-input-group size="sm">
-              <b-form-select v-model="sortBy" id="sortBySelect" :options="sortOptions" class="w-75">
+              <b-form-select
+                v-model="sortBy"
+                id="sortBySelect"
+                :options="sortOptions"
+                class="w-75"
+              >
                 <template v-slot:first>
                   <option value>-- none --</option>
                 </template>
               </b-form-select>
-              <b-form-select v-model="sortDesc" size="sm" :disabled="!sortBy" class="w-25">
+              <b-form-select
+                v-model="sortDesc"
+                size="sm"
+                :disabled="!sortBy"
+                class="w-25"
+              >
                 <option :value="false">Asc</option>
                 <option :value="true">Desc</option>
               </b-form-select>
@@ -44,12 +54,18 @@
                 placeholder="Type to Search"
               ></b-form-input>
               <b-input-group-append>
-                <b-button :disabled="!filter" @click="filter = ''">Clear</b-button>
+                <!-- ref="submitBtn" เซตให้ auto click เพื่อ รีเซ็ตค่า fillter ตั้งแต่ รีโหลดหน้า (ทำงานใน mounted)-->
+                <b-button
+                  :disabled="!filter"
+                  @click="filter = ''"
+                  ref="submitBtn"
+                  >Clear</b-button
+                >
               </b-input-group-append>
             </b-input-group>
           </b-form-group>
         </b-col>
-        
+
         <b-col sm="5" md="6" class="my-1">
           <b-form-group
             label="Per page"
@@ -61,7 +77,12 @@
             label-for="perPageSelect"
             class="mb-0"
           >
-            <b-form-select v-model="perPage" id="perPageSelect" size="sm" :options="pageOptions"></b-form-select>
+            <b-form-select
+              v-model="perPage"
+              id="perPageSelect"
+              size="sm"
+              :options="pageOptions"
+            ></b-form-select>
           </b-form-group>
         </b-col>
 
@@ -76,7 +97,6 @@
           ></b-pagination>
         </b-col>
       </b-row>
-
 
       <div id="space"></div>
       <div class="card">
@@ -96,7 +116,13 @@
             :sort-desc.sync="sortDesc"
             :sort-direction="sortDirection"
             @filtered="onFiltered"
-          ></b-table>
+          >
+            <template #cell(Review)="data">
+              <text-highlight :queries="filter">{{
+                data.item.Review
+              }}</text-highlight>
+            </template>
+          </b-table>
         </div>
       </div>
     </b-container>
@@ -129,7 +155,7 @@ export default {
       sortBy: "",
       sortDesc: false,
       sortDirection: "asc",
-      filter: null,
+      filter: [],
       filterOn: [],
       infoModal: {
         id: "info-modal",
@@ -149,15 +175,11 @@ export default {
     },
   },
   mounted() {
-     this.$axios
-      .get("http://localhost:5500/allcomments")
-      .then(({ data }) => {
-        this.item = data;
-        this.totalRows = this.item.length;
-      });
-
-    // Set the initial number of items
-    
+    this.$refs.submitBtn.click();
+    this.$axios.get("http://localhost:5500/allcomments").then(({ data }) => {
+      this.item = data;
+      this.totalRows = this.item.length;
+    });
   },
   methods: {
     info(item, index, button) {
@@ -182,5 +204,4 @@ export default {
 #space {
   margin-bottom: 40px;
 }
-
 </style>
