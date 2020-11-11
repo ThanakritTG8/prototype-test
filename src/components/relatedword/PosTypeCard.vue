@@ -55,4 +55,5 @@ export default {
   /* height: auto; */
   margin: 10px;
 }
+
 </style>

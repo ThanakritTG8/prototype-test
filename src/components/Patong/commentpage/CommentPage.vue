@@ -1,7 +1,7 @@
 <template>
   <div id="comment-page">
     <NavBar/>
-    <h1 class="text-center">Comment Page</h1>
+    <!-- <h1 class="text-center">Comment Page</h1> -->
     <div class="row" id="body-comment-page">
       <div class="col-1"></div>
       <div class="col-lg-10">
@@ -36,7 +36,7 @@ export default {
   border-radius: 20px;
 }
 #body-comment-page {
-  margin-top: 20px;
+  margin-top: 100px;
 }
 h1 {
   margin: 40px;

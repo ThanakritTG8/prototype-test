@@ -1,20 +1,7 @@
 <template>
   <div id="tab-noun">
-    <!-- <b-form-group>
-      <b-input-group size="sm">
-        <b-form-input
-          v-model="filter"
-          type="search"
-          id="filterInput"
-          placeholder="Type to Search"
-        ></b-form-input>
-        <b-input-group-append>
-          <b-button :disabled="!filter" @click="filter = ''">Clear</b-button>
-        </b-input-group-append>
-      </b-input-group>
-    </b-form-group> -->
     <b-card no-body>
-      <b-tabs pills card vertical class="b-tab scroll">
+      <b-tabs pills card vertical class="b-tab">
         <word-card-noun
           id="tab"
           :itemData="item"
@@ -23,14 +10,6 @@
           :current-page="currentPage"
           :filter="filter"
         />
-        <!-- <div class="row ">
-          <div class="col-8 text-right">
-            <p>Coming Soon</p>
-          </div>
-          <div class="col-4 overley">
-            <b-overlay :show="busy" rounded="lg" opacity="8"> </b-overlay>
-          </div>
-        </div> -->
       </b-tabs>
     </b-card>
     <!-- <b-pagination
@@ -111,4 +90,5 @@ export default {
   margin-top: 100px;
   font-size: 160px;
 }
+
 </style>

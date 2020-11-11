@@ -1,6 +1,6 @@
 <template>
   <div id="index-dashboard">
-    <h1 class="title text-center">Patong Dashboard</h1>
+    <h1 class="title text-center">Dashboard</h1>
     <div class="row">
       <div class="col-lg-4">
         <div class="card">

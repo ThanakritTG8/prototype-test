@@ -22,7 +22,7 @@
                 <router-link to="/comment" class="navbar" id="font">
                     <div class="navlink">
                         <i class="fas fa-table" id="icon"></i>
-                        <span>Comment</span>
+                        <span>Review</span>
                     </div>
                 </router-link>
             </b-navbar-nav>
@@ -37,6 +37,7 @@
             <b-navbar-nav>
                 <router-link to="/related" class="navbar" id="font">
                     <div class="navlink">
+                        <i class="fas fa-link" id="icon"></i>
                         <span>Related Word</span>
                     </div>
                 </router-link>

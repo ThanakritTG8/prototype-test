@@ -38,7 +38,7 @@ export default {
 <style scoped>
 #count-comment {
   font-family: "Lato", Arial, sans-serif;
-  text-transform: uppercase;
+  
   width: 100%;
 }
 
