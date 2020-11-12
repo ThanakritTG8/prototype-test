@@ -7,7 +7,7 @@
         </p>
       </b-col>
       <b-col cols="6">
-        <p class="head text-center" id="text">All Comment</p>
+        <p class="head text-center" id="text">All Comments</p>
         <p
           class="lead text-center"
           id="numComment"

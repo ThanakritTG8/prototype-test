@@ -14,7 +14,7 @@
     <b-container class="margin-top">
       <b-row>
         <b-col cols="2" style="text-align: right">
-          <b-button variant="info" @click="Bar">Bar</b-button>
+          <b-button variant="info" @click="Bar">Bar Chart</b-button>
         </b-col>
         <b-col cols="3" style="text-align: left">
           <b-button variant="info" @click="Wc">WordCloud</b-button>

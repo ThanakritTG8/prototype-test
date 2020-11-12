@@ -8,7 +8,7 @@
       </b-col>
 
       <b-col cols="6">
-        <p class="head text-center" id="text">Negative Comment</p>
+        <p class="head text-center" id="text">Negative Comments</p>
         <p class="lead text-center" id="numComment" v-for="datas in data" :key="datas">
           {{ datas.numComment }}
         </p>

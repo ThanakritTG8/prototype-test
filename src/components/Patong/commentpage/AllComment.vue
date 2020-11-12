@@ -51,7 +51,7 @@
                 v-model="filter"
                 type="search"
                 id="filterInput"
-                placeholder="Type to Search"
+                placeholder="Search"
               ></b-form-input>
               <b-input-group-append>
                 <!-- ref="submitBtn" เซตให้ auto click เพื่อ รีเซ็ตค่า fillter ตั้งแต่ รีโหลดหน้า (ทำงานใน mounted)-->
@@ -137,7 +137,7 @@ export default {
       fields: [
         {
           key: "Review",
-          label: "Review",
+          label: "Reviews",
           sortable: true,
           sortDirection: "desc",
         },
