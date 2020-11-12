@@ -2,9 +2,8 @@
 <div>
     <b-navbar toggleable="lg" type="dark" variant="info" id="home">
         <b-navbar-brand href="#">
-            <h3>
-                <b>Detect Word Sense</b>
-            </h3>
+           <img src="../assets/atsa4.png" alt="" id="img">
+            
         </b-navbar-brand>
 
         <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -72,14 +71,18 @@ export default {
 #home {
     font-weight: 20px;
     font-size: 18px;
+    height: 80px;
 }
 
 #font {
     color: aliceblue;
 }
 
-h3 {
+/* h3 {
     color: white;
     text-shadow: 2px 2px 4px #000000;
+} */
+#img {
+    width: 150px;
 }
 </style>
