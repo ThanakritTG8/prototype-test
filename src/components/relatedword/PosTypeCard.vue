@@ -7,16 +7,16 @@
         align="center"
         active-nav-item-class="font-weight-bold text-uppercase text-success"
       >
-        <b-tab title="Place" class="tab" active>
+        <b-tab title="Noun" class="tab" active>
           <tab-noun />
         </b-tab>
-        <b-tab title="Action" class="tab">
+        <b-tab title="Verb" class="tab">
           <tab-verb />
         </b-tab>
-        <b-tab title="Emotion" class="tab">
+        <b-tab title="Adjective" class="tab">
           <tab-adj />
         </b-tab>
-        <b-tab title="Character" class="tab">
+        <b-tab title="Adverb" class="tab">
           <tab-adv />
         </b-tab>
       </b-tabs>

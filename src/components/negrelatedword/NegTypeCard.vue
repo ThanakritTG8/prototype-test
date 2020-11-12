@@ -6,27 +6,27 @@
       align="center"
       active-nav-item-class="font-weight-bold text-uppercase text-success"
     >
-      <b-tab title="Place" class="tab" active>
-        <tab-noun-neg />
+      <b-tab title="Noun" class="tab" active>
+        <tab-noun />
       </b-tab>
-      <b-tab title="Action" class="tab">
-        <tab-verb-neg />
+      <b-tab title="Verb" class="tab">
+        <tab-verb />
       </b-tab>
-      <b-tab title="Emotion" class="tab"> 
-        <tab-adj-neg />
+      <b-tab title="Adjective" class="tab">
+        <tab-adj />
       </b-tab>
-      <b-tab title="Character" class="tab"> 
-        <tab-adv-neg />
+      <b-tab title="Adverb" class="tab">
+        <tab-adv />
       </b-tab>
     </b-tabs>
   </div>
 </template>
 
 <script>
-import TabNounNeg from '@/components/negrelatedword/TabNounNeg'
-import TabVerbNeg from '@/components/negrelatedword/TabVerbNeg'
-import TabAdjNeg from '@/components/negrelatedword/TabAdjNeg'
-import TabAdvNeg from '@/components/negrelatedword/TabAdvNeg'
+import TabNounNeg from "@/components/negrelatedword/TabNounNeg";
+import TabVerbNeg from "@/components/negrelatedword/TabVerbNeg";
+import TabAdjNeg from "@/components/negrelatedword/TabAdjNeg";
+import TabAdvNeg from "@/components/negrelatedword/TabAdvNeg";
 
 export default {
   name: "neg-type-card",
