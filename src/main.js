@@ -19,6 +19,12 @@ import VueFullpage from 'fullpage-vue'
 import VueTextTransition from 'vue-text-transition'
 import TextHighlight from 'vue-text-highlight';
 
+import VueTippy, { TippyComponent } from "vue-tippy";
+
+Vue.use(VueTippy);
+Vue.component("tippy", TippyComponent);
+
+
 Vue.component('text-highlight', TextHighlight);
 Vue.component('vue-text-transition', VueTextTransition)
 Vue.use(VueFullpage)

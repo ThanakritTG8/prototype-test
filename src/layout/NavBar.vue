@@ -1,7 +1,7 @@
 <template>
 <div>
     <b-navbar toggleable="lg" type="dark" variant="info" id="home">
-        <b-navbar-brand href="#" v-b-tooltip.hover.bottom="'Automatic Tourism sentiment analysis'" >
+        <b-navbar-brand href="#" content="Automatic Tourism sentiment analysis" v-tippy="{ placement : 'top',  arrow: true }">
            <img src="../assets/atsa4.png" alt="" id="img">
             
         </b-navbar-brand>
@@ -71,7 +71,7 @@ export default {
 #home {
     font-weight: 20px;
     font-size: 18px;
-    height: 80px;
+    
 }
 
 #font {
@@ -83,6 +83,6 @@ export default {
     text-shadow: 2px 2px 4px #000000;
 } */
 #img {
-    width: 150px;
+    width: 80px;
 }
 </style>
