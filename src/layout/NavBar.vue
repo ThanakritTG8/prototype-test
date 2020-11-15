@@ -1,7 +1,7 @@
 <template>
 <div>
     <b-navbar toggleable="lg" type="dark" variant="info" id="home">
-        <b-navbar-brand href="#">
+        <b-navbar-brand href="#" v-b-tooltip.hover.bottom="'Automatic Tourism sentiment analysis'" >
            <img src="../assets/atsa4.png" alt="" id="img">
             
         </b-navbar-brand>
