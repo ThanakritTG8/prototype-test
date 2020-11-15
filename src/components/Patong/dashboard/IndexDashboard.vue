@@ -5,21 +5,22 @@
       <div class="col-lg-4">
         <div class="card">
           <div class="card-body">
-            <count-comment />
+            <count-comment :countComment="countComment" />
           </div>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="card">
-          <div class="card-body">
-            <count-pos />
+          <div class="card-body magin">
+            <count-pos :countPos="countPos" :percenPos="percenPos"/>
           </div>
         </div>
       </div>
       <div class="col-lg-4">
         <div class="card">
-          <div class="card-body">
-            <count-neg />
+          <div class="card-body magin">
+           
+            <count-neg :countNeg="countNeg" :percenNeg="percenNeg"  />
           </div>
         </div>
       </div>
@@ -27,20 +28,16 @@
     <div class="row">
       <div class="col-lg-6 text-center">
         <div class="card">
-          
-            <b-overlay :show="busyLine" rounded="lg" opacity="0.6">
-              <date />
-            </b-overlay>
-         
+          <b-overlay :show="busyLine" rounded="lg" opacity="0.6">
+            <date />
+          </b-overlay>
         </div>
       </div>
       <div class="col-lg-6">
         <div class="card">
-          
-            <b-overlay :show="busyWord" rounded="lg" opacity="0.6">
-              <alltext-sense />
-            </b-overlay>
-         
+          <b-overlay :show="busyWord" rounded="lg" opacity="0.6">
+            <alltext-sense />
+          </b-overlay>
         </div>
       </div>
     </div>
@@ -66,12 +63,39 @@ export default {
   data() {
     return {
       busyWord: true,
-       busyLine: true,
+      busyLine: true,
       timeout: null,
+      countComment: null,
+      countPos: null,
+      countNeg:null,
+      percenPos:null,
+      percenNeg:null
     };
   },
-
+ 
   mounted() {
+    
+    this.$axios.get("http://localhost:5500/counts/all").then(({ data }) => {
+      for (const key in data) {
+        this.countComment = data[key].numComment;
+      }
+   
+    this.$axios.get("http://localhost:5500/counts/pos").then(({ data }) => {
+      for (const key in data) {
+        this.countPos = data[key].numComment;
+        this.percenPos = ((data[key].numComment*100)/ this.countComment).toFixed(2);
+        
+      }
+
+    });
+    this.$axios.get("http://localhost:5500/counts/neg").then(({ data }) => {
+      for (const key in data) {
+        this.countNeg = data[key].numComment;
+         this.percenNeg = ((data[key].numComment*100)/ this.countComment).toFixed(2);
+      }
+    });
+     });
+
     setTimeout(() => {
       this.busyWord = false;
     }, 2000);
@@ -91,4 +115,5 @@ export default {
 .title {
   margin: 20px;
 }
+
 </style>

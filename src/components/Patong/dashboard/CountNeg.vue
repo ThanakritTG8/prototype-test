@@ -8,10 +8,11 @@
       </b-col>
 
       <b-col cols="6">
-        <p class="head text-center" id="text">Negative Comments</p>
-        <p class="lead text-center" id="numComment" v-for="datas in data" :key="datas">
-          {{ datas.numComment }}
+        <p class="head text-center magin" id="text">Negative Comments</p>
+        <p class="lead text-center magin" id="numComment">
+          {{ countNeg }} 
         </p>
+        <h3 class=" text-center "> ( {{percenNeg}}% )</h3>
       </b-col>
     </div>
   </div>
@@ -20,16 +21,9 @@
 <script>
 export default {
   name: "count-neg",
-  data: () => ({
-    data: undefined,
-  }),
-  mounted() {
-    var arr = [];
-    this.$axios.get("http://localhost:5500/counts/neg").then(({ data }) => {
-      this.data = data;
-    });
-  },
-};
+  props: { countNeg: Number, percenNeg: Number },
+ 
+}
 </script>
 
 <style scoped>
@@ -41,18 +35,19 @@ export default {
 #text {
   padding-top: 0px;
   font-size: 15px;
-
 }
 #numComment {
-  font-size: 45px;
+  font-size: 30px;
   padding-top: 0;
-
 }
 #comment-icon {
   margin-left: 20px;
   font-size: 40px;
   margin-top: 10px;
- margin-right: 20px;
+  margin-right: 20px;
+}
+.magin{
+  margin-bottom: 6px;
 }
 
 i.fa {

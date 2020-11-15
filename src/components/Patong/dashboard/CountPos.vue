@@ -7,9 +7,9 @@
         </p>
       </b-col>
      <b-col cols="6">
-        <p class="head text-center" id="text">Positive Comments</p>
-         <p class="lead text-center" id="numComment"
-            v-for="datas in data" :key="datas">{{ datas.numComment }}</p>
+        <p class="head text-center magin" id="text">Positive Comments</p>
+         <p class="lead text-center magin" id="numComment">{{ countPos }}</p>
+         <h3 class=" text-center"> ( {{percenPos}}% )</h3>
      </b-col>
     </div>
   </div>
@@ -18,18 +18,8 @@
 <script>
 export default {
   name: "count-pos",
-  data: () => ({
-        data: undefined
-    }),
-    mounted() {
-      var arr =[]
-        this.$axios
-            .get("http://localhost:5500/counts/pos")
-            .then(({ data }) => { 
-             this.data=data
-                
-            });
-    },
+  props: {countPos:Number, percenPos:Number},
+  
 }
 </script>
 
@@ -45,7 +35,7 @@ export default {
   
 }
 #numComment {
-  font-size: 45px;
+  font-size: 30px;
   padding-top: 0;
   
 }
@@ -54,6 +44,9 @@ export default {
   font-size: 40px;
   margin-top: 10px;
  
+}
+.magin{
+  margin-bottom: 6px;
 }
 
 i.fa {

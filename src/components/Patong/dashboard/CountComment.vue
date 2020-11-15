@@ -11,10 +11,8 @@
         <p
           class="lead text-center"
           id="numComment"
-          v-for="datas in data"
-          :key="datas"
         >
-          {{ datas.numComment }}
+          {{ countComment }}
         </p>
       </b-col>
     </div>
@@ -24,14 +22,8 @@
 <script>
 export default {
   name: "count-comment",
-  data: () => ({
-    data: undefined,
-  }),
-  mounted() {
-    this.$axios.get("http://localhost:5500/counts/all").then(({ data }) => {
-      this.data = data;
-    });
-  },
+  props : {countComment : Number},
+  
 };
 </script>
 
