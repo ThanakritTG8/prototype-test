@@ -3,6 +3,7 @@
     <!-- <text-highlight :queries="queries">{{ item }}</text-highlight> -->
     <b-container fluid>
       <!-- User Interface controls -->
+
       <b-row>
         <b-col lg="6" class="my-1">
           <b-form-group
@@ -37,7 +38,7 @@
           </b-form-group>
         </b-col>
 
-        <b-col lg="6" class="my-1">
+        <b-col lg="5" class="my-1" >
           <b-form-group
             label="Filter"
             label-cols-sm="3"
@@ -46,12 +47,13 @@
             label-for="filterInput"
             class="mb-0"
           >
-            <b-input-group size="sm">
+            <b-input-group size="sm" >
               <b-form-input
                 v-model="filter"
                 type="search"
                 id="filterInput"
                 placeholder="Search"
+                @click="filter = ''"
               ></b-form-input>
               <b-input-group-append>
                 <!-- ref="submitBtn" เซตให้ auto click เพื่อ รีเซ็ตค่า fillter ตั้งแต่ รีโหลดหน้า (ทำงานใน mounted)-->
@@ -63,8 +65,17 @@
                 >
               </b-input-group-append>
             </b-input-group>
+             <input type="radio" id="all" value="" v-model="time" />
+            <label style="margin-top: 10px " for="all">All</label> &nbsp; &nbsp; 
+            <input type="radio" id="one" value="2020" v-model="time" />
+            <label style="margin-top: 10px " for="one">2020</label> &nbsp; &nbsp; 
+            <input type="radio" id="two" value="2019" v-model="time" />
+            <label for="two">2019</label> &nbsp; &nbsp; 
+            <input type="radio" id="three" value="2018" v-model="time" />
+            <label for="three">2018</label>
           </b-form-group>
         </b-col>
+        <b-col lg="1"></b-col>
 
         <b-col sm="5" md="6" class="my-1">
           <b-form-group
@@ -86,7 +97,7 @@
           </b-form-group>
         </b-col>
 
-        <b-col sm="7" md="6" class="my-1">
+        <b-col sm="6" md="5" class="my-1">
           <b-pagination
             v-model="currentPage"
             :total-rows="totalRows"
@@ -96,6 +107,7 @@
             class="my-0"
           ></b-pagination>
         </b-col>
+        <b-col sm="1" md="1" class="my-1"></b-col>
       </b-row>
 
       <div id="space"></div>
@@ -110,7 +122,8 @@
             :fields="fields"
             :current-page="currentPage"
             :per-page="perPage"
-            :filter="filter"
+            :filter="(filter||'[]')&&time"
+            
             :filterIncludedFields="filterOn"
             :sort-by.sync="sortBy"
             :sort-desc.sync="sortDesc"
@@ -133,6 +146,7 @@
 export default {
   data() {
     return {
+      time : null , 
       item: [],
       fields: [
         {
@@ -145,6 +159,11 @@ export default {
           key: "Rating",
           label: "Rating",
           sortable: true,
+          class: "text-center",
+        },
+        {
+          // key: "Time",
+          label: "Time",
           class: "text-center",
         },
       ],

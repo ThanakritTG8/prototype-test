@@ -31,7 +31,9 @@
             :items="item"
             :fields="fields"
             :filter="filter"
+             
           >
+         
            <template #cell(Thai)="data">
               <text-highlight :queries="filter">{{
                 data.item.Thai

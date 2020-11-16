@@ -1,21 +1,15 @@
 <template>
   <div id="comment-page">
-    <NavBar/>
-    <!-- <h1 class="text-center">Comment Page</h1> -->
-    <div class="row" id="body-comment-page">
-      <div class="col-1"></div>
-      <div class="col-lg-10">
-        <all-comment id="all-comment" />
-      </div>
-      <div class="col-1"></div>
-      <!-- <div class="col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <pos-neg id="pos-neg" />
-          </div>
+    <NavBar />
+    <b-tabs content-class="mt-3" class="margin">
+      <b-tab title="All Comment" active>
+        <div class="padding">
+          <all-comment id="all-comment" />
         </div>
-      </div>-->
-    </div>
+      </b-tab>
+      <b-tab title="Positive"><p>Positive</p></b-tab>
+      <b-tab title="Negative"><p>Negative</p></b-tab>
+    </b-tabs>
   </div>
 </template>
 
@@ -26,7 +20,7 @@ export default {
   name: "comment-page",
   components: {
     AllComment,
-    NavBar
+    NavBar,
   },
 };
 </script>
@@ -40,5 +34,11 @@ export default {
 }
 h1 {
   margin: 40px;
+}
+.padding {
+  padding: 40px;
+}
+.margin {
+  margin: 30px;
 }
 </style>
