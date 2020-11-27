@@ -75,12 +75,13 @@ export default {
  
   mounted() {
     
-    this.$axios.get("http://localhost:5500/counts/all").then(({ data }) => {
+    this.$axios.get("http://ajkitsiri.ddns.net/counts/all").then(({ data }) => {
       for (const key in data) {
         this.countComment = data[key].numComment;
       }
    
-    this.$axios.get("http://localhost:5500/counts/pos").then(({ data }) => {
+    this.$axios.get("http://ajkitsiri.ddns.net/counts/pos").then(({ data }) => {
+      console.log(data);
       for (const key in data) {
         this.countPos = data[key].numComment;
         this.percenPos = ((data[key].numComment*100)/ this.countComment).toFixed(2);
@@ -88,7 +89,8 @@ export default {
       }
 
     });
-    this.$axios.get("http://localhost:5500/counts/neg").then(({ data }) => {
+    this.$axios.get("http://ajkitsiri.ddns.net/counts/neg").then(({ data }) => {
+      console.log(data);
       for (const key in data) {
         this.countNeg = data[key].numComment;
          this.percenNeg = ((data[key].numComment*100)/ this.countComment).toFixed(2);

@@ -130,11 +130,11 @@
             :sort-direction="sortDirection"
             @filtered="onFiltered"
           >
-            <template #cell(Reviews)="data">
+            <!-- <template #cell(Review)="data">
               <text-highlight :queries="filter">{{
-                data.item.Reviews
+                data.item.Review
               }}</text-highlight>
-            </template>
+            </template> -->
           </b-table>
         </div>
       </div>
@@ -195,7 +195,7 @@ export default {
   },
   mounted() {
     this.$refs.submitBtn.click();
-    this.$axios.get("http://ajkitsiri.ddns.net/comments/pos").then(({ data }) => {
+    this.$axios.get("http://ajkitsiri.ddns.net/comments/neg").then(({ data }) => {
       this.item = data;
       this.totalRows = this.item.length;
     });

@@ -1,6 +1,7 @@
 <template>
   <div id="all-comment">
     <!-- <text-highlight :queries="queries">{{ item }}</text-highlight> -->
+     <b-overlay :show="busyLine" rounded="lg" opacity="0.6">
     <b-container fluid>
       <!-- User Interface controls -->
 
@@ -38,7 +39,7 @@
           </b-form-group>
         </b-col>
 
-        <b-col lg="5" class="my-1" >
+        <b-col lg="5" class="my-1">
           <b-form-group
             label="Filter"
             label-cols-sm="3"
@@ -47,8 +48,17 @@
             label-for="filterInput"
             class="mb-0"
           >
-            <b-input-group size="sm" >
+            <b-input-group size="sm">
+               <!-- <select v-model="time">
+              <option disabled value="">Year</option>
+              <option value="2020">2020</option>
+              <option value="2019">2019</option>
+              <option value="2018">2018</option>
+              <option value=''>All</option>
+            </select>
+            &nbsp;&nbsp; -->
               <b-form-input
+              autocomplete="off"
                 v-model="filter"
                 type="search"
                 id="filterInput"
@@ -65,14 +75,7 @@
                 >
               </b-input-group-append>
             </b-input-group>
-             <input type="radio" id="all" value="" v-model="time" />
-            <label style="margin-top: 10px " for="all">All</label> &nbsp; &nbsp; 
-            <input type="radio" id="one" value="2020" v-model="time" />
-            <label style="margin-top: 10px " for="one">2020</label> &nbsp; &nbsp; 
-            <input type="radio" id="two" value="2019" v-model="time" />
-            <label for="two">2019</label> &nbsp; &nbsp; 
-            <input type="radio" id="three" value="2018" v-model="time" />
-            <label for="three">2018</label>
+           
           </b-form-group>
         </b-col>
         <b-col lg="1"></b-col>
@@ -109,7 +112,7 @@
         </b-col>
         <b-col sm="1" md="1" class="my-1"></b-col>
       </b-row>
-
+<!-- :filter="(filter || '[]') && time" -->
       <div id="space"></div>
       <div class="card">
         <div class="card-body">
@@ -122,8 +125,7 @@
             :fields="fields"
             :current-page="currentPage"
             :per-page="perPage"
-            :filter="(filter||'[]')&&time"
-            
+            :filter="filter"
             :filterIncludedFields="filterOn"
             :sort-by.sync="sortBy"
             :sort-desc.sync="sortDesc"
@@ -139,6 +141,7 @@
         </div>
       </div>
     </b-container>
+     </b-overlay>
   </div>
 </template>
 
@@ -146,7 +149,8 @@
 export default {
   data() {
     return {
-      time : null , 
+      busyLine: true,
+      time: '',
       item: [],
       fields: [
         {
@@ -193,9 +197,13 @@ export default {
         });
     },
   },
+
   mounted() {
+     setTimeout(() => {
+      this.busyLine = false;
+    }, 2000);
     this.$refs.submitBtn.click();
-    this.$axios.get("http://localhost:5500/allcomments").then(({ data }) => {
+    this.$axios.get("http://ajkitsiri.ddns.net/allcomments").then(({ data }) => {
       this.item = data;
       this.totalRows = this.item.length;
     });

@@ -13,7 +13,7 @@
 
     <b-container class="margin-top">
       <b-row>
-        <b-col cols="2" style="text-align: right; margin-left: 20px">
+        <b-col cols="3" style="text-align: right; margin-left: 20px">
           <b-button variant="info" @click="Bar">Bar Chart</b-button>
         </b-col>
         <b-col cols="3" style="text-align: left">

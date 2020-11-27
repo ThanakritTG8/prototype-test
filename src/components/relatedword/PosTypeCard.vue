@@ -43,7 +43,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.busyLine = false;
-    }, 10000);
+    }, 18000);
   },
   methods: {},
 };

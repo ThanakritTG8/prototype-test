@@ -12,7 +12,7 @@ export default {
     var datas = [];
     var label = [];
     this.$axios
-      .get("http://localhost:5500/topten/negNOUN")
+      .get("http://ajkitsiri.ddns.net/topten/negNOUN")
       .then(({ data }) => {
         for (const key in data) {
           if (key > 0) {

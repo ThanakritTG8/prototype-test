@@ -21,7 +21,7 @@
                 <router-link to="/comment" class="navbar" id="font">
                     <div class="navlink">
                         <i class="fas fa-table" id="icon"></i>
-                        <span>Review</span>
+                        <span>Reviews</span>
                     </div>
                 </router-link>
             </b-navbar-nav>
