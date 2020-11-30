@@ -21,6 +21,10 @@ import TextHighlight from 'vue-text-highlight';
 
 import VueTippy, { TippyComponent } from "vue-tippy";
 
+import VueSimpleAlert from "vue-simple-alert";
+
+Vue.use(VueSimpleAlert);
+
 Vue.use(VueTippy);
 Vue.component("tippy", TippyComponent);
 

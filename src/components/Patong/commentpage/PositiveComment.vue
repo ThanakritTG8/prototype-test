@@ -161,11 +161,11 @@ export default {
         //   sortable: true,
         //   class: "text-center",
         // },
-        // {
-          // key: "Time",
-        //   label: "Time",
-        //   class: "text-center",
-        // },
+        {
+          key: "Time",
+          label: "Time",
+          class: "text-center",
+        },
       ],
       totalRows: 0,
       currentPage: null,

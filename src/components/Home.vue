@@ -3,30 +3,33 @@
     <section class="fullpage">
       <div class="container">
         <center>
-          <br />
-          <h1 style="margin-top: 100px">Detect Word Sense</h1>
-          <p class="card-text">Automatic Tourism Sentiment Analysis</p>
-
-          <vue-dropdown
+          <div >
+            <img src="../assets/atsa.png" alt="" width="350" height="350" class="img  "/>
+          </div>
+          <div>
+                    <vue-dropdown 
             style="
-              margin-top: 80px;
               box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             "
             :config="config"
             @setSelectedOption="setNewSelectedOption($event)"
           ></vue-dropdown>
-          <router-link to="/dashboard">
-            <b-button
-              class="button"
-              pill
-              variant="warning"
-              style="margin-top: 40px"
-              @click="Confirm"
-            >
-              Confirm</b-button
-            >
-          </router-link>
+
+          </div>
+          <div>
+              <b-button
+            class="button shadow-lg p-3 mb-5 rounded"
+            pill
+            variant="warning"
+            style="margin-top: 40px"
+            @click="Confirm()"
+          >
+            Confirm</b-button
+          >
+          </div>
+  
+        
         </center>
       </div>
     </section>
@@ -37,29 +40,31 @@
 export default {
   name: "App",
   data: () => ({
-    showDB: false,
-    show: true,
+    data: "",
     config: {
       options: [
         {
           value: "Patong",
         },
-        {
-          value: "Karon",
-        },
       ],
       placeholder: "Place",
       backgroundColor: "white",
       width: 180,
+
+      borderRadius: "1.5em",
     },
   }),
   methods: {
     setNewSelectedOption(selectedOption) {
       this.config.placeholder = selectedOption.value;
+      this.data = selectedOption.value;
     },
     Confirm() {
-      this.show = false;
-      this.showDB = true;
+      if (!this.data) {
+        this.$alert("Please select a place", "warning", "warning");
+      } else {
+        this.$router.push({ path: "/dashboard" });
+      }
     },
   },
 };
@@ -76,6 +81,10 @@ button {
   size: 20px;
   width: 150px;
   height: 50px;
+}
+.img{
+margin-top: 60px;
+margin-bottom: -60px;
 }
 /* button:hover{
     size: 20px;
