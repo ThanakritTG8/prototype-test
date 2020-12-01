@@ -40,7 +40,7 @@ export default {
   }),
   mounted() {
     this.$axios
-      .get("http://localhost:5500/postgards/NEGNOUN")
+      .get("http://ajkitsiri.ddns.net/postgards/NEGNOUN")
       .then(({ data }) => {
         for (let key in data) {
           this.item = data;
