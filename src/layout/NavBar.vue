@@ -10,7 +10,7 @@
 
         <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav>
-                <router-link to="/dashboard" class="navbar" id="font">
+                <router-link to="/" class="navbar" id="font">
                     <div class="navlink">
                         <i class="fas fa-desktop" id="icon"></i>
                         <span>Dashboard</span>
@@ -43,7 +43,7 @@
             </b-navbar-nav>
 
             <!-- Right aligned nav items -->
-            <b-navbar-nav class="ml-auto">
+            <!-- <b-navbar-nav class="ml-auto">
              
                <router-link to="/">
           <b-button
@@ -55,7 +55,7 @@
             Place</b-button >
           </router-link>
                
-            </b-navbar-nav>
+            </b-navbar-nav> -->
         </b-collapse>
     </b-navbar>
 </div>
