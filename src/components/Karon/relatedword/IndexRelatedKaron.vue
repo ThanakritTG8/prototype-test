@@ -1,6 +1,6 @@
 <template>
   <div id="index-related">
-    <NavBar />
+    <NavKaron />
     <div id="group">
       <h1 class="title text-center">Related Word</h1>
     </div>
@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import NavBar from "@/layout/NavBar";
+import NavKaron from "@/layout/NavKaron";
 import PosTypeCard from "@/components/Karon/relatedword/PosTypeCard";
 import NegTypeCard from "@/components/Karon/negrelatedword/NegTypeCard";
 export default {
@@ -34,7 +34,7 @@ export default {
   components: {
     PosTypeCard,
     NegTypeCard,
-    NavBar,
+    NavKaron,
   },
   methods: {},
 };

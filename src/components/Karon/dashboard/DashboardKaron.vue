@@ -1,18 +1,18 @@
 <template>
   <div class="dashboard">
-    <NavBar/>
+    <NavKaron/>
     <index-dashboard/>
   </div>
 </template>
 
 <script>
 import IndexDashboard from '@/components/Karon/dashboard/IndexDashboard'
-import NavBar from "@/layout/NavBar";
+import NavKaron from "@/layout/NavKaron";
 export default {
   name: "dashboard",
   components: {
     IndexDashboard,
-    NavBar
+    NavKaron
   },
 };
 </script>

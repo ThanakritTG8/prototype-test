@@ -1,6 +1,6 @@
 <template>
   <div id="comment-page">
-    <NavBar />
+    <NavKaron />
 
     <b-tabs content-class="mt-3" class="margin">
       <b-tab title="All Comments" active>
@@ -48,12 +48,12 @@
 import NegativeComment from '@/components/Karon/commentpage/NegativeComment'
 import PositiveComment from "@/components/Karon/commentpage/PositiveComment";
 import AllComment from "@/components/Karon/commentpage/AllComment";
-import NavBar from "@/layout/NavBar";
+import NavKaron from "@/layout/NavKaron";
 export default {
   name: "comment-page",
   components: {
     AllComment,
-    NavBar,
+    NavKaron,
     PositiveComment,
     NegativeComment,
   },
@@ -66,7 +66,7 @@ export default {
       { value: "2020", text: "2020" },
       { value: "2019", text: "2019" },
       { value: "2018", text: "2018" },
-      { value: "2017", text: "2017" },
+     
       { value: "", text: "All" },
     ],
     optionsMonth: [

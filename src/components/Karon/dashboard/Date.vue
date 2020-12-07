@@ -14,7 +14,7 @@ export default {
   mounted: function () {
    
     var labelA = [];
-    var color = ["#FF0066","#FF9900","#FFFF00","#CC0099","#9966FF","#66FFFF","#CBAB8D","#FDB4BF","#FFBE7D","#D0B3E1","#B3B3D9","#6E7EF5"];
+    var color = ["#FF0066","#FF9900","#FFFF00"];
     var ctx = document.getElementById("line").getContext("2d");
     this.$axios.get("http://ajkitsiri.ddns.net/karon/year").then(({ data }) => {
       for (let index = 0; index < data.length; index++) {
@@ -28,6 +28,7 @@ export default {
           };
           labelA.push(la)
         }
+        console.log(labelA);
       }
 
       var line = new Chart(ctx, {

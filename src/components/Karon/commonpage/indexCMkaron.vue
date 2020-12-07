@@ -1,6 +1,6 @@
 <template>
   <div id="index" >
-    <NavBar/>
+    <NavKaron/>
     <div class="margin-top">
       <b-row>
         <b-col cols="1"></b-col>
@@ -18,7 +18,7 @@
   </div>
 </template>
 <script>
-import NavBar from "@/layout/NavBar";
+import NavKaron from "@/layout/NavKaron";
 import NegPage from "@/components/Karon/commonpage/NegPage";
 import PosPage from "@/components/Karon/commonpage/PosPage";
 export default {
@@ -39,7 +39,7 @@ export default {
   components: {
     PosPage,
     NegPage,
-    NavBar
+    NavKaron
   },
 };
 </script>
