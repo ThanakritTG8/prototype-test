@@ -25,7 +25,7 @@
  <div>
   
 
-<div style="margin-top:10px;  max-width: 130px;">
+<!-- <div style="margin-top:10px;  max-width: 130px;">
     <b-form-input
     v-model="code"
       id="inline-form-input-name"
@@ -33,7 +33,7 @@
       placeholder="Code for user"
     ></b-form-input>
 </div>
-  
+   -->
  
 </div>
           <div>
@@ -91,11 +91,11 @@ export default {
         this.$router.push({ path: "/dashboard/karon" });
       }
 
-      if(this.code=='401')   this.$router.push({ path: "/dashboard" });
-       if(this.code=='402')   this.$router.push({ path: "/dashboard/karon" });
-       if (!this.code) {
-         this.$alert("Please put your code", "warning", "warning");
-       }
+      // if(this.code=='401')   this.$router.push({ path: "/dashboard" });
+      //  if(this.code=='402')   this.$router.push({ path: "/dashboard/karon" });
+      //  if (!this.code) {
+      //    this.$alert("Please put your code", "warning", "warning");
+      //  }
 
 
     },

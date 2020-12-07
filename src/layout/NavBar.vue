@@ -43,7 +43,7 @@
             </b-navbar-nav>
 
             <!-- Right aligned nav items -->
-            <!-- <b-navbar-nav class="ml-auto">
+            <b-navbar-nav class="ml-auto">
              
                <router-link to="/">
           <b-button
@@ -55,7 +55,7 @@
             Place</b-button >
           </router-link>
                
-            </b-navbar-nav> -->
+            </b-navbar-nav>
         </b-collapse>
     </b-navbar>
 </div>
