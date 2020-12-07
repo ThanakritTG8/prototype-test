@@ -10,7 +10,7 @@
 
         <b-collapse id="nav-collapse" is-nav>
             <b-navbar-nav>
-                <router-link to="/" class="navbar" id="font">
+                <router-link to="/dashboard" class="navbar" id="font">
                     <div class="navlink">
                         <i class="fas fa-desktop" id="icon"></i>
                         <span>Dashboard</span>
