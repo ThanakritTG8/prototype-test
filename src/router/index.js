@@ -4,7 +4,7 @@ import Dashboard from '@/components/Patong/dashboard/Dashboard'
 import CommentPage from '@/components/Patong/commentpage/CommentPage'
 import indexCM from '@/components/Patong/commonpage/indexCM'
 import DashboardKaron from '@/components/dashboardKaron/DashboardKaron'
-import IndexRelated from '@/components/relatedword/IndexRelated'
+import IndexRelated from '@/components/Patong/relatedword/IndexRelated'
 import Home from '@/components/Home'
 
 

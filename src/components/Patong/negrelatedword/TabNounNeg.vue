@@ -1,8 +1,8 @@
 <template>
-  <div id="tab-adj-neg">
+  <div id="tab-noun">
     <b-card no-body>
       <b-tabs pills card vertical class="b-tab scroll">
-        <word-card-adj-neg
+        <word-card-noun-neg
           id="tab"
           :itemData="item"
           :arrData="arr"
@@ -26,11 +26,11 @@
 </template>
 
 <script>
-import WordCardAdjNeg from '@/components/negrelatedword/WordCardAdjNeg'
+import WordCardNounNeg from '@/components/Patong/negrelatedword/WordCardNounNeg'
 export default {
-  name: "tab-adj",
+  name: "tab-noun",
   components: {
-    WordCardAdjNeg
+    WordCardNounNeg
   },
   data: () => ({
     item: undefined,
@@ -40,7 +40,7 @@ export default {
   }),
   mounted() {
     this.$axios
-      .get("http://ajkitsiri.ddns.net/postgards/NEGADJ")
+      .get("http://ajkitsiri.ddns.net/patong/postgards/NEGNOUN")
       .then(({ data }) => {
         for (let key in data) {
           this.item = data;

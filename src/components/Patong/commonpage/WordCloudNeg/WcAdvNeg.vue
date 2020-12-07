@@ -32,7 +32,7 @@ export default {
   mounted() {
     
     this.$axios
-      .get("http://ajkitsiri.ddns.net/wordcloud/negADV")
+      .get("http://ajkitsiri.ddns.net/patong/wordcloud/negADV")
       .then(({ data }) => {
         
         this.defaultWords = data;

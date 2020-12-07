@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import WordCardAdvNeg from '@/components/negrelatedword/WordCardAdvNeg'
+import WordCardAdvNeg from '@/components/Patong/negrelatedword/WordCardAdvNeg'
 export default {
   name: "tab-adv",
   components: {
@@ -40,7 +40,7 @@ export default {
   }),
   mounted() {
     this.$axios
-      .get("http://ajkitsiri.ddns.net/postgards/NEGADV")
+      .get("http://ajkitsiri.ddns.net/patong/postgards/NEGADV")
       .then(({ data }) => {
         for (let key in data) {
           this.item = data;

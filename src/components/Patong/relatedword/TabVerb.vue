@@ -1,8 +1,8 @@
 <template>
-  <div id="tab-adv">
+  <div id="tab-verb">
     <b-card no-body>
       <b-tabs pills card vertical class="b-tab scroll">
-        <word-card-adv
+        <word-card-verb
           id="tab"
           :itemData="item"
           :arrData="arr"
@@ -26,11 +26,11 @@
 </template>
 
 <script>
-import WordCardAdv from '@/components/relatedword/WordCardAdv'
+import WordCardVerb from '@/components/Patong/relatedword/WordCardVerb'
 export default {
-  name: "tab-adv",
+  name: "tab-verb",
   components: {
-    WordCardAdv
+    WordCardVerb
   },
   data: () => ({
     item: undefined,
@@ -40,7 +40,7 @@ export default {
   }),
   mounted() {
     this.$axios
-      .get("http://ajkitsiri.ddns.net/postgards/POSADV")
+      .get("http://ajkitsiri.ddns.net/patong/postgards/POSVERB")
       .then(({ data }) => {
         for (let key in data) {
           this.item = data;

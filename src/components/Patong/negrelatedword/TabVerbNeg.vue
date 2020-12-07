@@ -1,14 +1,13 @@
 <template>
-  <div id="tab-noun">
+  <div id="tab-verb-neg">
     <b-card no-body>
-      <b-tabs pills card vertical class="b-tab">
-        <word-card-noun
+      <b-tabs pills card vertical class="b-tab scroll">
+        <word-card-verb-neg
           id="tab"
           :itemData="item"
           :arrData="arr"
           :per-page="perPage"
           :current-page="currentPage"
-          :filter="filter"
         />
       </b-tabs>
     </b-card>
@@ -27,23 +26,21 @@
 </template>
 
 <script>
-import WordCardNoun from "@/components/relatedword/WordCardNoun";
+import WordCardVerbNeg from '@/components/Patong/negrelatedword/WordCardVerbNeg'
 export default {
-  name: "tab-noun",
+  name: "tab-verb",
   components: {
-    WordCardNoun
+    WordCardVerbNeg
   },
   data: () => ({
-    busy: true,
     item: undefined,
     arr: [],
     currentPage: 1,
-    perPage: 10,
-    filter: null
+    perPage: 10
   }),
   mounted() {
     this.$axios
-      .get("http://ajkitsiri.ddns.net/postgards/POSNOUN")
+      .get("http://ajkitsiri.ddns.net/patong/postgards/NEGVERB")
       .then(({ data }) => {
         for (let key in data) {
           this.item = data;
@@ -56,12 +53,6 @@ export default {
   computed: {
     rows() {
       return this.arr.length;
-    },
-    sortOptions() {
-      // Create an options list from our fields
-      return this.item.filter().map(i => {
-        return { text: i.word, value: i.sentence };
-      });
     }
   },
   methods: {
@@ -73,22 +64,11 @@ export default {
 </script>
 
 <style scoped>
-.b-tab {
+.b-tab{
   height: 500px;
   overflow-y: scroll;
 }
 #paginate {
   margin-top: 20px;
 }
-.text-right {
-  margin-top: 60px;
-
-  margin-right: -140px;
-  font-size: 120px;
-}
-.overley {
-  margin-top: 100px;
-  font-size: 160px;
-}
-
 </style>

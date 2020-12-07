@@ -75,12 +75,12 @@ export default {
  
   mounted() {
     
-    this.$axios.get("http://ajkitsiri.ddns.net/counts/all").then(({ data }) => {
+    this.$axios.get("http://ajkitsiri.ddns.net/patong/counts/all").then(({ data }) => {
       for (const key in data) {
         this.countComment = data[key].numComment;
       }
    
-    this.$axios.get("http://ajkitsiri.ddns.net/counts/pos").then(({ data }) => {
+    this.$axios.get("http://ajkitsiri.ddns.net/patong/counts/pos").then(({ data }) => {
       console.log(data);
       for (const key in data) {
         this.countPos = data[key].numComment;
@@ -89,7 +89,7 @@ export default {
       }
 
     });
-    this.$axios.get("http://ajkitsiri.ddns.net/counts/neg").then(({ data }) => {
+    this.$axios.get("http://ajkitsiri.ddns.net/patong/counts/neg").then(({ data }) => {
       console.log(data);
       for (const key in data) {
         this.countNeg = data[key].numComment;

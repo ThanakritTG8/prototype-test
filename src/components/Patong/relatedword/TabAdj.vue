@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import WordCardAdj from '@/components/relatedword/WordCardAdj'
+import WordCardAdj from '@/components/Patong/relatedword/WordCardAdj'
 export default {
   name: "tab-adj",
   components: {
@@ -40,7 +40,7 @@ export default {
   }),
   mounted() {
     this.$axios
-      .get("http://ajkitsiri.ddns.net/postgards/POSADJ")
+      .get("http://ajkitsiri.ddns.net/patong/postgards/POSADJ")
       .then(({ data }) => {
         for (let key in data) {
           this.item = data;

@@ -10,7 +10,7 @@ export default {
     var datas = [];
     var label = [];
     this.$axios
-      .get("http://ajkitsiri.ddns.net/topten/posVERB")
+      .get("http://ajkitsiri.ddns.net/patong/topten/posVERB")
       .then(({ data }) => {
         for (const key in data) {
           if (key > 0) {

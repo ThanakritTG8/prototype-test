@@ -23,10 +23,10 @@
 </template>
 
 <script>
-import TabNounNeg from '@/components/negrelatedword/TabNounNeg'
-import TabVerbNeg from '@/components/negrelatedword/TabVerbNeg'
-import TabAdjNeg from '@/components/negrelatedword/TabAdjNeg'
-import TabAdvNeg from '@/components/negrelatedword/TabAdvNeg'
+import TabNounNeg from '@/components/Patong/negrelatedword/TabNounNeg'
+import TabVerbNeg from '@/components/Patong/negrelatedword/TabVerbNeg'
+import TabAdjNeg from '@/components/Patong/negrelatedword/TabAdjNeg'
+import TabAdvNeg from '@/components/Patong/negrelatedword/TabAdvNeg'
 
 export default {
   name: "neg-type-card",

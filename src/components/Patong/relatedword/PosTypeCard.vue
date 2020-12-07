@@ -25,10 +25,10 @@
 </template>
 
 <script>
-import TabNoun from "@/components/relatedword/TabNoun";
-import TabVerb from "@/components/relatedword/TabVerb";
-import TabAdj from "@/components/relatedword/TabAdj";
-import TabAdv from "@/components/relatedword/TabAdv";
+import TabNoun from "@/components/Patong/relatedword/TabNoun";
+import TabVerb from "@/components/Patong/relatedword/TabVerb";
+import TabAdj from "@/components/Patong/relatedword/TabAdj";
+import TabAdv from "@/components/Patong/relatedword/TabAdv";
 export default {
   name: "pos-type-card",
   components: {

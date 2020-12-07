@@ -196,7 +196,7 @@ export default {
     }, 2000);
     this.$refs.submitBtn.click();
     this.$axios
-      .get("http://ajkitsiri.ddns.net/allcomments")
+      .get("http://ajkitsiri.ddns.net/patong/allcomments")
       .then(({ data }) => {
         if (this.year == "" && this.month == "") {
           this.item = data;

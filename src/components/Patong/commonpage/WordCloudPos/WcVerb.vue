@@ -33,7 +33,7 @@ export default {
   mounted() {
     var arr = [];
     this.$axios
-      .get("http://ajkitsiri.ddns.net/wordcloud/posVERB")
+      .get("http://ajkitsiri.ddns.net/patong/wordcloud/posVERB")
       .then(({ data }) => {
         for (const key in data) {
           for (let s = 0; s < 1; s++) {

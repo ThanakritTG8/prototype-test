@@ -27,8 +27,8 @@
 
 <script>
 import NavBar from "@/layout/NavBar";
-import PosTypeCard from "@/components/relatedword/PosTypeCard";
-import NegTypeCard from "@/components/negrelatedword/NegTypeCard";
+import PosTypeCard from "@/components/Patong/relatedword/PosTypeCard";
+import NegTypeCard from "@/components/Patong/negrelatedword/NegTypeCard";
 export default {
   name: "index-related",
   components: {
