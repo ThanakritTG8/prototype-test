@@ -32,7 +32,7 @@ export default {
   mounted() {
     var arr = [];
     this.$axios
-      .get("http://ajkitsiri.ddns.net/karon/wordcloud/posADJ")
+      .get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/karon/wordcloud/posADJ.json")
       .then(({ data }) => {
         for (const key in data) {
           for (let s = 0; s < 1; s++) {

@@ -12,7 +12,7 @@ export default {
     var datas = [];
     var label = [];
     this.$axios
-      .get("http://ajkitsiri.ddns.net/karon/topten/negNOUN")
+      .get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/karon/topten/negNOUN.json")
       .then(({ data }) => {
         for (const key in data) {
           if (key > 0) {

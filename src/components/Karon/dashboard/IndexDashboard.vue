@@ -75,12 +75,12 @@ export default {
  
   mounted() {
     
-    this.$axios.get("http://ajkitsiri.ddns.net/karon/counts/all").then(({ data }) => {
+    this.$axios.get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/karon/counts/all.json").then(({ data }) => {
       for (const key in data) {
         this.countComment = data[key].numComment;
       }
    
-    this.$axios.get("http://ajkitsiri.ddns.net/karon/counts/pos").then(({ data }) => {
+    this.$axios.get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/karon/counts/pos.json").then(({ data }) => {
       console.log(data);
       for (const key in data) {
         this.countPos = data[key].numComment;
@@ -89,7 +89,7 @@ export default {
       }
 
     });
-    this.$axios.get("http://ajkitsiri.ddns.net/karon/counts/neg").then(({ data }) => {
+    this.$axios.get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/karon/counts/neg.json").then(({ data }) => {
       console.log(data);
       for (const key in data) {
         this.countNeg = data[key].numComment;

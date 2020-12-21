@@ -10,7 +10,7 @@ export default {
   mounted() {
       var datas = [];
     var label = [];
-    this.$axios.get("http://ajkitsiri.ddns.net/karon/piechart/neg").then(({ data }) => {
+    this.$axios.get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/karon/piechart/neg.json").then(({ data }) => {
       for (const key in data) {
         for (let index = 0; index < 1; index++) {
           datas.push(data[key][1]);

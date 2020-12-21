@@ -76,7 +76,7 @@ export default {
   }),
   mounted() {
     var arr = [];
-    this.$axios.get("http://ajkitsiri.ddns.net/karon/wordcloud/all").then(({ data }) => {
+    this.$axios.get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/karon/wordcloud/all.json").then(({ data }) => {
       for (const key in data) {
         for (let s = 0; s < 1; s++) {
           if (data[key].count > 20) {
@@ -86,7 +86,7 @@ export default {
       }
       this.defaultWords = arr;
     });
-    this.$axios.get("http://ajkitsiri.ddns.net/karon/allcomments").then(({ data }) => {
+    this.$axios.get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/karon/allcomments.json").then(({ data }) => {
       this.item = data;
     });
   },

@@ -9,7 +9,7 @@ export default {
     var text = [];
     var datas = [];
     var label = [];
-    this.$axios.get("http://ajkitsiri.ddns.net/karon/topten/posADJ").then(({ data }) => {
+    this.$axios.get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/karon/topten/posADJ.json").then(({ data }) => {
       for (const key in data) {
         if (key > 0) {
           text.push(data[key]);

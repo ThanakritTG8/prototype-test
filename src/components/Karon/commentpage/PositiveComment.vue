@@ -150,8 +150,8 @@ export default {
       item: [],
       fields: [
         {
-          key: "Reviews",
-          label: "Reviews",
+          key: "Review",
+          label: "Review",
           sortable: true,
           sortDirection: "desc",
         },
@@ -195,7 +195,7 @@ export default {
   },
   mounted() {
     this.$refs.submitBtn.click();
-    this.$axios.get("http://ajkitsiri.ddns.net/karon/comments/pos").then(({ data }) => {
+    this.$axios.get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/karon/comments/pos.json").then(({ data }) => {
       this.item = data;
       this.totalRows = this.item.length;
     });

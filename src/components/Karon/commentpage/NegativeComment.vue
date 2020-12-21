@@ -150,8 +150,8 @@ export default {
       item: [],
       fields: [
         {
-          key: "Reviews",
-          label: "Reviews",
+          key: "Review",
+          label: "Review",
           sortable: true,
           sortDirection: "desc",
         },
@@ -161,11 +161,11 @@ export default {
         //   sortable: true,
         //   class: "text-center",
         // },
-        // {
-          // key: "Time",
-        //   label: "Time",
-        //   class: "text-center",
-        // },
+        {
+          key: "Time",
+          label: "Time",
+          class: "text-center",
+        },
       ],
       totalRows: 0,
       currentPage: null,
@@ -195,7 +195,7 @@ export default {
   },
   mounted() {
     this.$refs.submitBtn.click();
-    this.$axios.get("http://ajkitsiri.ddns.net/karon/comments/neg").then(({ data }) => {
+    this.$axios.get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/karon/comments/neg.json").then(({ data }) => {
       this.item = data;
       this.totalRows = this.item.length;
     });
