@@ -150,8 +150,8 @@ export default {
       item: [],
       fields: [
         {
-          key: "Reviews",
-          label: "Reviews",
+          key: "Review",
+          label: "Review",
           sortable: true,
           sortDirection: "desc",
         },
@@ -197,6 +197,7 @@ export default {
     this.$refs.submitBtn.click();
     this.$axios.get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/patong/comments/pos.json").then(({ data }) => {
       this.item = data;
+      console.log(data.reviews);
       this.totalRows = this.item.length;
     });
   },
