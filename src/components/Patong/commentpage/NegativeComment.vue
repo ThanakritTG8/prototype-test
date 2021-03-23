@@ -195,7 +195,7 @@ export default {
   },
   mounted() {
     this.$refs.submitBtn.click();
-    this.$axios.get("http://ajkitsiri.ddns.net/patong/comments/neg").then(({ data }) => {
+    this.$axios.get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/patong/comments/neg.json").then(({ data }) => {
       this.item = data;
       this.totalRows = this.item.length;
     });

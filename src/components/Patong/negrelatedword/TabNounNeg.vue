@@ -40,7 +40,7 @@ export default {
   }),
   mounted() {
     this.$axios
-      .get("http://ajkitsiri.ddns.net/patong/postgards/NEGNOUN")
+      .get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/patong/postgards/NEGNOUN.json")
       .then(({ data }) => {
         for (let key in data) {
           this.item = data;

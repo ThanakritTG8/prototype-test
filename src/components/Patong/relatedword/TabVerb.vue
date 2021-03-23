@@ -40,7 +40,7 @@ export default {
   }),
   mounted() {
     this.$axios
-      .get("http://ajkitsiri.ddns.net/patong/postgards/POSVERB")
+      .get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/patong/postgards/POSVERB.json")
       .then(({ data }) => {
         for (let key in data) {
           this.item = data;

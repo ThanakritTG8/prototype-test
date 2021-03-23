@@ -9,7 +9,7 @@ export default {
     var text = [];
     var datas = [];
     var label = [];
-    this.$axios.get("http://ajkitsiri.ddns.net/patong/topten/posADV").then(({ data }) => {
+    this.$axios.get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/patong/topten/posADV.json").then(({ data }) => {
       for (const key in data) {
         if (key > 0) {
           text.push(data[key]);

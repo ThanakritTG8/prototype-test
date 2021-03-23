@@ -32,7 +32,7 @@ export default {
   mounted() {
     
     this.$axios
-      .get("http://ajkitsiri.ddns.net/patong/wordcloud/negADJ")
+      .get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/patong/wordcloud/negADJ.json")
       .then(({ data }) => {
         this.defaultWords = data;
       });
