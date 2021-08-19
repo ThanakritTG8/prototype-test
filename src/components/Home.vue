@@ -5,6 +5,12 @@
         <center>
           <div>
             <img
+              src="../assets/coc1.png"
+              alt=""
+              width="250"
+              class="img"
+            />
+            <img
               src="../assets/atsa.png"
               alt=""
               width="350"
@@ -105,7 +111,7 @@ export default {
 
 <style scoped>
 #home {
-  background-image: url("../assets/patong.jpg");
+  background-image: url("../assets/beach.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
