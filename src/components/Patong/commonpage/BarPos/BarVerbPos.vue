@@ -10,7 +10,7 @@ export default {
     var datas = [];
     var label = [];
     this.$axios
-      .get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/patong/topten/posVERB.json")
+      .get("https://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/patong/topten/posVERB.json")
       .then(({ data }) => {
         for (const key in data) {
           if (key > 0) {

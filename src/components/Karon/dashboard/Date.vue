@@ -16,7 +16,7 @@ export default {
     var labelA = [];
     var color = ["#FF0066","#FF9900","#FFFF00"];
     var ctx = document.getElementById("line").getContext("2d");
-    this.$axios.get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/karon/year.json").then(({ data }) => {
+    this.$axios.get("https://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/karon/year.json").then(({ data }) => {
       for (let index = 0; index < data.length; index++) {
         for (let indexs = 0; indexs < 1; indexs++) {
               

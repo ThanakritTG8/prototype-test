@@ -195,7 +195,7 @@ export default {
   },
   mounted() {
     this.$refs.submitBtn.click();
-    this.$axios.get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/patong/comments/pos.json").then(({ data }) => {
+    this.$axios.get("https://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/patong/comments/pos.json").then(({ data }) => {
       this.item = data;
       console.log(data.reviews);
       this.totalRows = this.item.length;

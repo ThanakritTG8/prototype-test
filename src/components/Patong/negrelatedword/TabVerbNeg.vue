@@ -40,7 +40,7 @@ export default {
   }),
   mounted() {
     this.$axios
-      .get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/patong/postgards/NEGVERB.json")
+      .get("https://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/patong/postgards/NEGVERB.json")
       .then(({ data }) => {
         for (let key in data) {
           this.item = data;

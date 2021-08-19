@@ -196,7 +196,7 @@ export default {
     }, 2000);
     this.$refs.submitBtn.click();
     this.$axios
-      .get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/karon/allcomments.json")
+      .get("https://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/karon/allcomments.json")
       .then(({ data }) => {
         if (this.year == "" && this.month == "") {
           this.item = data;

@@ -29,7 +29,7 @@ export default {
   mounted() {
     var arr=[]
     this.$axios
-      .get("http://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/karon/wordcloud/negVERB.json")
+      .get("https://sentimentanalysis.chochiang.com/tourist/beach/Auto-sentiment-web/API/karon/wordcloud/negVERB.json")
       .then(({ data }) => {
         for (const key in data) {
           for (let s = 0; s < 1; s++) {
